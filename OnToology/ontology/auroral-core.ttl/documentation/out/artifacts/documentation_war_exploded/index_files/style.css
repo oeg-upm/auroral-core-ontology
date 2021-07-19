@@ -1,0 +1,11 @@
+/* responsible for formatting title and separator */
+p.tags
+{
+	font-size: 13px;
+	font-weight: bold;
+}
+/* responsible for formatting tags */
+p.tags a
+{
+	font-size: 12px;
+}

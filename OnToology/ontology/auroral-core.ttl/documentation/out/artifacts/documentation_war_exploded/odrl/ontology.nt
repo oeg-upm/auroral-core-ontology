@@ -1,0 +1,164 @@
+<https://auroral.iot.linkeddata.es/def/privacy#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://auroral.iot.linkeddata.es/def/privacy#> <http://purl.org/dc/elements/1.1/creator> "Alba Fernández Izquierdo" .
+<https://auroral.iot.linkeddata.es/def/privacy#> <http://purl.org/dc/elements/1.1/creator> "Andrea Cimmino" .
+<https://auroral.iot.linkeddata.es/def/privacy#> <http://purl.org/dc/elements/1.1/creator> "Raúl García Castro" .
+<https://auroral.iot.linkeddata.es/def/privacy#> <http://purl.org/dc/elements/1.1/description> "This ontology aims at modelling the privacy for the AURORAL project." .
+<https://auroral.iot.linkeddata.es/def/privacy#> <http://purl.org/dc/elements/1.1/title> "The AURORAL Privacy Ontology" .
+<https://auroral.iot.linkeddata.es/def/privacy#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#definesRule
+<https://auroral.iot.linkeddata.es/def/privacy#definesRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/privacy#definesRule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/privacy#Policy> .
+<https://auroral.iot.linkeddata.es/def/privacy#definesRule> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/privacy#Rule> .
+<https://auroral.iot.linkeddata.es/def/privacy#definesRule> <http://www.w3.org/2000/01/rdf-schema#label> "defines rule" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#hasAction
+<https://auroral.iot.linkeddata.es/def/privacy#hasAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/privacy#hasAction> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/privacy#Rule> .
+<https://auroral.iot.linkeddata.es/def/privacy#hasAction> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/privacy#Action> .
+<https://auroral.iot.linkeddata.es/def/privacy#hasAction> <http://www.w3.org/2000/01/rdf-schema#label> "has action" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#hasPolicy
+<https://auroral.iot.linkeddata.es/def/privacy#hasPolicy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/privacy#hasPolicy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Item> .
+<https://auroral.iot.linkeddata.es/def/privacy#hasPolicy> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/privacy#Policy> .
+<https://auroral.iot.linkeddata.es/def/privacy#hasPolicy> <http://www.w3.org/2000/01/rdf-schema#label> "has policy" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#hasRuleTarget
+<https://auroral.iot.linkeddata.es/def/privacy#hasRuleTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/privacy#hasRuleTarget> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/privacy#Rule> .
+<https://auroral.iot.linkeddata.es/def/privacy#hasRuleTarget> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/privacy#RuleTarget> .
+<https://auroral.iot.linkeddata.es/def/privacy#hasRuleTarget> <http://www.w3.org/2000/01/rdf-schema#label> "has rule target" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#hasDescription
+<https://auroral.iot.linkeddata.es/def/privacy#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://auroral.iot.linkeddata.es/def/privacy#hasDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has description" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#hasName
+<https://auroral.iot.linkeddata.es/def/privacy#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://auroral.iot.linkeddata.es/def/privacy#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has name" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://auroral.iot.linkeddata.es/def/core#Item
+<https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/privacy#hasPolicy> .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/privacy#Policy> .
+<https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#label> "Item" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#Action
+<https://auroral.iot.linkeddata.es/def/privacy#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/privacy#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/privacy#hasDescription> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/privacy#Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#Permission
+<https://auroral.iot.linkeddata.es/def/privacy#Permission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/privacy#Permission> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/privacy#Rule> .
+<https://auroral.iot.linkeddata.es/def/privacy#Permission> <http://www.w3.org/2000/01/rdf-schema#label> "Permission" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#Policy
+<https://auroral.iot.linkeddata.es/def/privacy#Policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/privacy#Policy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/privacy#hasDescription> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/privacy#Policy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/privacy#hasName> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/privacy#Policy> <http://www.w3.org/2000/01/rdf-schema#label> "Policy" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#Prohibition
+<https://auroral.iot.linkeddata.es/def/privacy#Prohibition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/privacy#Prohibition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/privacy#Rule> .
+<https://auroral.iot.linkeddata.es/def/privacy#Prohibition> <http://www.w3.org/2000/01/rdf-schema#label> "Prohibition" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#Rule
+<https://auroral.iot.linkeddata.es/def/privacy#Rule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/privacy#Rule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/privacy#hasDescription> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/privacy#Rule> <http://www.w3.org/2000/01/rdf-schema#label> "Rule" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#RuleTarget
+<https://auroral.iot.linkeddata.es/def/privacy#RuleTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/privacy#RuleTarget> <http://www.w3.org/2000/01/rdf-schema#label> "Rule Target" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#Accessibility
+<https://auroral.iot.linkeddata.es/def/privacy#Accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/privacy#Accessibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/privacy#Action> .
+<https://auroral.iot.linkeddata.es/def/privacy#Accessibility> <http://www.w3.org/2000/01/rdf-schema#label> "Accessibility" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#All
+<https://auroral.iot.linkeddata.es/def/privacy#All> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/privacy#All> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/privacy#RuleTarget> .
+<https://auroral.iot.linkeddata.es/def/privacy#All> <http://www.w3.org/2000/01/rdf-schema#label> "All" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#Friends
+<https://auroral.iot.linkeddata.es/def/privacy#Friends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/privacy#Friends> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/privacy#RuleTarget> .
+<https://auroral.iot.linkeddata.es/def/privacy#Friends> <http://www.w3.org/2000/01/rdf-schema#label> "Friends" .
+# 
+# https://auroral.iot.linkeddata.es/def/privacy#Visibility
+<https://auroral.iot.linkeddata.es/def/privacy#Visibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/privacy#Visibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/privacy#Action> .
+<https://auroral.iot.linkeddata.es/def/privacy#Visibility> <http://www.w3.org/2000/01/rdf-schema#label> "Visibility" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
