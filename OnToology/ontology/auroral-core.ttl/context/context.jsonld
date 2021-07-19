@@ -1,0 +1,208 @@
+{
+  "@context" : {
+    "belongsTo" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#belongsTo",
+      "@type" : "@id"
+    },
+    "hasNotification" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasNotification",
+      "@type" : "@id"
+    },
+    "hasFirstName" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasFirstName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasEmail" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasEmail",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "hasObject" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasObject",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Link" : {
+      "@id" : "https://www.w3.org/2019/wot/hypermedia#Link"
+    },
+    "hasActor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasActor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Organisation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Organisation"
+    },
+    "Organization" : {
+      "@id" : "https://www.w3.org/ns/org#Organization"
+    },
+    "Thing" : {
+      "@id" : "https://www.w3.org/2019/wot/td#Thing"
+    },
+    "hasAudit" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasAudit",
+      "@type" : "@id"
+    },
+    "isRepresentedByAvatar" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar",
+      "@type" : "@id"
+    },
+    "hasNote" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasNote",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasName" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasID" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasID",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasRole" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasRole",
+      "@type" : "@id"
+    },
+    "hasOwner" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasOwner",
+      "@type" : "@id"
+    },
+    "isLastUpdated" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#isLastUpdated"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasUser" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasUser",
+      "@type" : "@id"
+    },
+    "User" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "hasInteractionAffordance" : {
+      "@id" : "https://www.w3.org/2019/wot/td#hasInteractionAffordance",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Role" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Role"
+    },
+    "hasRegistrationNumber" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasRegistrationNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTarget" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasTarget",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "containsItem" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#containsItem",
+      "@type" : "@id"
+    },
+    "location" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+      "@type" : "@id"
+    },
+    "InteractionAffordance" : {
+      "@id" : "https://www.w3.org/2019/wot/td#InteractionAffordance"
+    },
+    "hasStatus" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasOccupation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasOccupation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "knows" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#knows",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "isUnread" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#isUnread",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasSkinColor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasSkinColor",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Audit" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Audit"
+    },
+    "hasLink" : {
+      "@id" : "https://www.w3.org/2019/wot/td#hasLink",
+      "@type" : "@id"
+    },
+    "hasCreationDate" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasCreationDate"
+    },
+    "hasToken" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasToken",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasPartnershipRequestedBy" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy",
+      "@type" : "@id"
+    },
+    "hasNode" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasNode",
+      "@type" : "@id"
+    },
+    "SpatialThing" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+    },
+    "hasPartnershipRequestedTo" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedTo",
+      "@type" : "@id"
+    },
+    "hasContactMail" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasContactMail",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Service" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
+    },
+    "Image" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Image"
+    },
+    "hasKey" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasKey",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Notification" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Notification"
+    },
+    "Device" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
+    },
+    "hasLastName" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasLastName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Node" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Node"
+    },
+    "Item" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Item"
+    },
+    "hasLocation" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasLocation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    }
+  }
+}
