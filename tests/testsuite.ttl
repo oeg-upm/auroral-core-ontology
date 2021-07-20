@@ -1,0 +1,409 @@
+@prefix : <https://auroral.iot.linkeddata.es/tests/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+:TestsuiteCore rdf:type <http://w3id.org/def/vtc#TestSuite>, owl:NamedIndividual;
+            dcterms:source <https://auroral.iot.linkeddata.es/def/core>.
+
+:Test1 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+               <https://w3id.org/def/vtc#desiredBehaviour> "User containsItem Item" .
+
+:Test2 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User hasAudit Audit" .
+
+:Test3 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User hasNotification Notification" .
+
+:Test4 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+               <https://w3id.org/def/vtc#desiredBehaviour> "Dev_ops type Role" .
+
+:Test5 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Infras_operator type Role" .
+
+:Test6 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User type Role" .
+
+:Test7 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Admin type Role" .
+
+:Test8 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User hasRole Role" .
+
+:Test9 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Deleted type UserStatus" .
+
+:Test10 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Active type UserStatus" .
+
+:Test11 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User isRepresentedByAvatar Image" .
+
+:Test12 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User belongsTo Organisation" .
+
+:Test13 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasID only string" .
+
+:Test14 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasUpdateDate only datetime" .
+
+:Test15 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasCreationDate only datetime" .
+
+:Test16 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasLocation only string" .
+
+:Test17 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasOccupation only string" .
+
+:Test18 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasContactMail only string" .
+
+:Test19 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasEmail only string" .
+
+:Test20 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasLastName only string" .
+
+:Test21 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasFirstName only string" .
+
+:Test22 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasName only string" .
+
+:Test23 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Deleted type ItemStatus" .
+
+:Test24 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Enabled type ItemStatus" .
+
+:Test25 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Disabled type ItemStatus" .
+
+:Test26 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Service subclassOf Item" .
+
+:Test27 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Device subclassOf Item" .
+
+:Test28 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Item isRepresentedByAvatar Image" .
+
+:Test29 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Item belongsTo Organisation" .
+
+:Test30 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Item hasUser User" .
+
+:Test31 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Item belongsTo Node" .
+
+:Test32 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Item subclassof hasUpdateDate only datetime" .
+
+:Test33 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Item subclassof hasCreationDate only datetime" .
+
+:Test34 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Item subclassof hasStatus only string" .
+
+:Test35 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Item subclassof hasName only string" .
+
+:Test36 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Deleted type NodeStatus" .
+
+:Test37 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Active type NodeStatus" .
+
+:Test38 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Node containsItem Item" .
+
+:Test39 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Auroral type Node" .
+
+:Test40 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Sharq type Node" .
+
+:Test41 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Vicinity type Node" .
+
+:Test42 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Node belongsTo Organisation" .
+
+:Test43 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Node subclassOf hasID only string" .
+
+:Test44 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Node subclassOf hasUpdateDate only datetime" .
+
+:Test45 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Node subclassOf hasCreationDate only datetime" .
+
+:Test46 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Node subclassOf hasToken only string" .
+
+:Test47 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Node subclassOf hasKey only string" .
+
+:Test48 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Node subclassOf hasName only string" .
+
+:Test49 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "ContractAccepted type Notification" .
+
+:Test50 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "ContractRequest type Notification" .
+
+:Test51 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "ItemUpdated type Notification" .
+
+:Test52 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "ItemDiscovered type Notification" .
+
+:Test53 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "ItemDisabled type Notification" .
+
+:Test54 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "ItemEnabled type Notification" .
+
+:Test55 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "RegistrationRequest type Notification" .
+
+:Test56 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Notification subclassOf isUnread only boolean" .
+
+:Test57 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Notification hasStatus NotificationStatus" .
+
+:Test58 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Responded type NotificationStatus" .
+
+:Test59 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Rejected type NotificationStatus" .
+
+:Test60 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Accepted type NotificationStatus" .
+
+:Test61 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Info type NotificationStatus" .
+
+:Test62 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Waiting type NotificationStatus" .
+
+:Test63 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Notification subClassOf hasObject only string" .
+
+:Test64 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Notification subClassOf hasActor only string" .
+
+:Test65 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Notification subClassOf hasCreationDate only Datetime" .
+
+:Test66 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Notification subClassOf hasTarget only string" .
+
+:Test67 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Notification subClassOf hasOwner only string" .
+
+:Test68 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Notification subClassOf hasID only string" .
+
+:Test69 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Organisation hasPartnershipRequestedTo Organisation" .
+
+:Test70 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Organisation hasPartnershipRequestedBy Organisation" .
+
+:Test71 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Organisation knows Organisation" .
+
+:Test72 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Organisation hasNode Node" .
+
+:Test73 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Organisation hasUser User" .
+
+:Test74 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Organisation hasAudit Audit" .
+
+:Test75 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Organisation hasNotification Notification" .
+
+:Test76 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Organisation subclassOf hasCreationDate only DateTime" .
+
+:Test77 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Organisation subclassOf hasLocation only string" .
+
+:Test78 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Organisation subclassOf hasID only string" .
+
+:Test79 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
+                               owl:NamedIndividual ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+        <https://w3id.org/def/vtc#desiredBehaviour> "Organisation subclassOf hasSkinColor only string" .
