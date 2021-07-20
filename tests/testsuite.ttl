@@ -56,12 +56,12 @@
 :Test9 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Deleted type UserStatus" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "DeletedUserStatus type UserStatus" .
 
 :Test10 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Active type UserStatus" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "ActiveUserStatus type UserStatus" .
 
 :Test11 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
@@ -126,17 +126,17 @@
 :Test23 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Deleted type ItemStatus" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "DeletedItemStatus type ItemStatus" .
 
 :Test24 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Enabled type ItemStatus" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "EnabledItemStatus type ItemStatus" .
 
 :Test25 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Disabled type ItemStatus" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "DisabledItemStatus type ItemStatus" .
 
 :Test26 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
@@ -191,12 +191,12 @@
 :Test36 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Deleted type NodeStatus" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "DeletedNodeStatus type NodeStatus" .
 
 :Test37 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Active type NodeStatus" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "ActiveNodeStatus type NodeStatus" .
 
 :Test38 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
@@ -256,37 +256,37 @@
 :Test49 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "ContractAccepted type Notification" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "ContractAcceptedNotification type Notification" .
 
 :Test50 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "ContractRequest type Notification" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "ContractRequestNotification type Notification" .
 
 :Test51 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "ItemUpdated type Notification" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "ItemUpdatedNotification type Notification" .
 
 :Test52 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "ItemDiscovered type Notification" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "ItemDiscoveredNotification type Notification" .
 
 :Test53 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "ItemDisabled type Notification" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "ItemDisabledNotification type Notification" .
 
 :Test54 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "ItemEnabled type Notification" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "ItemEnabledNotification type Notification" .
 
 :Test55 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "RegistrationRequest type Notification" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "RegistrationRequestNotification type Notification" .
 
 :Test56 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
@@ -301,27 +301,27 @@
 :Test58 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Responded type NotificationStatus" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "RespondedNotificationStatus type NotificationStatus" .
 
 :Test59 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Rejected type NotificationStatus" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "RejectedNotificationStatus type NotificationStatus" .
 
 :Test60 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Accepted type NotificationStatus" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "AcceptedNotificationStatus type NotificationStatus" .
 
 :Test61 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Info type NotificationStatus" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "InfoNotificationStatus type NotificationStatus" .
 
 :Test62 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;
         <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Waiting type NotificationStatus" .
+        <https://w3id.org/def/vtc#desiredBehaviour> "WaitingNotificationStatus type NotificationStatus" .
 
 :Test63 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
                                owl:NamedIndividual ;

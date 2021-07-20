@@ -103,6 +103,11 @@ core:hasRole rdf:type owl:ObjectProperty ;
              rdfs:label "has role" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#hasStatus
+core:hasStatus rdf:type owl:ObjectProperty ;
+               rdfs:label "has status" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#hasUser
 core:hasUser rdf:type owl:ObjectProperty ;
              rdfs:label "has user" .
@@ -228,12 +233,6 @@ core:hasSkinColor rdf:type owl:DatatypeProperty ;
                   rdfs:label "has skin color" .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#hasStatus
-core:hasStatus rdf:type owl:DatatypeProperty ;
-               rdfs:range xsd:string ;
-               rdfs:label "has status" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/core#hasTarget
 core:hasTarget rdf:type owl:DatatypeProperty ;
                rdfs:range xsd:string ;
@@ -244,6 +243,12 @@ core:hasTarget rdf:type owl:DatatypeProperty ;
 core:hasToken rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:string ;
               rdfs:label "has token" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#hasUpdateDate
+core:hasUpdateDate rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:dateTime ;
+                   rdfs:label "has update date" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#isLastUpdated
@@ -290,8 +295,26 @@ core:Device rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#Item
 core:Item rdf:type owl:Class ;
-          rdfs:subClassOf wot:Thing ;
+          rdfs:subClassOf wot:Thing ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty core:hasCreationDate ;
+                            owl:allValuesFrom xsd:dateTime
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty core:hasName ;
+                            owl:allValuesFrom xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty core:hasUpdateDate ;
+                            owl:allValuesFrom xsd:dateTime
+                          ] ;
           rdfs:label "Item" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#ItemStatus
+core:ItemStatus rdf:type owl:Class ;
+                rdfs:subClassOf core:Status ;
+                rdfs:label "Item status" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Node
@@ -299,6 +322,10 @@ core:Node rdf:type owl:Class ;
           rdfs:subClassOf [ rdf:type owl:Restriction ;
                             owl:onProperty core:containsItem ;
                             owl:allValuesFrom core:Item
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty core:hasStatus ;
+                            owl:allValuesFrom core:NodeStatus
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty core:hasCreationDate ;
@@ -327,6 +354,12 @@ core:Node rdf:type owl:Class ;
           rdfs:label "Node" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#NodeStatus
+core:NodeStatus rdf:type owl:Class ;
+                rdfs:subClassOf core:Status ;
+                rdfs:label "Node status" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#Notification
 core:Notification rdf:type owl:Class ;
                   rdfs:subClassOf [ rdf:type owl:Class ;
@@ -338,6 +371,10 @@ core:Notification rdf:type owl:Class ;
                                                 )
                                   ] ,
                                   [ rdf:type owl:Restriction ;
+                                    owl:onProperty core:hasStatus ;
+                                    owl:allValuesFrom core:NotificationStatus
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
                                     owl:onProperty core:hasActor ;
                                     owl:someValuesFrom xsd:string
                                   ] ,
@@ -347,10 +384,6 @@ core:Notification rdf:type owl:Class ;
                                   ] ,
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty core:hasObject ;
-                                    owl:someValuesFrom xsd:string
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
-                                    owl:onProperty core:hasStatus ;
                                     owl:someValuesFrom xsd:string
                                   ] ,
                                   [ rdf:type owl:Restriction ;
@@ -366,6 +399,12 @@ core:Notification rdf:type owl:Class ;
                                     owl:allValuesFrom xsd:boolean
                                   ] ;
                   rdfs:label "Notification" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#NotificationStatus
+core:NotificationStatus rdf:type owl:Class ;
+                        rdfs:subClassOf core:Status ;
+                        rdfs:label "Notification status" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Organisation
@@ -420,10 +459,6 @@ core:Organisation rdf:type owl:Class ;
                                     owl:someValuesFrom xsd:string
                                   ] ,
                                   [ rdf:type owl:Restriction ;
-                                    owl:onProperty core:hasStatus ;
-                                    owl:someValuesFrom xsd:string
-                                  ] ,
-                                  [ rdf:type owl:Restriction ;
                                     owl:onProperty core:isLastUpdated ;
                                     owl:someValuesFrom xsd:dateTime
                                   ] ;
@@ -439,6 +474,11 @@ core:Role rdf:type owl:Class ;
 core:Service rdf:type owl:Class ;
              rdfs:subClassOf core:Item ;
              rdfs:label "Service" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Status
+core:Status rdf:type owl:Class ;
+            rdfs:label "Status" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#User
@@ -459,6 +499,10 @@ core:User rdf:type owl:Class ;
                           [ rdf:type owl:Restriction ;
                             owl:onProperty core:hasNode ;
                             owl:allValuesFrom core:Node
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty core:hasStatus ;
+                            owl:allValuesFrom core:UserStatus
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty core:isRepresentedByAvatar ;
@@ -499,11 +543,13 @@ core:User rdf:type owl:Class ;
                           [ rdf:type owl:Restriction ;
                             owl:onProperty core:hasOccupation ;
                             owl:someValuesFrom xsd:string
-                          ] ,
-                          [ rdf:type owl:Restriction ;
-                            owl:onProperty core:hasStatus ;
-                            owl:someValuesFrom xsd:string
                           ] .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#UserStatus
+core:UserStatus rdf:type owl:Class ;
+                rdfs:subClassOf core:Status ;
+                rdfs:label "User status" .
 
 
 ###  https://saref.etsi.org/core#Device
@@ -535,10 +581,64 @@ org:Organization rdf:type owl:Class ;
 #    Individuals
 #################################################################
 
+###  https://auroral.iot.linkeddata.es/def/core#AcceptedNotificationStatus
+core:AcceptedNotificationStatus rdf:type owl:NamedIndividual ,
+                                         core:NotificationStatus ;
+                                rdfs:label "Accepted notification status" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#ActiveNodeStatus
+core:ActiveNodeStatus rdf:type owl:NamedIndividual ,
+                               core:NodeStatus ;
+                      rdfs:label "Active node status" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#ActiveUserStatus
+core:ActiveUserStatus rdf:type owl:NamedIndividual ,
+                               core:UserStatus ;
+                      rdfs:label "Active user status" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#Admin
 core:Admin rdf:type owl:NamedIndividual ,
                     core:Role ;
            rdfs:label "Admin" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Auroral
+core:Auroral rdf:type owl:NamedIndividual ,
+                      core:Node ;
+             rdfs:label "Auroral" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#ContractAcceptedNotification
+core:ContractAcceptedNotification rdf:type owl:NamedIndividual ,
+                                           core:Notification ;
+                                  rdfs:label "Contract accepted notification" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#ContractRequestNotification
+core:ContractRequestNotification rdf:type owl:NamedIndividual ,
+                                          core:Notification ;
+                                 rdfs:label "Contract request notification" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#DeletedItemStatus
+core:DeletedItemStatus rdf:type owl:NamedIndividual ,
+                                core:ItemStatus ;
+                       rdfs:label "Deleted item status" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#DeletedNodeStatus
+core:DeletedNodeStatus rdf:type owl:NamedIndividual ,
+                                core:NodeStatus ;
+                       rdfs:label "Deleted node status" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#DeletedUserStatus
+core:DeletedUserStatus rdf:type owl:NamedIndividual ,
+                                core:UserStatus ;
+                       rdfs:label "Deleted user status" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Dev_ops
@@ -553,16 +653,82 @@ core:Dev_owner rdf:type owl:NamedIndividual ,
                rdfs:label "Dev owner" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#DisabledItemStatus
+core:DisabledItemStatus rdf:type owl:NamedIndividual ,
+                                 core:ItemStatus ;
+                        rdfs:label "Disabled item status" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#EnabledItemStatus
+core:EnabledItemStatus rdf:type owl:NamedIndividual ,
+                                core:ItemStatus ;
+                       rdfs:label "Enabled item status" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#InfoNotificationStatus
+core:InfoNotificationStatus rdf:type owl:NamedIndividual ,
+                                     core:NotificationStatus ;
+                            rdfs:label "Info notification status" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#Infras_operator
 core:Infras_operator rdf:type owl:NamedIndividual ,
                               core:Role ;
                      rdfs:label "Infrastructure operator" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#ItemDisabledNotification
+core:ItemDisabledNotification rdf:type owl:NamedIndividual ,
+                                       core:Notification ;
+                              rdfs:label "Item disabled notification" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#ItemDiscoveredNotification
+core:ItemDiscoveredNotification rdf:type owl:NamedIndividual ,
+                                         core:Notification ;
+                                rdfs:label "Item discovered notification" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#ItemEnabledNotification
+core:ItemEnabledNotification rdf:type owl:NamedIndividual ,
+                                      core:Notification ;
+                             rdfs:label "Item enabled notification" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#ItemUpdatedNotification
+core:ItemUpdatedNotification rdf:type owl:NamedIndividual ,
+                                      core:Notification ;
+                             rdfs:label "Item update notification" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#RegistrationRequestNotification
+core:RegistrationRequestNotification rdf:type owl:NamedIndividual ,
+                                              core:Notification ;
+                                     rdfs:label "Registration request notification" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#RejectedNotificationStatus
+core:RejectedNotificationStatus rdf:type owl:NamedIndividual ,
+                                         core:NotificationStatus ;
+                                rdfs:label "Rejected notification status" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#RespondedNotificationStatus
+core:RespondedNotificationStatus rdf:type owl:NamedIndividual ,
+                                          core:NotificationStatus ;
+                                 rdfs:label "Responded notification status" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#Sev_provider
 core:Sev_provider rdf:type owl:NamedIndividual ,
                            core:Role ;
                   rdfs:label "Service provider" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Sharq
+core:Sharq rdf:type owl:NamedIndividual ,
+                    core:Node ;
+           rdfs:label "Sharql" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Super_user
@@ -580,6 +746,18 @@ core:Sys_integrator rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/core#User
 core:User rdf:type owl:NamedIndividual ,
                    core:Role .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Vicinity
+core:Vicinity rdf:type owl:NamedIndividual ,
+                       core:Node ;
+              rdfs:label "Vicinity" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#WaitingNotificationStatus
+core:WaitingNotificationStatus rdf:type owl:NamedIndividual ,
+                            core:NotificationStatus ;
+                   rdfs:label "Waiting notification status" .
 
 
 #################################################################
