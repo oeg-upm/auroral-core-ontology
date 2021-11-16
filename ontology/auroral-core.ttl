@@ -297,6 +297,10 @@ core:Device rdf:type owl:Class ;
 core:Item rdf:type owl:Class ;
           rdfs:subClassOf wot:Thing ,
                           [ rdf:type owl:Restriction ;
+                            owl:onProperty core:hasStatus ;
+                            owl:someValuesFrom core:ItemStatus
+                          ] ,
+                          [ rdf:type owl:Restriction ;
                             owl:onProperty core:hasCreationDate ;
                             owl:allValuesFrom xsd:dateTime
                           ] ,
@@ -543,6 +547,10 @@ core:User rdf:type owl:Class ;
                           [ rdf:type owl:Restriction ;
                             owl:onProperty core:hasOccupation ;
                             owl:someValuesFrom xsd:string
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty core:hasUpdateDate ;
+                            owl:someValuesFrom xsd:dateTime
                           ] .
 
 
@@ -756,8 +764,8 @@ core:Vicinity rdf:type owl:NamedIndividual ,
 
 ###  https://auroral.iot.linkeddata.es/def/core#WaitingNotificationStatus
 core:WaitingNotificationStatus rdf:type owl:NamedIndividual ,
-                            core:NotificationStatus ;
-                   rdfs:label "Waiting notification status" .
+                                        core:NotificationStatus ;
+                               rdfs:label "Waiting notification status" .
 
 
 #################################################################
