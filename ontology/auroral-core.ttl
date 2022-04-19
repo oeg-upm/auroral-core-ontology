@@ -331,9 +331,8 @@ geo:SpatialThing rdf:type owl:Class ;
                                     rdfs:label "Property" .
 
 
-###  http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure
-<http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure> rdf:type owl:Class ;
-                                                            rdfs:label "Unit_of_measure" .
+###  http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure
+<http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> rdf:type owl:Class .
 
 
 ###  http://xmlns.com/foaf/0.1/Image
@@ -777,6 +776,51 @@ org:Organization rdf:type owl:Class ;
 #################################################################
 #    Individuals
 #################################################################
+
+###  http://www.wurvoc.org/vocabularies/om-2/ampere
+<http://www.wurvoc.org/vocabularies/om-2/ampere> rdf:type owl:NamedIndividual ,
+                                                          <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  http://www.wurvoc.org/vocabularies/om-2/cubicMetre
+<http://www.wurvoc.org/vocabularies/om-2/cubicMetre> rdf:type owl:NamedIndividual ,
+                                                              <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  http://www.wurvoc.org/vocabularies/om-2/degree
+<http://www.wurvoc.org/vocabularies/om-2/degree> rdf:type owl:NamedIndividual ,
+                                                          <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  http://www.wurvoc.org/vocabularies/om-2/degreeCelsius
+<http://www.wurvoc.org/vocabularies/om-2/degreeCelsius> rdf:type owl:NamedIndividual ,
+                                                                 <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  http://www.wurvoc.org/vocabularies/om-2/degreeFahrenheit
+<http://www.wurvoc.org/vocabularies/om-2/degreeFahrenheit> rdf:type owl:NamedIndividual ,
+                                                                    <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  http://www.wurvoc.org/vocabularies/om-2/kilowattHour
+<http://www.wurvoc.org/vocabularies/om-2/kilowattHour> rdf:type owl:NamedIndividual ,
+                                                                <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  http://www.wurvoc.org/vocabularies/om-2/lux
+<http://www.wurvoc.org/vocabularies/om-2/lux> rdf:type owl:NamedIndividual ,
+                                                       <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  http://www.wurvoc.org/vocabularies/om-2/volt
+<http://www.wurvoc.org/vocabularies/om-2/volt> rdf:type owl:NamedIndividual ,
+                                                        <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  http://www.wurvoc.org/vocabularies/om-2/watt
+<http://www.wurvoc.org/vocabularies/om-2/watt> rdf:type owl:NamedIndividual ,
+                                                        <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
 
 ###  https://auroral.iot.linkeddata.es/def/core#AcceptedNotificationStatus
 core:AcceptedNotificationStatus rdf:type owl:NamedIndividual ,
