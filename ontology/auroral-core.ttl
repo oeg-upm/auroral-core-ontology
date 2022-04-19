@@ -63,6 +63,13 @@ geo:location rdf:type owl:ObjectProperty ;
                                      rdfs:label "observes" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#aboutProperty
+core:aboutProperty rdf:type owl:ObjectProperty ;
+                   rdfs:domain saref:Measurement ;
+                   rdfs:range <http://www.w3.org/ns/ssn/Property> ;
+                   rdfs:label "about property"@en .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#belongsTo
 core:belongsTo rdf:type owl:ObjectProperty ;
                rdfs:label "belongs to" .
