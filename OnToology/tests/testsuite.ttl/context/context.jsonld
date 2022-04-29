@@ -1,0 +1,19 @@
+{
+  "@context" : {
+    "belongsTo" : {
+      "@id" : "https://w3id.org/def/vtc#belongsTo"
+    },
+    "desiredBehaviour" : {
+      "@id" : "https://w3id.org/def/vtc#desiredBehaviour"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "TestCaseDesign" : {
+      "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+    },
+    "TestSuite" : {
+      "@id" : "http://w3id.org/def/vtc#TestSuite"
+    }
+  }
+}
