@@ -8,6 +8,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasNotification",
       "@type" : "@id"
     },
+    "MotionProperty" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#MotionProperty"
+    },
     "hasFirstName" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasFirstName",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -18,6 +21,12 @@
     },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "MonitoringSensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#MonitoringSensor"
+    },
+    "EnergyProperty" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#EnergyProperty"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
@@ -36,6 +45,9 @@
     "Organisation" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Organisation"
     },
+    "MotionSensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#MotionSensor"
+    },
     "Organization" : {
       "@id" : "https://www.w3.org/ns/org#Organization"
     },
@@ -45,6 +57,9 @@
     "hasAudit" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasAudit",
       "@type" : "@id"
+    },
+    "GPSEmergencyButton" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#GPSEmergencyButton"
     },
     "isRepresentedByAvatar" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar",
@@ -62,9 +77,25 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasID",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "hasValue" : {
+      "@id" : "https://saref.etsi.org/core#hasValue"
+    },
+    "ItemStatus" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#ItemStatus"
+    },
+    "NodeStatus" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#NodeStatus"
+    },
+    "DataSchema" : {
+      "@id" : "https://www.w3.org/2019/wot/td#DataSchema"
+    },
     "hasRole" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasRole",
       "@type" : "@id"
+    },
+    "hasUpdateDate" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasUpdateDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "hasOwner" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasOwner",
@@ -80,11 +111,37 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasUser",
       "@type" : "@id"
     },
+    "hasValueType" : {
+      "@id" : "https://www.w3.org/2019/wot/td#hasValueType",
+      "@type" : "@id"
+    },
+    "Measurement" : {
+      "@id" : "https://saref.etsi.org/core#Measurement"
+    },
+    "Thermometer" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Thermometer"
+    },
     "User" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
     },
+    "WaterAMRSensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#WaterAMRSensor"
+    },
+    "LuminusFlux" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#LuminusFlux"
+    },
+    "Status" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Status"
+    },
+    "aboutProperty" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#aboutProperty",
+      "@type" : "@id"
+    },
     "Person" : {
       "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "AmbientProperty" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#AmbientProperty"
     },
     "hasInteractionAffordance" : {
       "@id" : "https://www.w3.org/2019/wot/td#hasInteractionAffordance",
@@ -99,6 +156,9 @@
     "hasRegistrationNumber" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasRegistrationNumber",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "NotificationStatus" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#NotificationStatus"
     },
     "hasTarget" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasTarget",
@@ -117,7 +177,13 @@
     },
     "hasStatus" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      "@type" : "@id"
+    },
+    "FloodSensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#FloodSensor"
+    },
+    "hasTimeStamp" : {
+      "@id" : "https://saref.etsi.org/core#hasTimeStamp"
     },
     "hasOccupation" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasOccupation",
@@ -127,8 +193,27 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#knows",
       "@type" : "@id"
     },
+    "observes" : {
+      "@id" : "http://www.w3.org/ns/sosa/observes",
+      "@type" : "@id"
+    },
+    "makesMeasurement" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#makesMeasurement",
+      "@type" : "@id"
+    },
+    "forProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/forProperty",
+      "@type" : "@id"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/ns/ssn/Property"
+    },
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://saref.etsi.org/core#isMeasuredIn",
+      "@type" : "@id"
     },
     "isUnread" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#isUnread",
@@ -145,6 +230,9 @@
       "@id" : "https://www.w3.org/2019/wot/td#hasLink",
       "@type" : "@id"
     },
+    "EnergyMonitor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#EnergyMonitor"
+    },
     "hasCreationDate" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasCreationDate"
     },
@@ -159,6 +247,9 @@
     "hasNode" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasNode",
       "@type" : "@id"
+    },
+    "Actuator" : {
+      "@id" : "http://www.w3.org/ns/sosa/Actuator"
     },
     "SpatialThing" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
@@ -184,12 +275,21 @@
     "Notification" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Notification"
     },
+    "LightProperty" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#LightProperty"
+    },
+    "HumiditySensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#HumiditySensor"
+    },
     "Device" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
     },
     "hasLastName" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasLastName",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "SpaceProperty" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#SpaceProperty"
     },
     "Node" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Node"
@@ -201,8 +301,17 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasLocation",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "Unit_of_measure" : {
+      "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
+    },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "UserStatus" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#UserStatus"
+    },
+    "Sensor" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
     }
   }
 }

@@ -1,0 +1,976 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://w3id.org/def/vtc#TestSuite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User containsItem Item"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ActiveUserStatus type UserStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User isRepresentedByAvatar Image"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User belongsTo Organisation"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User subclassOf hasID only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User subclassOf hasUpdateDate only datetime"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User subclassOf hasCreationDate only datetime"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User subclassOf hasLocation only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User subclassOf hasOccupation only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User subclassOf hasContactMail only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User subclassOf hasEmail only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User hasAudit Audit"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User subclassOf hasLastName only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User subclassOf hasFirstName only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User subclassOf hasName only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DeletedItemStatus type ItemStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "EnabledItemStatus type ItemStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test25",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DisabledItemStatus type ItemStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Service subclassOf Item"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test27",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Device subclassOf Item"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Item isRepresentedByAvatar Image"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Item belongsTo Organisation"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User hasNotification Notification"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Item hasUser User"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Item belongsTo Node"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Item subclassof hasUpdateDate only datetime"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Item subclassof hasCreationDate only datetime"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test34",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Item subclassof hasStatus only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Item subclassof hasName only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DeletedNodeStatus type NodeStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ActiveNodeStatus type NodeStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Node containsItem Item"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test39",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Auroral type Node"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Dev_ops type Role"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Sharq type Node"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Vicinity type Node"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Node belongsTo Organisation"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test43",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Node subclassOf hasID only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Node subclassOf hasUpdateDate only datetime"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test45",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Node subclassOf hasCreationDate only datetime"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Node subclassOf hasToken only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Node subclassOf hasKey only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Node subclassOf hasName only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ContractAcceptedNotification type Notification"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Infras_operator type Role"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ContractRequestNotification type Notification"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ItemUpdatedNotification type Notification"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test52",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ItemDiscoveredNotification type Notification"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ItemDisabledNotification type Notification"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test54",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "ItemEnabledNotification type Notification"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "RegistrationRequestNotification type Notification"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test56",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Notification subclassOf isUnread only boolean"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Notification hasStatus NotificationStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "RespondedNotificationStatus type NotificationStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "RejectedNotificationStatus type NotificationStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User type Role"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "AcceptedNotificationStatus type NotificationStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "InfoNotificationStatus type NotificationStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "WaitingNotificationStatus type NotificationStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Notification subClassOf hasObject only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Notification subClassOf hasActor only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Notification subClassOf hasCreationDate only Datetime"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Notification subClassOf hasTarget only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Notification subClassOf hasOwner only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test68",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Notification subClassOf hasID only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test69",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Organisation hasPartnershipRequestedTo Organisation"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Admin type Role"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test70",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Organisation hasPartnershipRequestedBy Organisation"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test71",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Organisation knows Organisation"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test72",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Organisation hasNode Node"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test73",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Organisation hasUser User"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test74",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Organisation hasAudit Audit"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test75",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Organisation hasNotification Notification"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test76",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Organisation subclassOf hasCreationDate only DateTime"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test77",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Organisation subclassOf hasLocation only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test78",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Organisation subclassOf hasID only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Organisation subclassOf hasSkinColor only string"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "User hasRole Role"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#Test9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DeletedUserStatus type UserStatus"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://w3id.org/def/vtc#TestSuite"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#TestCaseDesign",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#belongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#desiredBehaviour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
