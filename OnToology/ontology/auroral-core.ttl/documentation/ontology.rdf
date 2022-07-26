@@ -73,6 +73,15 @@
     
 
 
+    <!-- http://lexvo.org/ontology#language -->
+
+
+    <owl:ObjectProperty rdf:about="http://lexvo.org/ontology#language">
+        <rdfs:label>language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#location -->
 
 
@@ -111,6 +120,15 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea -->
+
+
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea">
+        <rdfs:label>applicable to geographical area</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#belongsTo -->
 
 
@@ -129,11 +147,29 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#exposes -->
+
+
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#exposes">
+        <rdfs:label>exposes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#hasAudit -->
 
 
     <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasAudit">
         <rdfs:label>has audit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasInput -->
+
+
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasInput">
+        <rdfs:label>has Input</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -299,6 +335,26 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#currentStatus -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#currentStatus">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>current status</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#dateLastUpdate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#dateLastUpdate">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>date last update</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#hasActor -->
 
 
@@ -328,6 +384,16 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasDomain -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasDomain">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has domain</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#hasEmail -->
 
 
@@ -344,6 +410,15 @@
     <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasFirstName">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has first name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasFunctionality -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasFunctionality">
+        <rdfs:label>has functionality</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -438,12 +513,32 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasRequirement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasRequirement">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has requirement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#hasSkinColor -->
 
 
     <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasSkinColor">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has skin color</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasSubDomain -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasSubDomain">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has sub domain</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -464,6 +559,16 @@
     <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasToken">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has token</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasURL -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasURL">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>has URL</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -497,6 +602,46 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#provider -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#provider">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>provider</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#serviceDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#serviceDescription">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>service description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#serviceFree -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#serviceFree">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>service free</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#serviceName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#serviceName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>service name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://saref.etsi.org/core#hasTimeStamp -->
 
 
@@ -525,6 +670,15 @@
      -->
 
 
+    
+
+
+    <!-- http://lexvo.org/ontology#Language -->
+
+
+    <owl:Class rdf:about="http://lexvo.org/ontology#Language">
+        <rdfs:label>Language</rdfs:label>
+    </owl:Class>
     
 
 
@@ -600,16 +754,6 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#AmbientProperty -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#AmbientProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:label>Ambient Property</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/core#Audit -->
 
 
@@ -623,59 +767,9 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Device">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Item"/>
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#PhysicalThing"/>
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core#Device"/>
         <rdfs:label>Device</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#EnergyMonitor -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#EnergyMonitor">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
-        <rdfs:label>Energy Monitor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#EnergyProperty -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#EnergyProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:label>Energy Property</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#FloodSensor -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#FloodSensor">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
-        <rdfs:label>Flood Sensor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#GPSEmergencyButton -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#GPSEmergencyButton">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
-        <rdfs:label>G P S Emergency Button</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#HumiditySensor -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#HumiditySensor">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
-        <rdfs:label>Humidity Sensor</rdfs:label>
     </owl:Class>
     
 
@@ -724,52 +818,11 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#LightProperty -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#LightProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:label>Light Property</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/core#LuminusFlux -->
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#LuminusFlux">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#LightProperty"/>
         <rdfs:label>Luminus Flux</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#MonitoringSensor -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#MonitoringSensor">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
-        <rdfs:label>Monitoring Sensor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#MotionProperty -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#MotionProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:label>Motion Property</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#MotionSensor -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#MotionSensor">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
-        <rdfs:label>Motion Sensor</rdfs:label>
     </owl:Class>
     
 
@@ -1001,6 +1054,16 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#PhysicalThing -->
+
+
+    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#PhysicalThing">
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Item"/>
+        <rdfs:label>Physical Thing</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#Role -->
 
 
@@ -1025,18 +1088,95 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Service">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Item"/>
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#VirtualThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lexvo.org/ontology#language"/>
+                <owl:someValuesFrom rdf:resource="http://lexvo.org/ontology#Language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasInput"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasDomain"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasFunctionality"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasRequirement"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasSubDomain"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#serviceDescription"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#serviceFree"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#serviceName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasURL"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#currentStatus"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#dateLastUpdate"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#provider"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Service</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#SpaceProperty -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#SpaceProperty">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
-        <rdfs:label>Space Property</rdfs:label>
     </owl:Class>
     
 
@@ -1046,16 +1186,6 @@
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Status">
         <rdfs:label>Status</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#Thermometer -->
-
-
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Thermometer">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
-        <rdfs:label>Thermometer</rdfs:label>
     </owl:Class>
     
 
@@ -1175,12 +1305,18 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#WaterAMRSensor -->
+    <!-- https://auroral.iot.linkeddata.es/def/core#VirtualThing -->
 
 
-    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#WaterAMRSensor">
-        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
-        <rdfs:label>Water A M R Sensor</rdfs:label>
+    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#VirtualThing">
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Item"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#exposes"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/core#PhysicalThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Virtual Thing</rdfs:label>
     </owl:Class>
     
 
@@ -1203,40 +1339,12 @@
     
 
 
-    <!-- https://www.w3.org/2019/wot/hypermedia#EnergyProperty -->
-
-
-    <owl:Class rdf:about="https://www.w3.org/2019/wot/hypermedia#EnergyProperty"/>
-    
-
-
     <!-- https://www.w3.org/2019/wot/hypermedia#Link -->
 
 
     <owl:Class rdf:about="https://www.w3.org/2019/wot/hypermedia#Link">
         <rdfs:label>Link</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#LuminusFlux -->
-
-
-    <owl:Class rdf:about="https://www.w3.org/2019/wot/hypermedia#LuminusFlux"/>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#MotionProperty -->
-
-
-    <owl:Class rdf:about="https://www.w3.org/2019/wot/hypermedia#MotionProperty"/>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#SpaceProperty -->
-
-
-    <owl:Class rdf:about="https://www.w3.org/2019/wot/hypermedia#SpaceProperty"/>
     
 
 
@@ -1333,24 +1441,6 @@
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-2/kilowattHour -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wurvoc.org/vocabularies/om-2/kilowattHour">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.wurvoc.org/vocabularies/om-2/lux -->
-
-
-    <owl:NamedIndividual rdf:about="http://www.wurvoc.org/vocabularies/om-2/lux">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.wurvoc.org/vocabularies/om-2/volt -->
 
 
@@ -1409,46 +1499,12 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#AmbientTemperature -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#AmbientTemperature"/>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#AngularUnit -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#AngularUnit">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/core#Auroral -->
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#Auroral">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#Node"/>
         <rdfs:label>Auroral</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#BatteryLevel -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#BatteryLevel">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#BeaconMac -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#BeaconMac">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#SpaceProperty"/>
     </owl:NamedIndividual>
     
 
@@ -1533,73 +1589,12 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#ElectricCurrent -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#ElectricCurrent">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/core#EnabledItemStatus -->
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#EnabledItemStatus">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#ItemStatus"/>
         <rdfs:label>Enabled item status</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#Flood -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#Flood"/>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#GPSAltitud -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#GPSAltitud">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#GPSLatitude -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#GPSLatitude">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#GPSLongitude -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#GPSLongitude">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#GridVoltage -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#GridVoltage">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#Illuminance -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#Illuminance">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#LuminusFlux"/>
     </owl:NamedIndividual>
     
 
@@ -1620,15 +1615,6 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#Infras_operator">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#Role"/>
         <rdfs:label>Infrastructure operator</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#InstantaneousActivePower -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#InstantaneousActivePower">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#EnergyProperty"/>
     </owl:NamedIndividual>
     
 
@@ -1673,24 +1659,6 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#Motion -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#Motion">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#MotionProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#PowerFactor -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#PowerFactor">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/core#RegistrationRequestNotification -->
 
 
@@ -1711,28 +1679,12 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#RelativeHumidity -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#RelativeHumidity"/>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/core#RespondedNotificationStatus -->
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#RespondedNotificationStatus">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#NotificationStatus"/>
         <rdfs:label>Responded notification status</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#ReturnedEnergy -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#ReturnedEnergy">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#EnergyProperty"/>
     </owl:NamedIndividual>
     
 
@@ -1777,38 +1729,11 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#TotalEnergy -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#TotalEnergy">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#TotalReturnedEnergy -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#TotalReturnedEnergy">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/core#User -->
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#User">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#Role"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#Vibration -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#Vibration">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#MotionProperty"/>
     </owl:NamedIndividual>
     
 
@@ -1829,225 +1754,6 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#WaitingNotificationStatus">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#NotificationStatus"/>
         <rdfs:label>Waiting notification status</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#XAxisAcceleration -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#XAxisAcceleration">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#YAxisAcceleration -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#YAxisAcceleration">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#ZAxisAcceleration -->
-
-
-    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#ZAxisAcceleration">
-        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#AmbientTemperature -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#AmbientTemperature"/>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#AngularUnit -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#AngularUnit">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#BatteryLevel -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#BatteryLevel">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#BeaconMac -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#BeaconMac">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#ElectricCurrent -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#ElectricCurrent">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#Flood -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#Flood"/>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#GPSAltitud -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#GPSAltitud">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#GPSLatitude -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#GPSLatitude">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#GPSLongitude -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#GPSLongitude">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#GridVoltage -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#GridVoltage">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#Illuminance -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#Illuminance">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#LuminusFlux"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#InstantaneousActivePower -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#InstantaneousActivePower">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#Motion -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#Motion">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#MotionProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#PowerFactor -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#PowerFactor">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#RelativeHumidity -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#RelativeHumidity"/>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#ReturnedEnergy -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#ReturnedEnergy">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#TotalEnergy -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#TotalEnergy">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#TotalReturnedEnergy -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#TotalReturnedEnergy">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#EnergyProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#Vibration -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#Vibration">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#MotionProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#XAxisAcceleration -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#XAxisAcceleration">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#YAxisAcceleration -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#YAxisAcceleration">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#SpaceProperty"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.w3.org/2019/wot/hypermedia#ZAxisAcceleration -->
-
-
-    <owl:NamedIndividual rdf:about="https://www.w3.org/2019/wot/hypermedia#ZAxisAcceleration">
-        <rdf:type rdf:resource="https://www.w3.org/2019/wot/hypermedia#SpaceProperty"/>
     </owl:NamedIndividual>
     
 
