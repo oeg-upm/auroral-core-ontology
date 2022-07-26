@@ -1,0 +1,463 @@
+<https://auroral.iot.linkeddata.es/def/adapters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://auroral.iot.linkeddata.es/def/adapters> <http://purl.org/dc/elements/1.1/creator> "Ahlem Rhayem" .
+<https://auroral.iot.linkeddata.es/def/adapters> <http://purl.org/dc/elements/1.1/creator> "Andrea Cimmino" .
+<https://auroral.iot.linkeddata.es/def/adapters> <http://purl.org/dc/elements/1.1/creator> "Juan Cano de Benito" .
+<https://auroral.iot.linkeddata.es/def/adapters> <http://purl.org/dc/elements/1.1/creator> "Maria Poveda Villalon" .
+<https://auroral.iot.linkeddata.es/def/adapters> <http://purl.org/dc/elements/1.1/creator> "Raúl García Castro" .
+<https://auroral.iot.linkeddata.es/def/adapters> <http://purl.org/dc/elements/1.1/description> "This ontology aims at modelling the adapters for the AURORAL project." .
+<https://auroral.iot.linkeddata.es/def/adapters> <http://purl.org/dc/elements/1.1/title> "The AURORAL adapters ontology" .
+<https://auroral.iot.linkeddata.es/def/adapters> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
+<https://auroral.iot.linkeddata.es/def/adapters> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/ns/sosa/description
+<http://www.w3.org/ns/sosa/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/sosa/forProperty
+<http://www.w3.org/ns/sosa/forProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/sosa/forProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Actuator> .
+<http://www.w3.org/ns/sosa/forProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http:///www.w3.org/ns/ssn/Property> .
+<http://www.w3.org/ns/sosa/forProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Presents the relationship between the actuator and the detected properties. It has a domain the Actuator and a range the ssn:Property" .
+<http://www.w3.org/ns/sosa/forProperty> <http://www.w3.org/2000/01/rdf-schema#label> "for property" .
+# 
+# http://www.w3.org/ns/sosa/observes
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#range> <http:///www.w3.org/ns/ssn/Property> .
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between the Sensor device and the property. It has the Sensor as domain and the ssn:property the range." .
+<http://www.w3.org/ns/sosa/observes> <http://www.w3.org/2000/01/rdf-schema#label> "observes" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyMonitor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSEmergencyButton> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumiditySensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Thermometer> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterValveActuator> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Actuator> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Device> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#comment> "Device Identifier" .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device> <http://www.w3.org/2000/01/rdf-schema#label> "ID Device" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#from-timestamp
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#from-timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#from-timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#from-timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#from-timestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "UTC time in ISO 8601 formatted timestamp for when to get data From" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyMonitor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSEmergencyButton> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumiditySensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Thermometer> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterValveActuator> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Actuator> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Device> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location> <http://www.w3.org/2000/01/rdf-schema#comment> "location of the device" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the measure was detected" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#to-timestamp
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#to-timestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#to-timestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "UTC time in ISO 8601 formatted timestamp for when to get data TO" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http:///www.w3.org/ns/ssn/Property
+<http:///www.w3.org/ns/ssn/Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http:///www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the observables properties concerning a particular domain or use case. It has diverse sub-classes as presented below." .
+<http:///www.w3.org/ns/ssn/Property> <http://www.w3.org/2000/01/rdf-schema#label> "ssn:Property" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http:///www.w3.org/ns/ssn/Property> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Ambient Property" .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "This concepts regroups the ambient properties that are detcetd by the deployed devices. These properties are the ambient temperature, the ambient humidity, the ambient flood, the ambient wind and the ambient solar radiation properties." .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientSolarRadiation
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientSolarRadiation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientSolarRadiation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientSolarRadiation> <http://www.w3.org/2000/01/rdf-schema#comment> "Often called the solar resource or just sunlight, is a general term for the electromagnetic radiation emitted by the sun." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientSolarRadiation> <http://www.w3.org/2000/01/rdf-schema#label> "Ambient Solar Radiation" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http:///www.w3.org/ns/ssn/Property> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide> <http://www.w3.org/2000/01/rdf-schema#comment> "regroups measurement about the CO2 concentration" .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide> <http://www.w3.org/2000/01/rdf-schema#label> "CO2 Carbon Dioxide" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyMonitor
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyMonitor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyMonitor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyMonitor> <http://www.w3.org/2000/01/rdf-schema#comment> "It is used to track and control real time energy use. It has different properties such as the returned energy, the total returned energy, etc..." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyMonitor> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Monitor Sensor" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http:///www.w3.org/ns/ssn/Property> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "It regroups the properties related to the energy such as: the battery level, the totalreturnedEnergy, the TotalEnergy, the PowerFactor, the Gridvoltage, and so one." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Energy Property" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "a rising and overflowing of a body os water especially onto normally dry land" .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Flood Ambient Property" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodSensor
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "It is designed for detection of water leaks or detecting excessively high-water level." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Flood Sensor" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSEmergencyButton
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSEmergencyButton> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSEmergencyButton> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSEmergencyButton> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a device used to detect the exact location of a specific thing or object. The detected data is the longitude, latitude, altitude, and the acceleration." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSEmergencyButton> <http://www.w3.org/2000/01/rdf-schema#label> "GPS Emergency Button" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumidityAmbientProperty
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumidityAmbientProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumidityAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumidityAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a value expressed as a percentage (0-100%). It is the amount of water vapor present in a specific volume." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumidityAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Ambient Humidity Property" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumiditySensor
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumiditySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumiditySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumiditySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a device that detects and measures water vapor in its environment and converts its findings into a corresponding electrical signal." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumiditySensor> <http://www.w3.org/2000/01/rdf-schema#label> "Humidity Sensor" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightProperty
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http:///www.w3.org/ns/ssn/Property> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "it describes properties about illuminance." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Light Property" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#LuminusFlux
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#LuminusFlux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#LuminusFlux> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightProperty> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#LuminusFlux> <http://www.w3.org/2000/01/rdf-schema#label> "Luminus Flux" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "It generates data about the active power, the reactive inductive power, the active enrgy, the reactive capacitif, the voltage and so one." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Monitoring Sensor" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http:///www.w3.org/ns/ssn/Property> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "it is  about the motion and the vibration properties." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Motion Property" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A motion sensor (or motion detector) is a device that is designed to detect and measure movement." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Motion Sensor" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http:///www.w3.org/ns/ssn/Property> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure> <http://www.w3.org/2000/01/rdf-schema#comment> "provides information about the pressure properties (for example the atmospheric pressure)." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure> <http://www.w3.org/2000/01/rdf-schema#label> "Pressure" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rain
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http:///www.w3.org/ns/ssn/Property> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rain> <http://www.w3.org/2000/01/rdf-schema#comment> "refers to the accumulated precipitation" .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rain> <http://www.w3.org/2000/01/rdf-schema#label> "Rain" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http:///www.w3.org/ns/ssn/Property> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture> <http://www.w3.org/2000/01/rdf-schema#comment> "presents the soil moisture height and volume" .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture> <http://www.w3.org/2000/01/rdf-schema#label> "Soil Moisture" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor> <http://www.w3.org/2000/01/rdf-schema#comment> "soil moisture sensors measure the volumetric water content in soil. it provides data about the height and volume of water in soil." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor> <http://www.w3.org/2000/01/rdf-schema#label> "Soil Moisture Sensor" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http:///www.w3.org/ns/ssn/Property> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept defines the Noise Level properties." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound> <http://www.w3.org/2000/01/rdf-schema#label> "Sound Property" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http:///www.w3.org/ns/ssn/Property> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "describes properties related to space such as the  GPS latitude, the GPS altitude, the GPS longitude, the XAxis Acceleration, the YAxisAcceleration, the ZAxis acceleration, the distance, etc." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Space Property" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#TemperatureAmbientProperty
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#TemperatureAmbientProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#TemperatureAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#TemperatureAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Ambient Temperature is a measure of the temperature around a given asset or piece of equipement or other object" .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#TemperatureAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Ambient Temperature" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#Thermometer
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Thermometer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Thermometer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Thermometer> <http://www.w3.org/2000/01/rdf-schema#comment> "A thermometer sensor is a device used to measure temperature." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Thermometer> <http://www.w3.org/2000/01/rdf-schema#label> "Thermometer Sensor" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "It ensures a real time monitoring of the waste bins' status. It generates data about the distance and the deviation position" .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Waste Bin Sensor" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Water AMR sensor sends data about the accumulated value of water in the current timestamp." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Water AMR Sensor" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterValveActuator
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterValveActuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterValveActuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Actuator> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterValveActuator> <http://www.w3.org/2000/01/rdf-schema#comment> "it is used to control the water valve. It generates an acknowledgement message indicating that the command has been accepted. The generated command can be: ON, OFF, active, close." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterValveActuator> <http://www.w3.org/2000/01/rdf-schema#label> "WaterValveActuator" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a component of an automatic weather station that detects the presence of hydrometeors and determines their type (rain, snow, drizzle, etc.) and intensity. it detects data about the temperature, the humidity, the solar irradiation, the pressure and the rain." .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor> <http://www.w3.org/2000/01/rdf-schema#label> "Weather Sensor" .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindAmbientProperty
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindAmbientProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindAmbientProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Wind Ambient Property" .
+# 
+# https://auroral.iot.linkeddata.es/def/core#Actuator
+<https://auroral.iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Device> .
+<https://auroral.iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world" .
+<https://auroral.iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator" .
+# 
+# https://auroral.iot.linkeddata.es/def/core#Device
+<https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "It is designed to realize a specific task. This task can be a detection of an occurred event or the initiation of an action. It has two sub-classes (sensor and actuator)." .
+<https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
+# 
+# https://auroral.iot.linkeddata.es/def/core#Sensor
+<https://auroral.iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Device> .
+<https://auroral.iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "it responds to a Stimulus, e.g., a change in the environment, or Input data composed from the Results of prior Observations, and generate a Result" .
+<https://auroral.iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#AccumulatedWater
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AccumulatedWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AccumulatedWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientTemperature
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientTemperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#TemperatureAmbientProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#AngularUnit
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AngularUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AngularUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#AtmosphoricPressure
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AtmosphoricPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#AtmosphoricPressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#BatteryLevel
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#BatteryLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#BatteryLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#BeaconMac
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#BeaconMac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#BeaconMac> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#CO2Concentration
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#CO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#CO2Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#Distance
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Distance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Distance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#DivPosition
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#DivPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#DivPosition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#ElectricCurrent
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ElectricCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ElectricCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#Flood
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Flood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Flood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSAltitude
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSAltitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSAltitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLatitude
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLatitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLatitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLongitude
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLongitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLongitude> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridVoltage
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#Illuminance
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Illuminance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#LuminusFlux> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousActivePower
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousActivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousActivePower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#Motion
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Motion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Motion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#NoiseLevel
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#NoiseLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#NoiseLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#PowerFactor
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#PowerFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#PowerFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#ReturnedEnergy
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ReturnedEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ReturnedEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureHeight
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureVolume
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalEnergy
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalReturnedEnergy
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalReturnedEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalReturnedEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#UVIndex
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#UVIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#UVIndex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientSolarRadiation> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#Vibration
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Vibration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#Vibration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindDirection
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindDirection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindAmbientProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#XAxisAcceleration
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#XAxisAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#XAxisAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#YAxisAcceleration
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#YAxisAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#YAxisAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#ZAxisAcceleration
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ZAxisAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#ZAxisAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#relativeHumidity
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#relativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#relativeHumidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumidityAmbientProperty> .
+# 
+# http://www.semanticweb.org/user/ontologies/2022/5/adapters#windSpeed
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#windSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/user/ontologies/2022/5/adapters#windSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindAmbientProperty> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

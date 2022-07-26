@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "core:Service" "core:Notification" "core:NodeStatus" "core:VirtualThing" "core:UserStatus" "org:Organization" "core:User" "core:Item" "core:ItemStatus" "http://www.w3.org/ns/sosa/Actuator" "core:Actuator" "core:Organisation" "core:NotificationStatus" "foaf:Person" "649b14a621aad0e04f9992372b0fbd3b" "saref:Device" "core:PhysicalThing" "http://www.w3.org/ns/sosa/Sensor" "wot:Thing" "core:Status" "core:Device" "core:Sensor" ; /*classes style*/
+	"core:UserStatus" -> "core:Status" [ label = "rdfs:subClassOf" ];
+	"core:Item" -> "wot:Thing" [ label = "rdfs:subClassOf" ];
+	"core:VirtualThing" -> "core:Item" [ label = "rdfs:subClassOf" ];
+	"core:Notification" -> "649b14a621aad0e04f9992372b0fbd3b" [ label = "rdfs:subClassOf" ];
+	"core:PhysicalThing" -> "core:Item" [ label = "rdfs:subClassOf" ];
+	"core:Sensor" -> "core:Device" [ label = "rdfs:subClassOf" ];
+	"core:Sensor" -> "http://www.w3.org/ns/sosa/Sensor" [ label = "rdfs:subClassOf" ];
+	"core:NodeStatus" -> "core:Status" [ label = "rdfs:subClassOf" ];
+	"core:User" -> "foaf:Person" [ label = "rdfs:subClassOf" ];
+	"core:Actuator" -> "core:Device" [ label = "rdfs:subClassOf" ];
+	"core:Actuator" -> "http://www.w3.org/ns/sosa/Actuator" [ label = "rdfs:subClassOf" ];
+	"core:ItemStatus" -> "core:Status" [ label = "rdfs:subClassOf" ];
+	"core:Device" -> "saref:Device" [ label = "rdfs:subClassOf" ];
+	"core:Device" -> "core:PhysicalThing" [ label = "rdfs:subClassOf" ];
+	"core:Service" -> "core:VirtualThing" [ label = "rdfs:subClassOf" ];
+	"core:NotificationStatus" -> "core:Status" [ label = "rdfs:subClassOf" ];
+	"core:Organisation" -> "org:Organization" [ label = "rdfs:subClassOf" ];
+
+}

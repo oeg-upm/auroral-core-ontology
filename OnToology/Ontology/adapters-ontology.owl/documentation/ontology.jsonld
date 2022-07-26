@@ -1,0 +1,752 @@
+[ {
+  "@id" : "http:///www.w3.org/ns/ssn/Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It refers to the observables properties concerning a particular domain or use case. It has diverse sub-classes as presented below."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ssn:Property"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AccumulatedWater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ambient Property"
+  }, {
+    "@value" : "This concepts regroups the ambient properties that are detcetd by the deployed devices. These properties are the ambient temperature, the ambient humidity, the ambient flood, the ambient wind and the ambient solar radiation properties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http:///www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientSolarRadiation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Often called the solar resource or just sunlight, is a general term for the electromagnetic radiation emitted by the sun."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ambient Solar Radiation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientTemperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#TemperatureAmbientProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AngularUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AtmosphoricPressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#BatteryLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#BeaconMac",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#CO2Concentration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#CrabonDioxide",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "regroups measurement about the CO2 concentration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CO2 Carbon Dioxide"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http:///www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Distance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#DivPosition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#ElectricCurrent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyMonitor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is used to track and control real time energy use. It has different properties such as the returned energy, the total returned energy, etc..."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Energy Monitor Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It regroups the properties related to the energy such as: the battery level, the totalreturnedEnergy, the TotalEnergy, the PowerFactor, the Gridvoltage, and so one."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Energy Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http:///www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Flood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodAmbientProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a rising and overflowing of a body os water especially onto normally dry land"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Flood Ambient Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is designed for detection of water leaks or detecting excessively high-water level."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Flood Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSAltitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSEmergencyButton",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is a device used to detect the exact location of a specific thing or object. The detected data is the longitude, latitude, altitude, and the acceleration."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GPS Emergency Button"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLatitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSLongitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#GridVoltage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumidityAmbientProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is a value expressed as a percentage (0-100%). It is the amount of water vapor present in a specific volume."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ambient Humidity Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumiditySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is a device that detects and measures water vapor in its environment and converts its findings into a corresponding electrical signal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Humidity Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#ID-Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Device Identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyMonitor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSEmergencyButton"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumiditySensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Thermometer"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterValveActuator"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor"
+  }, {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Actuator"
+  }, {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
+  }, {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ID Device"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Illuminance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#LuminusFlux"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#InstantaneousActivePower",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "it describes properties about illuminance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Light Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http:///www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#LuminusFlux",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Luminus Flux"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#LightProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It generates data about the active power, the reactive inductive power, the active enrgy, the reactive capacitif, the voltage and so one."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Monitoring Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Motion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "it is  about the motion and the vibration properties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Motion Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http:///www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A motion sensor (or motion detector) is a device that is designed to detect and measure movement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Motion Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#NoiseLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#PowerFactor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Pressure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "provides information about the pressure properties (for example the atmospheric pressure)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http:///www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Rain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "refers to the accumulated precipitation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http:///www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#ReturnedEnergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "presents the soil moisture height and volume"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Soil Moisture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http:///www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureHeight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "soil moisture sensors measure the volumetric water content in soil. it provides data about the height and volume of water in soil."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Soil Moisture Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureVolume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoisture"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Sound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This concept defines the Noise Level properties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sound Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http:///www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "describes properties related to space such as the  GPS latitude, the GPS altitude, the GPS longitude, the XAxis Acceleration, the YAxisAcceleration, the ZAxis acceleration, the distance, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Space Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http:///www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#TemperatureAmbientProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ambient Temperature is a measure of the temperature around a given asset or piece of equipement or other object"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ambient Temperature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Thermometer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A thermometer sensor is a device used to measure temperature."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Thermometer Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalEnergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#TotalReturnedEnergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#UVIndex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientSolarRadiation"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Vibration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It ensures a real time monitoring of the waste bins' status. It generates data about the distance and the deviation position"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Waste Bin Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Water AMR sensor sends data about the accumulated value of water in the current timestamp."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Water AMR Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterValveActuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "it is used to control the water valve. It generates an acknowledgement message indicating that the command has been accepted. The generated command can be: ON, OFF, active, close."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "WaterValveActuator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Actuator"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is a component of an automatic weather station that detects the presence of hydrometeors and determines their type (rain, snow, drizzle, etc.) and intensity. it detects data about the temperature, the humidity, the solar irradiation, the pressure and the rain."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Weather Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindAmbientProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wind Ambient Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#AmbientProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindDirection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindAmbientProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#XAxisAcceleration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#YAxisAcceleration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#ZAxisAcceleration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SpaceProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#from-timestamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "UTC time in ISO 8601 formatted timestamp for when to get data From"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "location of the device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#EnergyMonitor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#FloodSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#GPSEmergencyButton"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumiditySensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MonitoringSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#Thermometer"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterValveActuator"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor"
+  }, {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Actuator"
+  }, {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
+  }, {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#has-timestamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Timestamp when the measure was detected"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#MotionSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#SoilMoistureSEnsor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WasteBinSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WaterAMRSensor"
+  }, {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WeatherSensor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#relativeHumidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#HumidityAmbientProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#to-timestamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "UTC time in ISO 8601 formatted timestamp for when to get data TO"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#windSpeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/user/ontologies/2022/5/adapters#WindAmbientProperty"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/forProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Presents the relationship between the actuator and the detected properties. It has a domain the Actuator and a range the ssn:Property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Actuator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "for property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http:///www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/sosa/observes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The relation between the Sensor device and the property. It has the Sensor as domain and the ssn:property the range."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "observes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http:///www.w3.org/ns/ssn/Property"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/adapters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Ahlem Rhayem"
+  }, {
+    "@value" : "Andrea Cimmino"
+  }, {
+    "@value" : "Juan Cano de Benito"
+  }, {
+    "@value" : "Maria Poveda Villalon"
+  }, {
+    "@value" : "Raúl García Castro"
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "This ontology aims at modelling the adapters for the AURORAL project."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "The AURORAL adapters ontology"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.0.1"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#Actuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A device that is used by, or implements, an (Actuation) Procedure that changes the state of the world"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Actuator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is designed to realize a specific task. This task can be a detection of an occurred event or the initiation of an action. It has two sub-classes (sensor and actuator)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Device"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "it responds to a Stimulus, e.g., a change in the environment, or Input data composed from the Results of prior Observations, and generate a Result"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Sensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
+  } ]
+} ]
