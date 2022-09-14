@@ -358,6 +358,13 @@ core:isUnread rdf:type owl:DatatypeProperty ;
               rdfs:label "is unread" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#numberOfDownloads
+core:numberOfDownloads rdf:type owl:DatatypeProperty ;
+                       rdfs:domain core:Service ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "number of downloads" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#provider
 core:provider rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:string ;
@@ -380,6 +387,13 @@ core:serviceFree rdf:type owl:DatatypeProperty ;
 core:serviceName rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:string ;
                  rdfs:label "service name" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#versionOfService
+core:versionOfService rdf:type owl:DatatypeProperty ;
+                      rdfs:domain core:Service ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "version of service" .
 
 
 ###  https://saref.etsi.org/core#hasTimeStamp
@@ -642,6 +656,11 @@ core:PhysicalThing rdf:type owl:Class ;
                    rdfs:label "Physical Thing" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#Place
+core:Place rdf:type owl:Class ;
+           rdfs:label "Place" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#Role
 core:Role rdf:type owl:Class ;
           rdfs:label "Role" .
@@ -662,12 +681,12 @@ core:Service rdf:type owl:Class ;
                                owl:someValuesFrom <http://lexvo.org/ontology#Language>
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty core:hasInput ;
-                               owl:someValuesFrom <http://www.w3.org/ns/ssn/Property>
+                               owl:onProperty core:applicableToGeographicalArea ;
+                               owl:someValuesFrom core:Place
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty core:applicableToGeographicalArea ;
-                               owl:allValuesFrom geo:SpatialThing
+                               owl:onProperty core:hasInput ;
+                               owl:someValuesFrom <http://www.w3.org/ns/ssn/Property>
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty core:hasDomain ;
