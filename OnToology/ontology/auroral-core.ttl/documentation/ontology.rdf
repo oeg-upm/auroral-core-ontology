@@ -602,6 +602,17 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#numberOfDownloads -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#numberOfDownloads">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Service"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>number of downloads</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#provider -->
 
 
@@ -638,6 +649,17 @@
     <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#serviceName">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>service name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#versionOfService -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#versionOfService">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Service"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>version of service</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1064,6 +1086,15 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#Place -->
+
+
+    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Place">
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#Role -->
 
 
@@ -1097,14 +1128,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasInput"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/core#Place"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasInput"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/ssn/Property"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
