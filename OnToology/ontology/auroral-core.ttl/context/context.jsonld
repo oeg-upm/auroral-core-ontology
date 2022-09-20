@@ -138,6 +138,10 @@
     "Person" : {
       "@id" : "http://xmlns.com/foaf/0.1/Person"
     },
+    "versionOfService" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#versionOfService",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "provider" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#provider",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -175,6 +179,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasInput",
       "@type" : "@id"
     },
+    "numberOfDownloads" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#numberOfDownloads",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "location" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
       "@type" : "@id"
@@ -203,6 +211,9 @@
     "hasOccupation" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasOccupation",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Place" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Place"
     },
     "knows" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#knows",

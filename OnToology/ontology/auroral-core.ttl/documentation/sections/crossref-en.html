@@ -80,6 +80,10 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/core#PhysicalThing">Physical Thing</a>
       </li>
       <li>
+         <a href="#Place"
+            title="https://auroral.iot.linkeddata.es/def/core#Place">Place</a>
+      </li>
+      <li>
          <a href="#http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">Property</a>
       </li>
       <li>
@@ -528,6 +532,14 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Place">
+      <h3>Place<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#Place</p>
+   </div>
    <div class="entity" id="http://www.w3.org/ns/ssn/Property">
       <h3>Property<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -625,6 +637,14 @@ This section provides details for each class and property defined by The AURORAL
             <a href="#VirtualThing"
                title="https://auroral.iot.linkeddata.es/def/core#VirtualThing">Virtual Thing</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#numberOfDownloads"
+               title="https://auroral.iot.linkeddata.es/def/core#numberOfDownloads">number of downloads</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#versionOfService"
+               title="https://auroral.iot.linkeddata.es/def/core#versionOfService">version of service</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
    </div>
@@ -1293,6 +1313,10 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/core#isUnread">is unread</a>
       </li>
       <li>
+         <a href="#numberOfDownloads"
+            title="https://auroral.iot.linkeddata.es/def/core#numberOfDownloads">number of downloads</a>
+      </li>
+      <li>
          <a href="#provider"
             title="https://auroral.iot.linkeddata.es/def/core#provider">provider</a>
       </li>
@@ -1307,6 +1331,10 @@ This section provides details for each class and property defined by The AURORAL
       <li>
          <a href="#serviceName"
             title="https://auroral.iot.linkeddata.es/def/core#serviceName">service name</a>
+      </li>
+      <li>
+         <a href="#versionOfService"
+            title="https://auroral.iot.linkeddata.es/def/core#versionOfService">version of service</a>
       </li>
    </ul>
    <div class="entity" id="currentStatus">
@@ -1781,6 +1809,30 @@ This section provides details for each class and property defined by The AURORAL
          </dl>
       </div>
    </div>
+   <div class="entity" id="numberOfDownloads">
+      <h3>number of downloads<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#numberOfDownloads</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Service"
+                  title="https://auroral.iot.linkeddata.es/def/core#Service">Service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="provider">
       <h3>provider<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1844,6 +1896,30 @@ This section provides details for each class and property defined by The AURORAL
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#serviceName</p>
       <div class="description">
          <dl>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="versionOfService">
+      <h3>version of service<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#versionOfService</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Service"
+                  title="https://auroral.iot.linkeddata.es/def/core#Service">Service</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="http://www.w3.org/2001/XMLSchema#string"

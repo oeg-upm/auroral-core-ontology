@@ -349,6 +349,13 @@
           rdfs:label "is unread" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#numberOfDownloads
+:numberOfDownloads rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Service ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "number of downloads" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#provider
 :provider rdf:type owl:DatatypeProperty ;
           rdfs:range xsd:string ;
@@ -371,6 +378,13 @@
 :serviceName rdf:type owl:DatatypeProperty ;
              rdfs:range xsd:string ;
              rdfs:label "service name" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#versionOfService
+:versionOfService rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Service ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "version of service" .
 
 
 ###  https://saref.etsi.org/core#hasTimeStamp
@@ -633,6 +647,11 @@
                rdfs:label "Physical Thing" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#Place
+:Place rdf:type owl:Class ;
+       rdfs:label "Place" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#Role
 :Role rdf:type owl:Class ;
       rdfs:label "Role" .
@@ -653,12 +672,12 @@
                            owl:someValuesFrom <http://lexvo.org/ontology#Language>
                          ] ,
                          [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasInput ;
-                           owl:someValuesFrom <http://www.w3.org/ns/ssn/Property>
+                           owl:onProperty :applicableToGeographicalArea ;
+                           owl:someValuesFrom :Place
                          ] ,
                          [ rdf:type owl:Restriction ;
-                           owl:onProperty :applicableToGeographicalArea ;
-                           owl:allValuesFrom <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing>
+                           owl:onProperty :hasInput ;
+                           owl:someValuesFrom <http://www.w3.org/ns/ssn/Property>
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasDomain ;
