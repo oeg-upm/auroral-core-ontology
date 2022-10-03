@@ -11,6 +11,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix hctl: <https://www.w3.org/2019/wot/hypermedia#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix lexvo: <http://lexvo.org/ontology> .
 @prefix saref: <https://saref.etsi.org/core#> .
 @base <https://auroral.iot.linkeddata.es/def/core#> .
@@ -60,13 +61,13 @@ geo:location rdf:type owl:ObjectProperty ;
 
 
 ###  http://www.w3.org/ns/sosa/forProperty
-<http://www.w3.org/ns/sosa/forProperty> rdf:type owl:ObjectProperty ;
-                                        rdfs:label "for property" .
+sosa:forProperty rdf:type owl:ObjectProperty ;
+                 rdfs:label "for property" .
 
 
 ###  http://www.w3.org/ns/sosa/observes
-<http://www.w3.org/ns/sosa/observes> rdf:type owl:ObjectProperty ;
-                                     rdfs:label "observes" .
+sosa:observes rdf:type owl:ObjectProperty ;
+              rdfs:label "observes" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#aboutProperty
@@ -143,12 +144,28 @@ core:hasRole rdf:type owl:ObjectProperty ;
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasStatus
-core:hasStatus rdf:type owl:ObjectProperty .
+core:hasStatus rdf:type owl:ObjectProperty ;
+               rdfs:domain core:Actuator ,
+                           core:Device ,
+                           core:Node ,
+                           core:Notification ,
+                           core:Organisation ,
+                           core:Sensor ,
+                           core:User ,
+                           saref:Device ,
+                           org:Organization .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasUser
 core:hasUser rdf:type owl:ObjectProperty ;
              rdfs:label "has user" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#isAbout
+core:isAbout rdf:type owl:ObjectProperty ;
+             rdfs:domain <http://www.w3.org/ns/ssn/Property> ;
+             rdfs:range core:FeatureOfInterest ;
+             rdfs:label "is about" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar
@@ -327,15 +344,6 @@ core:hasSkinColor rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasStatus
 core:hasStatus rdf:type owl:DatatypeProperty ;
-               rdfs:domain core:Actuator ,
-                           core:Device ,
-                           core:Node ,
-                           core:Notification ,
-                           core:Organisation ,
-                           core:Sensor ,
-                           core:User ,
-                           saref:Device ,
-                           org:Organization ;
                rdfs:range xsd:string .
 
 
@@ -449,13 +457,13 @@ geo:SpatialThing rdf:type owl:Class ;
 
 
 ###  http://www.w3.org/ns/sosa/Actuator
-<http://www.w3.org/ns/sosa/Actuator> rdf:type owl:Class ;
-                                     rdfs:label "Actuator" .
+sosa:Actuator rdf:type owl:Class ;
+              rdfs:label "Actuator" .
 
 
 ###  http://www.w3.org/ns/sosa/Sensor
-<http://www.w3.org/ns/sosa/Sensor> rdf:type owl:Class ;
-                                   rdfs:label "Sensor" .
+sosa:Sensor rdf:type owl:Class ;
+            rdfs:label "Sensor" .
 
 
 ###  http://www.w3.org/ns/ssn/Property
@@ -479,7 +487,7 @@ foaf:Person rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#Actuator
 core:Actuator rdf:type owl:Class ;
-              rdfs:subClassOf <http://www.w3.org/ns/sosa/Actuator> ,
+              rdfs:subClassOf sosa:Actuator ,
                               core:Device ;
               rdfs:label "Actuator" .
 
@@ -494,6 +502,11 @@ core:Device rdf:type owl:Class ;
             rdfs:subClassOf core:PhysicalThing ,
                             saref:Device ;
             rdfs:label "Device" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#FeatureOfInterest
+core:FeatureOfInterest rdf:type owl:Class ;
+                       rdfs:label "Feature of interest" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Item
@@ -685,7 +698,7 @@ core:Role rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#Sensor
 core:Sensor rdf:type owl:Class ;
-            rdfs:subClassOf <http://www.w3.org/ns/sosa/Sensor> ,
+            rdfs:subClassOf sosa:Sensor ,
                             core:Device ;
             rdfs:label "Sensor" .
 
