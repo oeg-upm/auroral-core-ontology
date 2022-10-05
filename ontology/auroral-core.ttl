@@ -9,6 +9,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix core: <https://auroral.iot.linkeddata.es/def/core#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geon: <http://www.geonames.org/ontology#> .
 @prefix hctl: <https://www.w3.org/2019/wot/hypermedia#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
@@ -17,7 +18,8 @@
 @base <https://auroral.iot.linkeddata.es/def/core#> .
 
 <https://auroral.iot.linkeddata.es/def/core#> rdf:type owl:Ontology ;
-                                               dc:creator "Alba Fernández Izquierdo" ,
+                                               dc:creator "Ahlem Rhayem" ,
+                                                          "Alba Fernández Izquierdo" ,
                                                           "Andrea Cimmino" ,
                                                           "María Poveda-Villalón" ,
                                                           "Raúl García Castro" ;
@@ -79,6 +81,8 @@ core:aboutProperty rdf:type owl:ObjectProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea
 core:applicableToGeographicalArea rdf:type owl:ObjectProperty ;
+                                  rdfs:domain core:Service ;
+                                  rdfs:range core:Place ;
                                   rdfs:label "applicable to geographical area" .
 
 
@@ -179,6 +183,13 @@ core:knows rdf:type owl:ObjectProperty ,
            rdfs:domain core:Organisation ;
            rdfs:range core:Organisation ;
            rdfs:label "knows" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#locatedIn
+core:locatedIn rdf:type owl:ObjectProperty ;
+               rdfs:domain core:Place ;
+               rdfs:range core:Feature ;
+               rdfs:comment "located In" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#makesMeasurement
@@ -504,6 +515,11 @@ core:Device rdf:type owl:Class ;
             rdfs:label "Device" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#Feature
+core:Feature rdf:type owl:Class ;
+             rdfs:label "Feature" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#FeatureOfInterest
 core:FeatureOfInterest rdf:type owl:Class ;
                        rdfs:label "Feature of interest" .
@@ -689,6 +705,11 @@ core:Organisation rdf:type owl:Class ;
 core:PhysicalThing rdf:type owl:Class ;
                    rdfs:subClassOf core:Item ;
                    rdfs:label "Physical Thing" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Place
+core:Place rdf:type owl:Class ;
+           rdfs:label "Place" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Role
