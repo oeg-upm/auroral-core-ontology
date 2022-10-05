@@ -7,7 +7,8 @@
 @base <https://auroral.iot.linkeddata.es/def/core#> .
 
 <https://auroral.iot.linkeddata.es/def/core#> rdf:type owl:Ontology ;
-                                               <http://purl.org/dc/elements/1.1/creator> "Alba Fernández Izquierdo" ,
+                                               <http://purl.org/dc/elements/1.1/creator> "Ahlem Rhayem" ,
+                                                                                         "Alba Fernández Izquierdo" ,
                                                                                          "Andrea Cimmino" ,
                                                                                          "María Poveda-Villalón" ,
                                                                                          "Raúl García Castro" ;
@@ -69,6 +70,8 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea
 :applicableToGeographicalArea rdf:type owl:ObjectProperty ;
+                              rdfs:domain :Service ;
+                              rdfs:range :Place ;
                               rdfs:label "applicable to geographical area" .
 
 
@@ -135,12 +138,27 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasStatus
 :hasStatus rdf:type owl:ObjectProperty ;
-           rdfs:label "has status" .
+           rdfs:domain :Actuator ,
+                       :Device ,
+                       :Node ,
+                       :Notification ,
+                       :Organisation ,
+                       :Sensor ,
+                       :User ,
+                       <https://saref.etsi.org/core#Device> ,
+                       <https://www.w3.org/ns/org#Organization> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasUser
 :hasUser rdf:type owl:ObjectProperty ;
          rdfs:label "has user" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#isAbout
+:isAbout rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://www.w3.org/ns/ssn/Property> ;
+         rdfs:range :FeatureOfInterest ;
+         rdfs:label "is about" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar
@@ -154,6 +172,13 @@
        rdfs:domain :Organisation ;
        rdfs:range :Organisation ;
        rdfs:label "knows" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Place ;
+           rdfs:range :Feature ;
+           rdfs:comment "located In" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#makesMeasurement
@@ -244,6 +269,15 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasID
 :hasID rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Actuator ,
+                   :Device ,
+                   :Node ,
+                   :Notification ,
+                   :Organisation ,
+                   :Sensor ,
+                   :User ,
+                   <https://saref.etsi.org/core#Device> ,
+                   <https://www.w3.org/ns/org#Organization> ;
        rdfs:range xsd:string ;
        rdfs:label "has i d" .
 
@@ -306,6 +340,11 @@
 :hasSkinColor rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:string ;
               rdfs:label "has skin color" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#hasStatus
+:hasStatus rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:string .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasSubDomain
@@ -390,6 +429,11 @@
 ###  https://saref.etsi.org/core#hasTimeStamp
 <https://saref.etsi.org/core#hasTimeStamp> rdf:type owl:DatatypeProperty ,
                                                     owl:FunctionalProperty ;
+                                           rdfs:domain :Actuator ,
+                                                       :Device ,
+                                                       :Sensor ,
+                                                       <https://saref.etsi.org/core#Device> ;
+                                           rdfs:range xsd:dateTime ;
                                            rdfs:label "has time stamp" .
 
 
@@ -460,6 +504,16 @@
         rdfs:label "Device" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#Feature
+:Feature rdf:type owl:Class ;
+         rdfs:label "Feature" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#FeatureOfInterest
+:FeatureOfInterest rdf:type owl:Class ;
+                   rdfs:label "Feature of interest" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#Item
 :Item rdf:type owl:Class ;
       rdfs:subClassOf <https://www.w3.org/2019/wot/td#Thing> ,
@@ -486,11 +540,6 @@
 :ItemStatus rdf:type owl:Class ;
             rdfs:subClassOf :Status ;
             rdfs:label "Item status" .
-
-
-###  https://auroral.iot.linkeddata.es/def/core#LuminusFlux
-:LuminusFlux rdf:type owl:Class ;
-             rdfs:label "Luminus Flux" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Node
@@ -670,10 +719,6 @@
                          [ rdf:type owl:Restriction ;
                            owl:onProperty <http://lexvo.org/ontology#language> ;
                            owl:someValuesFrom <http://lexvo.org/ontology#Language>
-                         ] ,
-                         [ rdf:type owl:Restriction ;
-                           owl:onProperty :applicableToGeographicalArea ;
-                           owl:someValuesFrom :Place
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasInput ;
@@ -1077,6 +1122,9 @@
 #################################################################
 
 :User rdfs:label "User" .
+
+
+:hasStatus rdfs:label "has status" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
