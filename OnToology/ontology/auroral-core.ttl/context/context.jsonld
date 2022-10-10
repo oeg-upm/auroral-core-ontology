@@ -70,6 +70,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasID",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "FeatureOfInterest" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#FeatureOfInterest"
+    },
     "hasValue" : {
       "@id" : "https://saref.etsi.org/core#hasValue"
     },
@@ -100,6 +103,9 @@
     "isLastUpdated" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#isLastUpdated"
     },
+    "Feature" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Feature"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
@@ -120,9 +126,6 @@
     },
     "User" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
-    },
-    "LuminusFlux" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/core#LuminusFlux"
     },
     "Status" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Status"
@@ -192,10 +195,14 @@
     },
     "hasStatus" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus",
-      "@type" : "@id"
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "exposes" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#exposes",
+      "@type" : "@id"
+    },
+    "isAbout" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#isAbout",
       "@type" : "@id"
     },
     "serviceName" : {
@@ -203,7 +210,8 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "hasTimeStamp" : {
-      "@id" : "https://saref.etsi.org/core#hasTimeStamp"
+      "@id" : "https://saref.etsi.org/core#hasTimeStamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "PhysicalThing" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#PhysicalThing"
@@ -260,6 +268,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasRequirement",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "locatedIn" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#locatedIn",
+      "@type" : "@id"
+    },
     "hasCreationDate" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasCreationDate"
     },
@@ -295,6 +307,9 @@
     "hasContactMail" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasContactMail",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "Service" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
