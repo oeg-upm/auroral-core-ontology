@@ -9,12 +9,12 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix core: <https://auroral.iot.linkeddata.es/def/core#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix geon: <http://www.geonames.org/ontology#> .
 @prefix hctl: <https://www.w3.org/2019/wot/hypermedia#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
 @prefix lexvo: <http://lexvo.org/ontology> .
 @prefix saref: <https://saref.etsi.org/core#> .
+@prefix geonames: <http://www.geonames.org/ontology#> .
 @base <https://auroral.iot.linkeddata.es/def/core#> .
 
 <https://auroral.iot.linkeddata.es/def/core#> rdf:type owl:Ontology ;
@@ -188,7 +188,6 @@ core:knows rdf:type owl:ObjectProperty ,
 ###  https://auroral.iot.linkeddata.es/def/core#locatedIn
 core:locatedIn rdf:type owl:ObjectProperty ;
                rdfs:domain core:Place ;
-               rdfs:range core:Feature ;
                rdfs:comment "located In" .
 
 
@@ -230,12 +229,6 @@ wot:hasValueType rdf:type owl:ObjectProperty ;
 core:currentStatus rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:string ;
                    rdfs:label "current status" .
-
-
-###  https://auroral.iot.linkeddata.es/def/core#dateLastUpdate
-core:dateLastUpdate rdf:type owl:DatatypeProperty ;
-                    rdfs:range xsd:dateTime ;
-                    rdfs:label "date last update" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasActor
@@ -412,22 +405,10 @@ core:provider rdf:type owl:DatatypeProperty ;
               rdfs:label "provider" .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#serviceDescription
-core:serviceDescription rdf:type owl:DatatypeProperty ;
-                        rdfs:range xsd:string ;
-                        rdfs:label "service description" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/core#serviceFree
 core:serviceFree rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:boolean ;
                  rdfs:label "service free" .
-
-
-###  https://auroral.iot.linkeddata.es/def/core#serviceName
-core:serviceName rdf:type owl:DatatypeProperty ;
-                 rdfs:range xsd:string ;
-                 rdfs:label "service name" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#versionOfService
@@ -460,6 +441,11 @@ saref:hasValue rdf:type owl:DatatypeProperty ;
 ###  http://lexvo.org/ontology#Language
 <http://lexvo.org/ontology#Language> rdf:type owl:Class ;
                                      rdfs:label "Language" .
+
+
+###  http://www.geonames.org/ontology#Feature
+geonames:Feature rdf:type owl:Class ;
+                 rdfs:label "Feature" .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
@@ -513,11 +499,6 @@ core:Device rdf:type owl:Class ;
             rdfs:subClassOf core:PhysicalThing ,
                             saref:Device ;
             rdfs:label "Device" .
-
-
-###  https://auroral.iot.linkeddata.es/def/core#Feature
-core:Feature rdf:type owl:Class ;
-             rdfs:label "Feature" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#FeatureOfInterest
@@ -709,6 +690,7 @@ core:PhysicalThing rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#Place
 core:Place rdf:type owl:Class ;
+           rdfs:subClassOf geonames:Feature ;
            rdfs:label "Place" .
 
 
@@ -752,16 +734,8 @@ core:Service rdf:type owl:Class ;
                                owl:someValuesFrom xsd:string
                              ] ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty core:serviceDescription ;
-                               owl:someValuesFrom xsd:string
-                             ] ,
-                             [ rdf:type owl:Restriction ;
                                owl:onProperty core:serviceFree ;
                                owl:someValuesFrom xsd:boolean
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty core:serviceName ;
-                               owl:someValuesFrom xsd:string
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty core:hasURL ;
@@ -771,11 +745,6 @@ core:Service rdf:type owl:Class ;
                                owl:onProperty core:currentStatus ;
                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                owl:onDataRange xsd:string
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty core:dateLastUpdate ;
-                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                               owl:onDataRange xsd:dateTime
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty core:provider ;
