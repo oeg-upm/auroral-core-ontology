@@ -369,12 +369,6 @@ core:hasToken rdf:type owl:DatatypeProperty ;
               rdfs:label "has token" .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#hasURL
-core:hasURL rdf:type owl:DatatypeProperty ;
-            rdfs:range xsd:anyURI ;
-            rdfs:label "has URL" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/core#hasUpdateDate
 core:hasUpdateDate rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:dateTime ;
@@ -736,10 +730,6 @@ core:Service rdf:type owl:Class ;
                              [ rdf:type owl:Restriction ;
                                owl:onProperty core:serviceFree ;
                                owl:someValuesFrom xsd:boolean
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty core:hasURL ;
-                               owl:allValuesFrom xsd:anyURI
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty core:currentStatus ;
