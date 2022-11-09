@@ -24,12 +24,14 @@ This ontology has the following classes and properties.</span>
       <a href="#https://saref.etsi.org/core#Device" title="https://saref.etsi.org/core#Device">Device</a>
    </li>
    <li>
-      <a href="#Feature"
-         title="https://auroral.iot.linkeddata.es/def/core#Feature">Feature</a>
+      <a href="#Domain"
+         title="https://auroral.iot.linkeddata.es/def/core#Domain">Domain</a>
    </li>
    <li>
-      <a href="#FeatureOfInterest"
-         title="https://auroral.iot.linkeddata.es/def/core#FeatureOfInterest">Feature of interest</a>
+      <a href="#http://www.geonames.org/ontology#Feature" title="http://www.geonames.org/ontology#Feature">Feature</a>
+   </li>
+   <li>
+      <a href="#https://saref.etsi.org/core#FeatureOfInterest" title="https://saref.etsi.org/core#FeatureOfInterest">Feature of interest</a>
    </li>
    <li>
       <a href="#http://xmlns.com/foaf/0.1/Image" title="http://xmlns.com/foaf/0.1/Image">Image</a>
@@ -88,7 +90,7 @@ This ontology has the following classes and properties.</span>
          title="https://auroral.iot.linkeddata.es/def/core#Place">Place</a>
    </li>
    <li>
-      <a href="#http://www.w3.org/ns/ssn/Property" title="http://www.w3.org/ns/ssn/Property">Property</a>
+      <a href="#https://saref.etsi.org/core#Property" title="https://saref.etsi.org/core#Property">Property</a>
    </li>
    <li>
       <a href="#Role" title="https://auroral.iot.linkeddata.es/def/core#Role">Role</a>
@@ -114,6 +116,10 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://www.w3.org/2019/wot/td#Thing" title="https://www.w3.org/2019/wot/td#Thing">Thing</a>
+   </li>
+   <li>
+      <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
+         title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
    </li>
    <li>
       <a href="#User" title="https://auroral.iot.linkeddata.es/def/core#User">
@@ -157,6 +163,9 @@ This ontology has the following classes and properties.</span>
          title="https://auroral.iot.linkeddata.es/def/core#hasAudit">has audit</a>
    </li>
    <li>
+      <a href="#https://saref.etsi.org/core#hasDomain" title="https://saref.etsi.org/core#hasDomain">has domain</a>
+   </li>
+   <li>
       <a href="#hasInput"
          title="https://auroral.iot.linkeddata.es/def/core#hasInput">has Input</a>
    </li>
@@ -166,6 +175,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://www.w3.org/2019/wot/td#hasLink" title="https://www.w3.org/2019/wot/td#hasLink">has link</a>
+   </li>
+   <li>
+      <a href="#https://saref.etsi.org/core#hasMeasurement" title="https://saref.etsi.org/core#hasMeasurement">has measurement</a>
    </li>
    <li>
       <a href="#hasNode"
@@ -186,6 +198,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasPartnershipRequestedTo"
          title="https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedTo">has partnership requested to</a>
+   </li>
+   <li>
+      <a href="#https://saref.etsi.org/core#hasProperty" title="https://saref.etsi.org/core#hasProperty">has property</a>
    </li>
    <li>
       <a href="#hasRole"
@@ -212,6 +227,9 @@ This ontology has the following classes and properties.</span>
       <a href="#https://saref.etsi.org/core#isMeasuredIn" title="https://saref.etsi.org/core#isMeasuredIn">is measured in</a>
    </li>
    <li>
+      <a href="#https://saref.etsi.org/core#isPropertyOf" title="https://saref.etsi.org/core#isPropertyOf">is property of</a>
+   </li>
+   <li>
       <a href="#isRepresentedByAvatar"
          title="https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar">is represented by avatar</a>
    </li>
@@ -220,12 +238,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#http://lexvo.org/ontology#language" title="http://lexvo.org/ontology#language">language</a>
-   </li>
-   <li>
-      <a href="#locatedIn"
-         title="https://auroral.iot.linkeddata.es/def/core#locatedIn">
-         <span>located in</span>
-      </a>
    </li>
    <li>
       <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#location" title="http://www.w3.org/2003/01/geo/wgs84_pos#location">location</a>
@@ -241,10 +253,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#currentStatus"
          title="https://auroral.iot.linkeddata.es/def/core#currentStatus">current status</a>
-   </li>
-   <li>
-      <a href="#dateLastUpdate"
-         title="https://auroral.iot.linkeddata.es/def/core#dateLastUpdate">date last update</a>
    </li>
    <li>
       <a href="#hasActor"
@@ -343,10 +351,6 @@ This ontology has the following classes and properties.</span>
          title="https://auroral.iot.linkeddata.es/def/core#hasUpdateDate">has update date</a>
    </li>
    <li>
-      <a href="#hasURL"
-         title="https://auroral.iot.linkeddata.es/def/core#hasURL">has URL</a>
-   </li>
-   <li>
       <a href="#https://saref.etsi.org/core#hasValue" title="https://saref.etsi.org/core#hasValue">has value</a>
    </li>
    <li>
@@ -366,16 +370,8 @@ This ontology has the following classes and properties.</span>
          title="https://auroral.iot.linkeddata.es/def/core#provider">provider</a>
    </li>
    <li>
-      <a href="#serviceDescription"
-         title="https://auroral.iot.linkeddata.es/def/core#serviceDescription">service description</a>
-   </li>
-   <li>
       <a href="#serviceFree"
          title="https://auroral.iot.linkeddata.es/def/core#serviceFree">service free</a>
-   </li>
-   <li>
-      <a href="#serviceName"
-         title="https://auroral.iot.linkeddata.es/def/core#serviceName">service name</a>
    </li>
    <li>
       <a href="#versionOfService"
@@ -420,6 +416,14 @@ This ontology has the following classes and properties.</span>
          title="http://www.wurvoc.org/vocabularies/om-2/cubicMetre">
          <span>cubic metre</span>
       </a>
+   </li>
+   <li>
+      <a href="#CyclingEconomy"
+         title="https://auroral.iot.linkeddata.es/def/core#CyclingEconomy">Cycling economy</a>
+   </li>
+   <li>
+      <a href="#DairyFarming"
+         title="https://auroral.iot.linkeddata.es/def/core#DairyFarming">Dairy farming</a>
    </li>
    <li>
       <a href="#http://www.wurvoc.org/vocabularies/om-2/degree" title="http://www.wurvoc.org/vocabularies/om-2/degree">
@@ -467,6 +471,14 @@ This ontology has the following classes and properties.</span>
          title="https://auroral.iot.linkeddata.es/def/core#EnabledItemStatus">Enabled item status</a>
    </li>
    <li>
+      <a href="#Energy"
+         title="https://auroral.iot.linkeddata.es/def/core#Energy">Energy</a>
+   </li>
+   <li>
+      <a href="#Health"
+         title="https://auroral.iot.linkeddata.es/def/core#Health">Health</a>
+   </li>
+   <li>
       <a href="#InfoNotificationStatus"
          title="https://auroral.iot.linkeddata.es/def/core#InfoNotificationStatus">Info notification status</a>
    </li>
@@ -489,6 +501,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#ItemUpdatedNotification"
          title="https://auroral.iot.linkeddata.es/def/core#ItemUpdatedNotification">Item update notification</a>
+   </li>
+   <li>
+      <a href="#Mobility"
+         title="https://auroral.iot.linkeddata.es/def/core#Mobility">Mobility</a>
    </li>
    <li>
       <a href="#RegistrationRequestNotification"
@@ -517,6 +533,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Sys_integrator"
          title="https://auroral.iot.linkeddata.es/def/core#Sys_integrator">System integrator</a>
+   </li>
+   <li>
+      <a href="#Tourism"
+         title="https://auroral.iot.linkeddata.es/def/core#Tourism">Tourism</a>
    </li>
    <li>
       <a href="#User" title="https://auroral.iot.linkeddata.es/def/core#User">
