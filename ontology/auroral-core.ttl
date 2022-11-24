@@ -447,6 +447,18 @@ core:versionOfService rdf:type owl:DatatypeProperty ;
                       rdfs:label "version of service" .
 
 
+###  https://saref.etsi.org/core#hasManufacturer
+saref:hasManufacturer rdf:type owl:DatatypeProperty ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "has manufacturer" .
+
+
+###  https://saref.etsi.org/core#hasModel
+saref:hasModel rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:string ;
+               rdfs:label "has model" .
+
+
 ###  https://saref.etsi.org/core#hasTimeStamp
 saref:hasTimeStamp rdf:type owl:DatatypeProperty ,
                             owl:FunctionalProperty ;
@@ -875,6 +887,14 @@ core:VirtualThing rdf:type owl:Class ;
 
 ###  https://saref.etsi.org/core#Device
 saref:Device rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty saref:hasManufacturer ;
+                               owl:someValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty saref:hasModel ;
+                               owl:someValuesFrom xsd:string
+                             ] ;
              rdfs:label "Device" .
 
 
