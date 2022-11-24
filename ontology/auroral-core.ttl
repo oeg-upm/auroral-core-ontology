@@ -422,10 +422,22 @@ core:provider rdf:type owl:DatatypeProperty ;
               rdfs:label "provider" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#serialNumber
+core:serialNumber rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "serial number" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#serviceFree
 core:serviceFree rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:boolean ;
                  rdfs:label "service free" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#versionNumber
+core:versionNumber rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "version number" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#versionOfService
@@ -510,7 +522,15 @@ core:Audit rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/core#Device
 core:Device rdf:type owl:Class ;
             rdfs:subClassOf core:PhysicalThing ,
-                            saref:Device ;
+                            saref:Device ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty core:serialNumber ;
+                              owl:someValuesFrom xsd:string
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty core:versionNumber ;
+                              owl:someValuesFrom xsd:string
+                            ] ;
             rdfs:label "Device" .
 
 
