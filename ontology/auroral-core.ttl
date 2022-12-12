@@ -13,6 +13,7 @@
 @prefix hctl: <https://www.w3.org/2019/wot/hypermedia#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <https://www.w3.org/2006/time> .
 @prefix lexvo: <http://lexvo.org/ontology> .
 @prefix saref: <https://saref.etsi.org/core#> .
 @prefix geonames: <http://www.geonames.org/ontology#> .
@@ -914,6 +915,11 @@ saref:Property rdf:type owl:Class ;
                rdfs:label "Property" .
 
 
+###  https://www.w3.org/2006/time#TemporalUnit
+<https://www.w3.org/2006/time#TemporalUnit> rdf:type owl:Class ;
+                                            rdfs:label "Temporal Unit" .
+
+
 ###  https://www.w3.org/2019/wot/hypermedia#Link
 hctl:Link rdf:type owl:Class ;
           rdfs:label "Link" .
@@ -1294,6 +1300,12 @@ core:kilowattSquareMeter rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/core#kilowattYear
 core:kilowattYear rdf:type owl:NamedIndividual ,
                            <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  https://www.w3.org/2006/time#unitHour
+<https://www.w3.org/2006/time#unitHour> rdf:type owl:NamedIndividual ,
+                                                 <https://www.w3.org/2006/time#TemporalUnit> ;
+                                        rdfs:label "unit Hour" .
 
 
 #################################################################
