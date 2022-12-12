@@ -306,6 +306,7 @@ core:hasID rdf:type owl:DatatypeProperty ;
                        core:Sensor ,
                        core:User ,
                        saref:Device ,
+                       saref:FeatureOfInterest ,
                        org:Organization ;
            rdfs:range xsd:string ;
            rdfs:label "has i d" .
@@ -533,6 +534,16 @@ core:Audit rdf:type owl:Class ;
            rdfs:label "Audit" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#Building
+core:Building rdf:type owl:Class ;
+              rdfs:subClassOf saref:FeatureOfInterest .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#City
+core:City rdf:type owl:Class ;
+          rdfs:subClassOf saref:FeatureOfInterest .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#Device
 core:Device rdf:type owl:Class ;
             rdfs:subClassOf core:PhysicalThing ,
@@ -579,6 +590,11 @@ core:Item rdf:type owl:Class ;
 core:ItemStatus rdf:type owl:Class ;
                 rdfs:subClassOf core:Status ;
                 rdfs:label "Item status" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Municipality
+core:Municipality rdf:type owl:Class ;
+                  rdfs:subClassOf saref:FeatureOfInterest .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Node
