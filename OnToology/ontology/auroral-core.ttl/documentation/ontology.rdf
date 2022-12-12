@@ -492,6 +492,7 @@
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Sensor"/>
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#User"/>
         <rdfs:domain rdf:resource="https://saref.etsi.org/core#Device"/>
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#FeatureOfInterest"/>
         <rdfs:domain rdf:resource="https://www.w3.org/ns/org#Organization"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>has i d</rdfs:label>
@@ -688,12 +689,32 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#serialNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#serialNumber">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>serial number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#serviceFree -->
 
 
     <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#serviceFree">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:label>service free</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#versionNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#versionNumber">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>version number</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -705,6 +726,26 @@
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Service"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>version of service</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core#hasManufacturer -->
+
+
+    <owl:DatatypeProperty rdf:about="https://saref.etsi.org/core#hasManufacturer">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has manufacturer</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core#hasModel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://saref.etsi.org/core#hasModel">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has model</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -837,12 +878,42 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#Building -->
+
+
+    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Building">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#City -->
+
+
+    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#City">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#Device -->
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Device">
         <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#PhysicalThing"/>
         <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core#Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#serialNumber"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#versionNumber"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Device</rdfs:label>
     </owl:Class>
     
@@ -897,6 +968,15 @@
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#ItemStatus">
         <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Status"/>
         <rdfs:label>Item status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#Municipality -->
+
+
+    <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Municipality">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core#FeatureOfInterest"/>
     </owl:Class>
     
 
@@ -1378,6 +1458,18 @@
 
 
     <owl:Class rdf:about="https://saref.etsi.org/core#Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core#hasManufacturer"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core#hasModel"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label>Device</rdfs:label>
     </owl:Class>
     
@@ -1406,6 +1498,15 @@
 
     <owl:Class rdf:about="https://saref.etsi.org/core#Property">
         <rdfs:label>Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.w3.org/2006/time#TemporalUnit -->
+
+
+    <owl:Class rdf:about="https://www.w3.org/2006/time#TemporalUnit">
+        <rdfs:label>Temporal Unit</rdfs:label>
     </owl:Class>
     
 
@@ -1467,64 +1568,233 @@
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-2/ampere -->
+    <!-- http://www.ontology-of-units-of-measure.org/page/om-2#Percentage -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.wurvoc.org/vocabularies/om-2/ampere">
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#Percentage">
         <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-2/cubicMetre -->
+    <!-- http://www.ontology-of-units-of-measure.org/page/om-2#centimetre -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.wurvoc.org/vocabularies/om-2/cubicMetre">
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#centimetre">
         <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-2/degree -->
+    <!-- http://www.ontology-of-units-of-measure.org/page/om-2#hectopascal -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.wurvoc.org/vocabularies/om-2/degree">
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#hectopascal">
         <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-2/degreeCelsius -->
+    <!-- http://www.ontology-of-units-of-measure.org/page/om-2#kelvin -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.wurvoc.org/vocabularies/om-2/degreeCelsius">
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#kelvin">
         <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-2/degreeFahrenheit -->
+    <!-- http://www.ontology-of-units-of-measure.org/page/om-2#kilogram -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.wurvoc.org/vocabularies/om-2/degreeFahrenheit">
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#kilogram">
         <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-2/volt -->
+    <!-- http://www.ontology-of-units-of-measure.org/page/om-2#kilowatt -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.wurvoc.org/vocabularies/om-2/volt">
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#kilowatt">
         <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.wurvoc.org/vocabularies/om-2/watt -->
+    <!-- http://www.ontology-of-units-of-measure.org/page/om-2#litre -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.wurvoc.org/vocabularies/om-2/watt">
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#litre">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/page/om-2#millimetre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#millimetre">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/page/om-2#wattSquareMetre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#wattSquareMetre">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/ampere -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ampere">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre"/>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/decibel -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/decibel">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degree -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degree">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/lux -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/lux">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/volt -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/volt">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ontology-of-units-of-measure.org/resource/om-2/watt -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/watt">
         <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
     </owl:NamedIndividual>
     
@@ -1884,6 +2154,34 @@
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#WaitingNotificationStatus">
         <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#NotificationStatus"/>
         <rdfs:label>Waiting notification status</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#kilowattSquareMeter -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#kilowattSquareMeter">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#kilowattYear -->
+
+
+    <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#kilowattYear">
+        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.w3.org/2006/time#unitHour -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3.org/2006/time#unitHour">
+        <rdf:type rdf:resource="https://www.w3.org/2006/time#TemporalUnit"/>
+        <rdfs:label>unit Hour</rdfs:label>
     </owl:NamedIndividual>
     
 
