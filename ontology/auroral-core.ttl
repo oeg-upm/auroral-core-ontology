@@ -1020,6 +1020,11 @@ org:Organization rdf:type owl:Class ;
                                                                             <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour
+<http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre
 <http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre> rdf:type owl:NamedIndividual .
 
@@ -1072,6 +1077,11 @@ org:Organization rdf:type owl:Class ;
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared
 <http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared> rdf:type owl:NamedIndividual ,
                                                                                                  <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour
+<http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre
