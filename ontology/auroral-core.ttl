@@ -304,12 +304,10 @@ core:hasFunctionality rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasID
 core:hasID rdf:type owl:DatatypeProperty ;
-           rdfs:domain core:Actuator ,
-                       core:Device ,
+           rdfs:domain core:Device ,
                        core:Node ,
                        core:Notification ,
                        core:Organisation ,
-                       core:Sensor ,
                        core:User ,
                        saref:Device ,
                        org:Organization ;
