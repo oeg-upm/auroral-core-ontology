@@ -13,6 +13,7 @@
 @prefix hctl: <https://www.w3.org/2019/wot/hypermedia#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <https://www.w3.org/2006/time> .
 @prefix lexvo: <http://lexvo.org/ontology> .
 @prefix saref: <https://saref.etsi.org/core#> .
 @prefix geonames: <http://www.geonames.org/ontology#> .
@@ -310,6 +311,7 @@ core:hasID rdf:type owl:DatatypeProperty ;
                        core:Organisation ,
                        core:User ,
                        saref:Device ,
+                       saref:FeatureOfInterest ,
                        org:Organization ;
            rdfs:range xsd:string ;
            rdfs:label "has i d" .
@@ -536,6 +538,16 @@ core:Audit rdf:type owl:Class ;
            rdfs:label "Audit" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#Building
+core:Building rdf:type owl:Class ;
+              rdfs:subClassOf saref:FeatureOfInterest .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#City
+core:City rdf:type owl:Class ;
+          rdfs:subClassOf saref:FeatureOfInterest .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#Device
 core:Device rdf:type owl:Class ;
             rdfs:subClassOf core:PhysicalThing ,
@@ -582,6 +594,11 @@ core:Item rdf:type owl:Class ;
 core:ItemStatus rdf:type owl:Class ;
                 rdfs:subClassOf core:Status ;
                 rdfs:label "Item status" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Municipality
+core:Municipality rdf:type owl:Class ;
+                  rdfs:subClassOf saref:FeatureOfInterest .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Node
@@ -918,6 +935,11 @@ saref:Property rdf:type owl:Class ;
                rdfs:label "Property" .
 
 
+###  https://www.w3.org/2006/time#TemporalUnit
+<https://www.w3.org/2006/time#TemporalUnit> rdf:type owl:Class ;
+                                            rdfs:label "Temporal Unit" .
+
+
 ###  https://www.w3.org/2019/wot/hypermedia#Link
 hctl:Link rdf:type owl:Class ;
           rdfs:label "Link" .
@@ -1002,6 +1024,11 @@ org:Organization rdf:type owl:Class ;
                                                                             <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour
+<http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour> rdf:type owl:NamedIndividual ,
+                                                                                <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre
 <http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre> rdf:type owl:NamedIndividual .
 
@@ -1054,6 +1081,11 @@ org:Organization rdf:type owl:Class ;
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared
 <http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared> rdf:type owl:NamedIndividual ,
                                                                                                  <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour
+<http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour> rdf:type owl:NamedIndividual ,
+                                                                                     <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre
@@ -1298,6 +1330,12 @@ core:kilowattSquareMeter rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/core#kilowattYear
 core:kilowattYear rdf:type owl:NamedIndividual ,
                            <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  https://www.w3.org/2006/time#unitHour
+<https://www.w3.org/2006/time#unitHour> rdf:type owl:NamedIndividual ,
+                                                 <https://www.w3.org/2006/time#TemporalUnit> ;
+                                        rdfs:label "unit Hour" .
 
 
 #################################################################

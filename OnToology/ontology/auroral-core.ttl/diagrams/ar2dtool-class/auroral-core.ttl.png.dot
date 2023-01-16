@@ -1,15 +1,15 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "core:Service" "foaf:Image" "core:Notification" "core:Place" "core:NodeStatus" "core:UserStatus" "saref:Property" "saref:FeatureOfInterest" "core:User" "core:Item" "core:Audit" "core:ItemStatus" "wot:InteractionAffordance" "core:Actuator" "core:Organisation" "core:NotificationStatus" "core:Domain" "geo:SpatialThing" "hctl:Link" "core:Role" "core:Node" "saref:Measurement" "core:PhysicalThing" "http://lexvo.org/ontology#Language" "wot:Thing" "core:Device" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "wot:Thing" "core:User" "core:Node" "core:NotificationStatus" "saref:Measurement" "core:Service" "core:Audit" "core:Device" "core:Actuator" "core:Organisation" "core:Domain" "core:Role" "core:Item" "saref:Property" "core:Place" "core:Notification" "core:ItemStatus" "geo:SpatialThing" "wot:InteractionAffordance" "hctl:Link" "core:PhysicalThing" "core:UserStatus" "core:NodeStatus" "saref:FeatureOfInterest" "foaf:Image" "http://lexvo.org/ontology#Language" ; /*classes style*/
 	"core:" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = ":license" ];
 	"saref:isPropertyOf" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"NULL" -> "core:ItemStatus" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "core:hasNotification" [ label = "owl:onProperty" ];
 	"NULL" -> "core:Organisation" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "xsd:dateTime" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "core:hasUpdateDate" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasContactMail" [ label = "owl:onProperty" ];
+	"NULL" -> "core:hasUpdateDate" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasActor" [ label = "owl:onProperty" ];
 	"NULL" -> "xsd:boolean" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "http://lexvo.org/ontology#Language" [ label = "owl:someValuesFrom" ];
@@ -17,14 +17,16 @@ node [shape = rectangle, color="orange"]; "core:Service" "foaf:Image" "core:Noti
 	"NULL" -> "core:Organisation" [ label = "rdf:first" ];
 	"NULL" -> "core:currentStatus" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasInput" [ label = "owl:onProperty" ];
-	"NULL" -> "foaf:Image" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "core:UserStatus" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "foaf:Image" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "xsd:string" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "core:isUnread" [ label = "owl:onProperty" ];
+	"NULL" -> "-5f6cc156:18510763f7f:-7ffc" [ label = "owl:unionOf" ];
 	"NULL" -> "core:hasKey" [ label = "owl:onProperty" ];
-	"NULL" -> "core:belongsTo" [ label = "owl:onProperty" ];
 	"NULL" -> "core:PhysicalThing" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "core:belongsTo" [ label = "owl:onProperty" ];
 	"NULL" -> "core:Item" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "saref:hasManufacturer" [ label = "owl:onProperty" ];
 	"NULL" -> "core:Audit" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "xsd:boolean" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "core:isLastUpdated" [ label = "owl:onProperty" ];
@@ -34,15 +36,14 @@ node [shape = rectangle, color="orange"]; "core:Service" "foaf:Image" "core:Noti
 	"NULL" -> "geo:location" [ label = "owl:onProperty" ];
 	"NULL" -> "http://lexvo.org/ontology#language" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasUser" [ label = "owl:onProperty" ];
-	"NULL" -> "58b6c2a9:1845d703407:-7ffc" [ label = "owl:unionOf" ];
 	"NULL" -> "core:hasNode" [ label = "owl:onProperty" ];
 	"NULL" -> "core:Notification" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "core:hasCreationDate" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasEmail" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasLocation" [ label = "owl:onProperty" ];
-	"NULL" -> "58b6c2a9:1845d703407:-7ffb" [ label = "rdf:rest" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "core:hasTarget" [ label = "owl:onProperty" ];
+	"NULL" -> "saref:hasModel" [ label = "owl:onProperty" ];
 	"NULL" -> "geo:SpatialThing" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "core:hasDomain" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasFunctionality" [ label = "owl:onProperty" ];
@@ -55,14 +56,17 @@ node [shape = rectangle, color="orange"]; "core:Service" "foaf:Image" "core:Noti
 	"NULL" -> "core:hasName" [ label = "owl:onProperty" ];
 	"NULL" -> "xsd:dateTime" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "core:exposes" [ label = "owl:onProperty" ];
+	"NULL" -> "-5f6cc156:18510763f7f:-7ffb" [ label = "rdf:rest" ];
 	"NULL" -> "xsd:string" [ label = "owl:onDataRange" ];
 	"NULL" -> "core:hasOccupation" [ label = "owl:onProperty" ];
 	"NULL" -> "core:serviceFree" [ label = "owl:onProperty" ];
-	"NULL" -> "core:provider" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasRequirement" [ label = "owl:onProperty" ];
+	"NULL" -> "core:provider" [ label = "owl:onProperty" ];
+	"NULL" -> "core:versionNumber" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasSubDomain" [ label = "owl:onProperty" ];
 	"NULL" -> "core:containsItem" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasOwner" [ label = "owl:onProperty" ];
+	"NULL" -> "core:serialNumber" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasFirstName" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasID" [ label = "owl:onProperty" ];
 	"NULL" -> "core:hasStatus" [ label = "owl:onProperty" ];
@@ -74,6 +78,7 @@ node [shape = rectangle, color="orange"]; "core:Service" "foaf:Image" "core:Noti
 	"wot:Thing" -> "wot:InteractionAffordance" [ label = "wot:hasInteractionAffordance" ];
 	"owl:Thing" -> "xsd:string" [ label = "core:provider" ];
 	"saref:FeatureOfInterest" -> "saref:Measurement" [ label = "saref:hasMeasurement" ];
+	"owl:Thing" -> "xsd:string" [ label = "saref:hasManufacturer" ];
 	"saref:FeatureOfInterest" -> "saref:Property" [ label = "saref:hasProperty" ];
 	"owl:Thing" -> "xsd:string" [ label = "core:hasKey" ];
 	"core:Organisation" -> "core:Organisation" [ label = "core:hasPartnershipRequestedBy" ];
@@ -94,7 +99,9 @@ node [shape = rectangle, color="orange"]; "core:Service" "foaf:Image" "core:Noti
 	"owl:Thing" -> "xsd:string" [ label = "core:hasDomain" ];
 	"owl:Thing" -> "xsd:string" [ label = "core:hasRegistrationNumber" ];
 	"owl:Thing" -> "xsd:string" [ label = "core:hasLocation" ];
+	"owl:Thing" -> "xsd:string" [ label = "core:versionNumber" ];
 	"owl:Thing" -> "xsd:string" [ label = "core:hasTarget" ];
+	"owl:Thing" -> "xsd:string" [ label = "core:serialNumber" ];
 	"core:Service" -> "xsd:string" [ label = "core:numberOfDownloads" ];
 	"core:Organisation" -> "core:Organisation" [ label = "core:hasPartnershipRequestedTo" ];
 	"owl:Thing" -> "xsd:string" [ label = "core:hasRequirement" ];
@@ -107,6 +114,7 @@ node [shape = rectangle, color="orange"]; "core:Service" "foaf:Image" "core:Noti
 	"owl:Thing" -> "xsd:string" [ label = "core:hasFirstName" ];
 	"owl:Thing" -> "xsd:string" [ label = "core:hasToken" ];
 	"owl:Thing" -> "xsd:string" [ label = "core:hasSubDomain" ];
+	"owl:Thing" -> "xsd:string" [ label = "saref:hasModel" ];
 	"owl:Thing" -> "xsd:string" [ label = "core:hasSkinColor" ];
 	"core:User" -> "xsd:string" [ label = "core:hasStatus" ];
 	"owl:Thing" -> "xsd:dateTime" [ label = "core:hasUpdateDate" ];
