@@ -112,6 +112,12 @@ core:hasInput rdf:type owl:ObjectProperty ;
               rdfs:label "has Input" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#hasLocation
+core:hasLocation rdf:type owl:ObjectProperty ;
+                 rdfs:domain saref:Device ;
+                 rdfs:range core:Place .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#hasNode
 core:hasNode rdf:type owl:ObjectProperty ;
              rdfs:label "has node" .
@@ -186,12 +192,6 @@ core:knows rdf:type owl:ObjectProperty ,
            rdfs:label "knows" .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#makesMeasurement
-core:makesMeasurement rdf:type owl:ObjectProperty ;
-                      rdfs:domain core:Device ;
-                      rdfs:label "makes measurement" .
-
-
 ###  https://saref.etsi.org/core#hasDomain
 saref:hasDomain rdf:type owl:ObjectProperty ;
                 rdfs:domain core:Service ;
@@ -224,6 +224,13 @@ saref:isPropertyOf rdf:type owl:ObjectProperty ;
                    rdfs:domain saref:Property ;
                    rdfs:range saref:FeatureOfInterest ;
                    rdfs:label "is property of" .
+
+
+###  https://saref.etsi.org/core#makesMeasurement
+saref:makesMeasurement rdf:type owl:ObjectProperty ;
+                       rdfs:domain core:Device ;
+                       rdfs:range saref:Measurement ;
+                       rdfs:label "makes measurement" .
 
 
 ###  https://www.w3.org/2019/wot/td#hasInteractionAffordance
@@ -324,8 +331,7 @@ core:hasLastName rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasLocation
 core:hasLocation rdf:type owl:DatatypeProperty ;
-                 rdfs:range xsd:string ;
-                 rdfs:label "has location" .
+                 rdfs:range xsd:string .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasName
@@ -1301,6 +1307,9 @@ core:kilowattYear rdf:type owl:NamedIndividual ,
 #################################################################
 
 core:User rdfs:label "User" .
+
+
+core:hasLocation rdfs:label "has location" .
 
 
 core:hasStatus rdfs:label "has status" .
