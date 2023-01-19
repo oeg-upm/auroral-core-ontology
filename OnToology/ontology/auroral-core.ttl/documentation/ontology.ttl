@@ -100,6 +100,12 @@
           rdfs:label "has Input" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:domain <https://saref.etsi.org/core#Device> ;
+             rdfs:range :Place .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#hasNode
 :hasNode rdf:type owl:ObjectProperty ;
          rdfs:label "has node" .
@@ -174,12 +180,6 @@
        rdfs:label "knows" .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#makesMeasurement
-:makesMeasurement rdf:type owl:ObjectProperty ;
-                  rdfs:domain :Device ;
-                  rdfs:label "makes measurement" .
-
-
 ###  https://saref.etsi.org/core#hasDomain
 <https://saref.etsi.org/core#hasDomain> rdf:type owl:ObjectProperty ;
                                         rdfs:domain :Service ;
@@ -212,6 +212,13 @@
                                            rdfs:domain <https://saref.etsi.org/core#Property> ;
                                            rdfs:range <https://saref.etsi.org/core#FeatureOfInterest> ;
                                            rdfs:label "is property of" .
+
+
+###  https://saref.etsi.org/core#makesMeasurement
+<https://saref.etsi.org/core#makesMeasurement> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain :Device ;
+                                               rdfs:range <https://saref.etsi.org/core#Measurement> ;
+                                               rdfs:label "makes measurement" .
 
 
 ###  https://www.w3.org/2019/wot/td#hasInteractionAffordance
@@ -285,12 +292,10 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasID
 :hasID rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Actuator ,
-                   :Device ,
+       rdfs:domain :Device ,
                    :Node ,
                    :Notification ,
                    :Organisation ,
-                   :Sensor ,
                    :User ,
                    <https://saref.etsi.org/core#Device> ,
                    <https://saref.etsi.org/core#FeatureOfInterest> ,
@@ -313,8 +318,7 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasLocation
 :hasLocation rdf:type owl:DatatypeProperty ;
-             rdfs:range xsd:string ;
-             rdfs:label "has location" .
+             rdfs:range xsd:string .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasName
@@ -1326,6 +1330,9 @@
 #################################################################
 
 :User rdfs:label "User" .
+
+
+:hasLocation rdfs:label "has location" .
 
 
 :hasStatus rdfs:label "has status" .

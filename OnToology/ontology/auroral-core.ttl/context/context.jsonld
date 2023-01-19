@@ -245,7 +245,7 @@
       "@type" : "@id"
     },
     "makesMeasurement" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/core#makesMeasurement",
+      "@id" : "https://saref.etsi.org/core#makesMeasurement",
       "@type" : "@id"
     },
     "forProperty" : {
