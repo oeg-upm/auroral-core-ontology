@@ -1024,11 +1024,6 @@ org:Organization rdf:type owl:Class ;
                                                                             <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
-###  http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour
-<http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour> rdf:type owl:NamedIndividual ,
-                                                                                <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
-
-
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre
 <http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre> rdf:type owl:NamedIndividual .
 
@@ -1036,11 +1031,6 @@ org:Organization rdf:type owl:Class ;
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre
 <http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre> rdf:type owl:NamedIndividual ,
                                                                                 <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
-
-
-###  http://www.ontology-of-units-of-measure.org/resource/om-2/decibel
-<http://www.ontology-of-units-of-measure.org/resource/om-2/decibel> rdf:type owl:NamedIndividual ,
-                                                                             <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/degree
@@ -1081,11 +1071,6 @@ org:Organization rdf:type owl:Class ;
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared
 <http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared> rdf:type owl:NamedIndividual ,
                                                                                                  <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
-
-
-###  http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour
-<http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour> rdf:type owl:NamedIndividual ,
-                                                                                     <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre
@@ -1132,6 +1117,16 @@ core:Admin rdf:type owl:NamedIndividual ,
            rdfs:label "Admin" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#AmpereHour
+core:AmpereHour rdf:type owl:NamedIndividual ,
+                         <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#AngularDegree
+core:AngularDegree rdf:type owl:NamedIndividual ,
+                            <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#Auroral
 core:Auroral rdf:type owl:NamedIndividual ,
                       core:Node ;
@@ -1160,6 +1155,11 @@ core:CyclingEconomy rdf:type owl:NamedIndividual ,
 core:DairyFarming rdf:type owl:NamedIndividual ,
                            core:Domain ;
                   rdfs:label "Dairy farming" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Decibel
+core:Decibel rdf:type owl:NamedIndividual ,
+                      <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#DeletedItemStatus
@@ -1250,6 +1250,11 @@ core:ItemEnabledNotification rdf:type owl:NamedIndividual ,
 core:ItemUpdatedNotification rdf:type owl:NamedIndividual ,
                                       core:Notification ;
                              rdfs:label "Item update notification" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#MilliAmpereHour
+core:MilliAmpereHour rdf:type owl:NamedIndividual ,
+                              <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Mobility
