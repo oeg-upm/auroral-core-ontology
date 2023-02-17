@@ -424,6 +424,17 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#adapterId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#adapterId">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Item"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>adapter id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#currentStatus -->
 
 

@@ -504,19 +504,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_d29a0ebe1f30522fe615d4d63ad9dab0">
+      <node id="nid_c2332e1e5747823b38d03f2009cc03cc">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">d29a0ebe1f30522fe615d4d63ad9dab0</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">c2332e1e5747823b38d03f2009cc03cc</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf18" source="nid_core:Notification" target="nid_d29a0ebe1f30522fe615d4d63ad9dab0">
+    <edge id="eid_rdfs:subClassOf18" source="nid_core:Notification" target="nid_c2332e1e5747823b38d03f2009cc03cc">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
