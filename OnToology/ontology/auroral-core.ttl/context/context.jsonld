@@ -256,6 +256,10 @@
     "Property" : {
       "@id" : "https://saref.etsi.org/core#Property"
     },
+    "adapterId" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#adapterId",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
     },

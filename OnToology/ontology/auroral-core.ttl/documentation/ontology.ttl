@@ -251,6 +251,13 @@
 #    Data properties
 #################################################################
 
+###  https://auroral.iot.linkeddata.es/def/core#adapterId
+:adapterId rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Item ;
+           rdfs:range xsd:string ;
+           rdfs:label "adapter id" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#currentStatus
 :currentStatus rdf:type owl:DatatypeProperty ;
                rdfs:range xsd:string ;

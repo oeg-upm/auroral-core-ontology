@@ -1494,6 +1494,18 @@
     "@id" : "https://saref.etsi.org/core#Property"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#adapterId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "adapter id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
