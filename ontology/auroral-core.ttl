@@ -952,11 +952,6 @@ hctl:Link rdf:type owl:Class ;
           rdfs:label "Link" .
 
 
-###  https://www.w3.org/2019/wot/td#DataSchema
-wot:DataSchema rdf:type owl:Class ;
-               rdfs:label "Data Schema" .
-
-
 ###  https://www.w3.org/2019/wot/td#InteractionAffordance
 wot:InteractionAffordance rdf:type owl:Class ;
                           rdfs:label "Interaction Affordance" .
@@ -989,11 +984,6 @@ org:Organization rdf:type owl:Class ;
 ###  http://www.ontology-of-units-of-measure.org/page/om-2#kelvin
 <http://www.ontology-of-units-of-measure.org/page/om-2#kelvin> rdf:type owl:NamedIndividual ,
                                                                         <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
-
-
-###  http://www.ontology-of-units-of-measure.org/page/om-2#kilogram
-<http://www.ontology-of-units-of-measure.org/page/om-2#kilogram> rdf:type owl:NamedIndividual ,
-                                                                          <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/page/om-2#kilowatt
@@ -1053,6 +1043,11 @@ om:degreeFahrenheit rdf:type owl:NamedIndividual ,
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal
 om:hectopascal rdf:type owl:NamedIndividual ,
                         <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+
+
+###  http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram
+om:kilogram rdf:type owl:NamedIndividual ,
+                     <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt
@@ -1328,14 +1323,14 @@ core:WaitingNotificationStatus rdf:type owl:NamedIndividual ,
                                rdfs:label "Waiting notification status" .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#kilowattSquareMeter
-core:kilowattSquareMeter rdf:type owl:NamedIndividual ,
-                                  <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+###  https://auroral.iot.linkeddata.es/def/core#kilowattHourSquareMeter
+core:kilowattHourSquareMeter rdf:type owl:NamedIndividual ,
+                                      <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#kilowattYear
-core:kilowattYear rdf:type owl:NamedIndividual ,
-                           <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
+###  https://auroral.iot.linkeddata.es/def/core#kilowattHourYear
+core:kilowattHourYear rdf:type owl:NamedIndividual ,
+                               <http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure> .
 
 
 ###  https://www.w3.org/2006/time#unitHour
