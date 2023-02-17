@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "wot:Thing" "core:User" "saref:Device" "core:City" "core:NotificationStatus" "geonames:Feature" "core:Status" "core:Service" "core:Device" "core:Sensor" "core:Actuator" "core:Organisation" "foaf:Person" "core:Building" "org:Organization" "core:Item" "core:Place" "core:Notification" "core:ItemStatus" "87c995e03df4c352fdd66b3c408a2c05" "core:PhysicalThing" "sosa:Actuator" "core:UserStatus" "core:NodeStatus" "core:Municipality" "core:VirtualThing" "saref:FeatureOfInterest" "sosa:Sensor" ; /*classes style*/
+node [shape = rectangle, color="black"]; "wot:Thing" "core:User" "saref:Device" "core:City" "core:NotificationStatus" "geonames:Feature" "core:Status" "core:Service" "core:Device" "core:Sensor" "core:Actuator" "core:Organisation" "foaf:Person" "core:Building" "org:Organization" "core:Item" "core:Place" "core:Notification" "core:ItemStatus" "core:PhysicalThing" "sosa:Actuator" "core:UserStatus" "core:NodeStatus" "core:Municipality" "core:VirtualThing" "saref:FeatureOfInterest" "sosa:Sensor" "d29a0ebe1f30522fe615d4d63ad9dab0" ; /*classes style*/
 	"core:ItemStatus" -> "core:Status" [ label = "rdfs:subClassOf" ];
 	"core:Service" -> "core:VirtualThing" [ label = "rdfs:subClassOf" ];
 	"core:Organisation" -> "org:Organization" [ label = "rdfs:subClassOf" ];
@@ -20,7 +20,7 @@ node [shape = rectangle, color="black"]; "wot:Thing" "core:User" "saref:Device" 
 	"core:Actuator" -> "sosa:Actuator" [ label = "rdfs:subClassOf" ];
 	"core:Item" -> "wot:Thing" [ label = "rdfs:subClassOf" ];
 	"core:Place" -> "geonames:Feature" [ label = "rdfs:subClassOf" ];
-	"core:Notification" -> "87c995e03df4c352fdd66b3c408a2c05" [ label = "rdfs:subClassOf" ];
+	"core:Notification" -> "d29a0ebe1f30522fe615d4d63ad9dab0" [ label = "rdfs:subClassOf" ];
 	"core:NotificationStatus" -> "core:Status" [ label = "rdfs:subClassOf" ];
 	"core:City" -> "saref:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
 

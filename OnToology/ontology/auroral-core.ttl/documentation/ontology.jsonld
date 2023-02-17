@@ -614,12 +614,6 @@
     "@value" : "Feature"
   } ]
 }, {
-  "@id" : "http://www.ontology-of-units-of-measure.org/page/om-2#Percentage",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-  } ]
-}, {
   "@id" : "http://www.ontology-of-units-of-measure.org/page/om-2#centimetre",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -633,12 +627,6 @@
   } ]
 }, {
   "@id" : "http://www.ontology-of-units-of-measure.org/page/om-2#kelvin",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-  } ]
-}, {
-  "@id" : "http://www.ontology-of-units-of-measure.org/page/om-2#kilogram",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
@@ -680,22 +668,10 @@
     "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
   } ]
 }, {
-  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-  } ]
-}, {
   "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-  } ]
-}, {
-  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/decibel",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
@@ -725,11 +701,14 @@
     "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
   } ]
 }, {
-  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt",
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
   } ]
+}, {
+  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
@@ -744,12 +723,6 @@
   } ]
 }, {
   "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-  } ]
-}, {
-  "@id" : "http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
@@ -906,6 +879,18 @@
     "@value" : "Admin"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#AmpereHour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#AngularDegree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Audit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -967,6 +952,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Dairy farming"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#Decibel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#DeletedItemStatus",
@@ -1149,6 +1140,12 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Item update notification"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#MilliAmpereHour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Mobility",
@@ -1826,6 +1823,18 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://saref.etsi.org/core#Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has temporal unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/2006/time#TemporalUnit"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasToken",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -1883,13 +1892,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/core#kilowattSquareMeter",
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#kilowattHourSquareMeter",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/core#kilowattYear",
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#kilowattHourYear",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
@@ -2126,12 +2135,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Link"
-  } ]
-}, {
-  "@id" : "https://www.w3.org/2019/wot/td#DataSchema",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Data Schema"
   } ]
 }, {
   "@id" : "https://www.w3.org/2019/wot/td#InteractionAffordance",
