@@ -264,6 +264,13 @@ wot:hasValueType rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+###  https://auroral.iot.linkeddata.es/def/core#adapterId
+core:adapterId rdf:type owl:DatatypeProperty ;
+               rdfs:domain core:Item ;
+               rdfs:range xsd:string ;
+               rdfs:label "adapter id" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#currentStatus
 core:currentStatus rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:string ;
