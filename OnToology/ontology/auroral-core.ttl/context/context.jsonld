@@ -81,6 +81,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasID",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "hasTemporalUnit" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit",
+      "@type" : "@id"
+    },
     "FeatureOfInterest" : {
       "@id" : "https://saref.etsi.org/core#FeatureOfInterest"
     },
@@ -92,9 +96,6 @@
     },
     "NodeStatus" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#NodeStatus"
-    },
-    "DataSchema" : {
-      "@id" : "https://www.w3.org/2019/wot/td#DataSchema"
     },
     "hasRole" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasRole",

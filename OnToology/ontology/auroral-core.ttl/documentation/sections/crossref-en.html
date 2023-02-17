@@ -25,9 +25,6 @@ This section provides details for each class and property defined by The AURORAL
          </a>
       </li>
       <li>
-         <a href="#https://www.w3.org/2019/wot/td#DataSchema" title="https://www.w3.org/2019/wot/td#DataSchema">Data Schema</a>
-      </li>
-      <li>
          <a href="#Device"
             title="https://auroral.iot.linkeddata.es/def/core#Device">Device</a>
       </li>
@@ -232,14 +229,6 @@ This section provides details for each class and property defined by The AURORAL
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
-   </div>
-   <div class="entity" id="https://www.w3.org/2019/wot/td#DataSchema">
-      <h3>Data Schema<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://www.w3.org/2019/wot/td#DataSchema</p>
    </div>
    <div class="entity" id="Device">
       <h3>Device<sup class="type-c" title="class">c</sup>
@@ -489,6 +478,8 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#aboutProperty"
                title="https://auroral.iot.linkeddata.es/def/core#aboutProperty">about property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasTemporalUnit"
+               title="https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit">has temporal unit</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -916,6 +907,12 @@ This section provides details for each class and property defined by The AURORAL
       <p>
          <strong>IRI:</strong> https://www.w3.org/2006/time#TemporalUnit</p>
       <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasTemporalUnit"
+               title="https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit">has temporal unit</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>has members</dt>
          <dd>
             <a href="#https://www.w3.org/2006/time#unitHour" title="https://www.w3.org/2006/time#unitHour">unit Hour</a>
@@ -957,14 +954,16 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/ampere"
                title="http://www.ontology-of-units-of-measure.org/resource/om-2/ampere">ampere</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour"
-               title="http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour">ampere hour</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#AmpereHour"
+               title="https://auroral.iot.linkeddata.es/def/core#AmpereHour">ampere hour</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#AngularDegree"
+               title="https://auroral.iot.linkeddata.es/def/core#AngularDegree">angular degree</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/page/om-2#centimetre"
                title="http://www.ontology-of-units-of-measure.org/page/om-2#centimetre">centimetre</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre"
                title="http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre">cubic metre</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/decibel"
-               title="http://www.ontology-of-units-of-measure.org/resource/om-2/decibel">decibel</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#Decibel"
+               title="https://auroral.iot.linkeddata.es/def/core#Decibel">decibel</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/degree"
                title="http://www.ontology-of-units-of-measure.org/resource/om-2/degree">degree</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius"
@@ -977,34 +976,30 @@ This section provides details for each class and property defined by The AURORAL
                title="http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal">hectopascal</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/page/om-2#kelvin"
                title="http://www.ontology-of-units-of-measure.org/page/om-2#kelvin">kelvin</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/page/om-2#kilogram"
-               title="http://www.ontology-of-units-of-measure.org/page/om-2#kilogram">kilogram</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram"
+               title="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram">kilogram</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/page/om-2#kilowatt"
                title="http://www.ontology-of-units-of-measure.org/page/om-2#kilowatt">kilowatt</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt"
-               title="http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt">kilowatt</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour"
                title="http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour">kilowatt hour</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#kilowattSquareMeter"
-               title="https://auroral.iot.linkeddata.es/def/core#kilowattSquareMeter">kilowatt square meter</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#kilowattYear"
-               title="https://auroral.iot.linkeddata.es/def/core#kilowattYear">kilowatt year</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#kilowattHourSquareMeter"
+               title="https://auroral.iot.linkeddata.es/def/core#kilowattHourSquareMeter">kilowatt hour square meter</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#kilowattHourYear"
+               title="https://auroral.iot.linkeddata.es/def/core#kilowattHourYear">kilowatt hour year</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/page/om-2#litre"
                title="http://www.ontology-of-units-of-measure.org/page/om-2#litre">litre</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/lux"
                title="http://www.ontology-of-units-of-measure.org/resource/om-2/lux">lux</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared"
                title="http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared">meters per second time squared</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour"
-               title="http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour">milliampere hour</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MilliAmpereHour"
+               title="https://auroral.iot.linkeddata.es/def/core#MilliAmpereHour">milli ampere hour</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/page/om-2#millimetre"
                title="http://www.ontology-of-units-of-measure.org/page/om-2#millimetre">millimetre</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre"
                title="http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre">millimetre</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion"
                title="http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion">parts per million</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/page/om-2#Percentage"
-               title="http://www.ontology-of-units-of-measure.org/page/om-2#Percentage">percentage</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage"
                title="http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage">percentage</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/volt"
@@ -1175,6 +1170,10 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/core#hasStatus">
             <span>has status</span>
          </a>
+      </li>
+      <li>
+         <a href="#hasTemporalUnit"
+            title="https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit">has temporal unit</a>
       </li>
       <li>
          <a href="#hasUser"
@@ -1595,6 +1594,28 @@ This section provides details for each class and property defined by The AURORAL
             <dt>is also defined as</dt>
             <dd>
                <a href="#hasStatus">data property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasTemporalUnit">
+      <h3>has temporal unit<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Measurement" title="https://saref.etsi.org/core#Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://www.w3.org/2006/time#TemporalUnit" title="https://www.w3.org/2006/time#TemporalUnit">Temporal Unit</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -2615,9 +2636,15 @@ This section provides details for each class and property defined by The AURORAL
          </a>
       </li>
       <li>
-         <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour"
-            title="http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour">
+         <a href="#AmpereHour"
+            title="https://auroral.iot.linkeddata.es/def/core#AmpereHour">
             <span>ampere hour</span>
+         </a>
+      </li>
+      <li>
+         <a href="#AngularDegree"
+            title="https://auroral.iot.linkeddata.es/def/core#AngularDegree">
+            <span>angular degree</span>
          </a>
       </li>
       <li>
@@ -2653,8 +2680,8 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/core#DairyFarming">Dairy farming</a>
       </li>
       <li>
-         <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/decibel"
-            title="http://www.ontology-of-units-of-measure.org/resource/om-2/decibel">
+         <a href="#Decibel"
+            title="https://auroral.iot.linkeddata.es/def/core#Decibel">
             <span>decibel</span>
          </a>
       </li>
@@ -2755,8 +2782,8 @@ This section provides details for each class and property defined by The AURORAL
          </a>
       </li>
       <li>
-         <a href="#http://www.ontology-of-units-of-measure.org/page/om-2#kilogram"
-            title="http://www.ontology-of-units-of-measure.org/page/om-2#kilogram">
+         <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram"
+            title="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram">
             <span>kilogram</span>
          </a>
       </li>
@@ -2767,27 +2794,21 @@ This section provides details for each class and property defined by The AURORAL
          </a>
       </li>
       <li>
-         <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt"
-            title="http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt">
-            <span>kilowatt</span>
-         </a>
-      </li>
-      <li>
          <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour"
             title="http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour">
             <span>kilowatt hour</span>
          </a>
       </li>
       <li>
-         <a href="#kilowattSquareMeter"
-            title="https://auroral.iot.linkeddata.es/def/core#kilowattSquareMeter">
-            <span>kilowatt square meter</span>
+         <a href="#kilowattHourSquareMeter"
+            title="https://auroral.iot.linkeddata.es/def/core#kilowattHourSquareMeter">
+            <span>kilowatt hour square meter</span>
          </a>
       </li>
       <li>
-         <a href="#kilowattYear"
-            title="https://auroral.iot.linkeddata.es/def/core#kilowattYear">
-            <span>kilowatt year</span>
+         <a href="#kilowattHourYear"
+            title="https://auroral.iot.linkeddata.es/def/core#kilowattHourYear">
+            <span>kilowatt hour year</span>
          </a>
       </li>
       <li>
@@ -2809,9 +2830,9 @@ This section provides details for each class and property defined by The AURORAL
          </a>
       </li>
       <li>
-         <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour"
-            title="http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour">
-            <span>milliampere hour</span>
+         <a href="#MilliAmpereHour"
+            title="https://auroral.iot.linkeddata.es/def/core#MilliAmpereHour">
+            <span>milli ampere hour</span>
          </a>
       </li>
       <li>
@@ -2834,12 +2855,6 @@ This section provides details for each class and property defined by The AURORAL
          <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion"
             title="http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion">
             <span>parts per million</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.ontology-of-units-of-measure.org/page/om-2#Percentage"
-            title="http://www.ontology-of-units-of-measure.org/page/om-2#Percentage">
-            <span>percentage</span>
          </a>
       </li>
       <li>
@@ -2994,13 +3009,29 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour">
+   <div class="entity" id="AmpereHour">
       <h3>ampere hour<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/ampereHour</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#AmpereHour</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
+               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AngularDegree">
+      <h3>angular degree<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#AngularDegree</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -3121,13 +3152,13 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/decibel">
+   <div class="entity" id="Decibel">
       <h3>decibel<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/decibel</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#Decibel</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -3470,13 +3501,13 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.ontology-of-units-of-measure.org/page/om-2#kilogram">
+   <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram">
       <h3>kilogram<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/page/om-2#kilogram</p>
+         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -3502,22 +3533,6 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt">
-      <h3>kilowatt<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour">
       <h3>kilowatt hour<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -3534,13 +3549,13 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
-   <div class="entity" id="kilowattSquareMeter">
-      <h3>kilowatt square meter<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="kilowattHourSquareMeter">
+      <h3>kilowatt hour square meter<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#kilowattSquareMeter</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#kilowattHourSquareMeter</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -3550,13 +3565,13 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
-   <div class="entity" id="kilowattYear">
-      <h3>kilowatt year<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="kilowattHourYear">
+      <h3>kilowatt hour year<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#kilowattYear</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#kilowattHourYear</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -3614,13 +3629,13 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour">
-      <h3>milliampere hour<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="MilliAmpereHour">
+      <h3>milli ampere hour<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/milliampereHour</p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#MilliAmpereHour</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -3685,22 +3700,6 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.ontology-of-units-of-measure.org/page/om-2#Percentage">
-      <h3>percentage<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.ontology-of-units-of-measure.org/page/om-2#Percentage</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
