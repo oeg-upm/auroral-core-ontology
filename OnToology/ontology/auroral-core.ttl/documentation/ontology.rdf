@@ -92,35 +92,6 @@
     
 
 
-    <!-- http://www.w3.org/ns/sosa/forProperty -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/forProperty">
-        <rdfs:label>for property</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/observes -->
-
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes">
-        <rdfs:label>observes</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://auroral.iot.linkeddata.es/def/core#aboutProperty -->
-
-
-    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#aboutProperty">
-        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Measurement"/>
-        <rdfs:range rdf:resource="https://saref.etsi.org/core#Property"/>
-        <rdfs:label xml:lang="en">about property</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea -->
 
 
@@ -164,6 +135,17 @@
 
     <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasAudit">
         <rdfs:label>has audit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasGranularity -->
+
+
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasGranularity">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Measurement"/>
+        <rdfs:range rdf:resource="https://www.w3.org/2006/time#TemporalUnit"/>
+        <rdfs:label>has granularity</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -264,17 +246,6 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit -->
-
-
-    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit">
-        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Measurement"/>
-        <rdfs:range rdf:resource="https://www.w3.org/2006/time#TemporalUnit"/>
-        <rdfs:label>has temporal unit</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/core#hasUser -->
 
 
@@ -316,6 +287,17 @@
     
 
 
+    <!-- https://saref.etsi.org/core#controlsProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core#controlsProperty">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Device"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core#Property"/>
+        <rdfs:label>controls property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://saref.etsi.org/core#hasDomain -->
 
 
@@ -353,6 +335,8 @@
 
 
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core#isMeasuredIn">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Measurement"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
         <rdfs:label>is measured in</rdfs:label>
     </owl:ObjectProperty>
     
@@ -377,6 +361,39 @@
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Device"/>
         <rdfs:range rdf:resource="https://saref.etsi.org/core#Measurement"/>
         <rdfs:label>makes measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core#measuresProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core#measuresProperty">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Device"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core#Property"/>
+        <rdfs:label>measures property</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core#relatesToMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core#relatesToMeasurement">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Property"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core#Measurement"/>
+        <rdfs:label>relates to measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core#relatesToProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core#relatesToProperty">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Measurement"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core#Property"/>
+        <rdfs:label xml:lang="en">relates to property</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -843,33 +860,6 @@
     
 
 
-    <!-- http://www.w3.org/ns/sosa/Actuator -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Actuator">
-        <rdfs:label>Actuator</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/Sensor -->
-
-
-    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor">
-        <rdfs:label>Sensor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure -->
-
-
-    <owl:Class rdf:about="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">
-        <rdfs:label>Unit of measure</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/Image -->
 
 
@@ -892,8 +882,8 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Actuator">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
         <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Device"/>
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core#Actuator"/>
         <rdfs:label>Actuator</rdfs:label>
     </owl:Class>
     
@@ -1271,8 +1261,8 @@
 
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Sensor">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
         <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#Device"/>
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core#Sensor"/>
         <rdfs:label>Sensor</rdfs:label>
     </owl:Class>
     
@@ -1484,6 +1474,15 @@
     
 
 
+    <!-- https://saref.etsi.org/core#Actuator -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core#Actuator">
+        <rdfs:label>Actuator</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://saref.etsi.org/core#Device -->
 
 
@@ -1528,6 +1527,24 @@
 
     <owl:Class rdf:about="https://saref.etsi.org/core#Property">
         <rdfs:label>Property</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core#Sensor -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core#Sensor">
+        <rdfs:label>Sensor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core#Unit_of_measure -->
+
+
+    <owl:Class rdf:about="https://saref.etsi.org/core#Unit_of_measure">
+        <rdfs:label>Unit of measure</rdfs:label>
     </owl:Class>
     
 
@@ -1593,7 +1610,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#centimetre">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1602,7 +1619,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#hectopascal">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1611,7 +1628,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#kelvin">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1620,7 +1637,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#kilowatt">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1629,7 +1646,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#litre">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1638,7 +1655,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#millimetre">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1647,7 +1664,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/page/om-2#wattSquareMetre">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1656,7 +1673,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1665,7 +1682,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/ampere">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1681,7 +1698,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1690,7 +1707,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degree">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1699,7 +1716,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1708,7 +1725,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1717,7 +1734,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1726,7 +1743,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1742,7 +1759,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1751,7 +1768,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/lux">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1760,7 +1777,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1769,7 +1786,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1778,7 +1795,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1787,7 +1804,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/volt">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1796,7 +1813,7 @@
 
 
     <owl:NamedIndividual rdf:about="http://www.ontology-of-units-of-measure.org/resource/om-2/watt">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1845,7 +1862,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#AmpereHour">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1854,7 +1871,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#AngularDegree">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -1913,7 +1930,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#Decibel">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -2072,7 +2089,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#MilliAmpereHour">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -2199,7 +2216,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#kilowattHourSquareMeter">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
@@ -2208,7 +2225,7 @@
 
 
     <owl:NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#kilowattHourYear">
-        <rdf:type rdf:resource="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"/>
+        <rdf:type rdf:resource="https://saref.etsi.org/core#Unit_of_measure"/>
     </owl:NamedIndividual>
     
 
