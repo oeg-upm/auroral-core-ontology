@@ -191,7 +191,7 @@ saref:controlsProperty rdf:type owl:ObjectProperty ;
 
 ###  https://saref.etsi.org/core#hasDomain
 saref:hasDomain rdf:type owl:ObjectProperty ;
-                rdfs:domain core:Service ;
+                rdfs:domain core:Item ;
                 rdfs:range core:Domain ;
                 rdfs:label "has domain" .
 
