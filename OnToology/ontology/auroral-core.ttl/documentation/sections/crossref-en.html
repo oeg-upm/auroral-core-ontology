@@ -4,11 +4,11 @@ This section provides details for each class and property defined by The AURORAL
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://www.w3.org/ns/sosa/Actuator" title="http://www.w3.org/ns/sosa/Actuator">Actuator</a>
-      </li>
-      <li>
          <a href="#Actuator"
             title="https://auroral.iot.linkeddata.es/def/core#Actuator">Actuator</a>
+      </li>
+      <li>
+         <a href="#https://saref.etsi.org/core#Actuator" title="https://saref.etsi.org/core#Actuator">Actuator</a>
       </li>
       <li>
          <a href="#Audit" title="https://auroral.iot.linkeddata.es/def/core#Audit">Audit</a>
@@ -110,11 +110,11 @@ This section provides details for each class and property defined by The AURORAL
          <a href="#Role" title="https://auroral.iot.linkeddata.es/def/core#Role">Role</a>
       </li>
       <li>
-         <a href="#http://www.w3.org/ns/sosa/Sensor" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a>
-      </li>
-      <li>
          <a href="#Sensor"
             title="https://auroral.iot.linkeddata.es/def/core#Sensor">Sensor</a>
+      </li>
+      <li>
+         <a href="#https://saref.etsi.org/core#Sensor" title="https://saref.etsi.org/core#Sensor">Sensor</a>
       </li>
       <li>
          <a href="#Service"
@@ -135,8 +135,7 @@ This section provides details for each class and property defined by The AURORAL
          <a href="#https://www.w3.org/2019/wot/td#Thing" title="https://www.w3.org/2019/wot/td#Thing">Thing</a>
       </li>
       <li>
-         <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-            title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+         <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
       </li>
       <li>
          <a href="#User" title="https://auroral.iot.linkeddata.es/def/core#User">
@@ -152,22 +151,6 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/core#VirtualThing">Virtual Thing</a>
       </li>
    </ul>
-   <div class="entity" id="http://www.w3.org/ns/sosa/Actuator">
-      <h3>Actuator<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/sosa/Actuator</p>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#Actuator"
-               title="https://auroral.iot.linkeddata.es/def/core#Actuator">Actuator</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Actuator">
       <h3>Actuator<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -178,7 +161,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.w3.org/ns/sosa/Actuator" title="http://www.w3.org/ns/sosa/Actuator">Actuator</a>
+            <a href="#https://saref.etsi.org/core#Actuator" title="https://saref.etsi.org/core#Actuator">Actuator</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Device"
                title="https://auroral.iot.linkeddata.es/def/core#Device">Device</a>
             <sup class="type-c" title="class">c</sup>
@@ -189,6 +172,22 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/core#hasStatus">has status</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#hasTimeStamp" title="https://saref.etsi.org/core#hasTimeStamp">has time stamp</a>
             <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://saref.etsi.org/core#Actuator">
+      <h3>Actuator<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#Actuator</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Actuator"
+               title="https://auroral.iot.linkeddata.es/def/core#Actuator">Actuator</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -282,13 +281,15 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#hasID" title="https://auroral.iot.linkeddata.es/def/core#hasID">has i d</a>
+            <a href="#https://saref.etsi.org/core#controlsProperty" title="https://saref.etsi.org/core#controlsProperty">controls property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasID" title="https://auroral.iot.linkeddata.es/def/core#hasID">has i d</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLocation"
                title="https://auroral.iot.linkeddata.es/def/core#hasLocation">has location</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasStatus"
                title="https://auroral.iot.linkeddata.es/def/core#hasStatus">has status</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#hasTimeStamp" title="https://saref.etsi.org/core#hasTimeStamp">has time stamp</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://saref.etsi.org/core#measuresProperty" title="https://saref.etsi.org/core#measuresProperty">measures property</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -419,7 +420,8 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#adapterId"
                title="https://auroral.iot.linkeddata.es/def/core#adapterId">adapter id</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://saref.etsi.org/core#hasDomain" title="https://saref.etsi.org/core#hasDomain">has domain</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -482,16 +484,17 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#aboutProperty"
-               title="https://auroral.iot.linkeddata.es/def/core#aboutProperty">about property</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasTemporalUnit"
-               title="https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit">has temporal unit</a>
+            <a href="#hasGranularity"
+               title="https://auroral.iot.linkeddata.es/def/core#hasGranularity">has granularity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#isMeasuredIn" title="https://saref.etsi.org/core#isMeasuredIn">is measured in</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#relatesToProperty" title="https://saref.etsi.org/core#relatesToProperty">relates to property</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#https://saref.etsi.org/core#hasMeasurement" title="https://saref.etsi.org/core#hasMeasurement">has measurement</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#makesMeasurement" title="https://saref.etsi.org/core#makesMeasurement">makes measurement</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#relatesToMeasurement" title="https://saref.etsi.org/core#relatesToMeasurement">relates to measurement</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -762,13 +765,15 @@ This section provides details for each class and property defined by The AURORAL
             <a href="#isAbout"
                title="https://auroral.iot.linkeddata.es/def/core#isAbout">is about</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#isPropertyOf" title="https://saref.etsi.org/core#isPropertyOf">is property of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#relatesToMeasurement" title="https://saref.etsi.org/core#relatesToMeasurement">relates to measurement</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#aboutProperty"
-               title="https://auroral.iot.linkeddata.es/def/core#aboutProperty">about property</a>
+            <a href="#https://saref.etsi.org/core#controlsProperty" title="https://saref.etsi.org/core#controlsProperty">controls property</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#hasProperty" title="https://saref.etsi.org/core#hasProperty">has property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#measuresProperty" title="https://saref.etsi.org/core#measuresProperty">measures property</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#relatesToProperty" title="https://saref.etsi.org/core#relatesToProperty">relates to property</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -808,22 +813,6 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.w3.org/ns/sosa/Sensor">
-      <h3>Sensor<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/sosa/Sensor</p>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#Sensor"
-               title="https://auroral.iot.linkeddata.es/def/core#Sensor">Sensor</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Sensor">
       <h3>Sensor<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -836,7 +825,7 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#Device"
                title="https://auroral.iot.linkeddata.es/def/core#Device">Device</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#http://www.w3.org/ns/sosa/Sensor" title="http://www.w3.org/ns/sosa/Sensor">Sensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://saref.etsi.org/core#Sensor" title="https://saref.etsi.org/core#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -845,6 +834,22 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/core#hasStatus">has status</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#hasTimeStamp" title="https://saref.etsi.org/core#hasTimeStamp">has time stamp</a>
             <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://saref.etsi.org/core#Sensor">
+      <h3>Sensor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#Sensor</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Sensor"
+               title="https://auroral.iot.linkeddata.es/def/core#Sensor">Sensor</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -866,7 +871,6 @@ This section provides details for each class and property defined by The AURORAL
          <dd>
             <a href="#applicableToGeographicalArea"
                title="https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea">applicable to geographical area</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#hasDomain" title="https://saref.etsi.org/core#hasDomain">has domain</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#numberOfDownloads"
                title="https://auroral.iot.linkeddata.es/def/core#numberOfDownloads">number of downloads</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#versionOfService"
@@ -915,8 +919,8 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasTemporalUnit"
-               title="https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit">has temporal unit</a>
+            <a href="#hasGranularity"
+               title="https://auroral.iot.linkeddata.es/def/core#hasGranularity">has granularity</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>has members</dt>
@@ -948,14 +952,19 @@ This section provides details for each class and property defined by The AURORAL
          </dd>
       </dl>
    </div>
-   <div class="entity" id="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">
+   <div class="entity" id="https://saref.etsi.org/core#Unit_of_measure">
       <h3>Unit of measure<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure</p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#Unit_of_measure</p>
       <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://saref.etsi.org/core#isMeasuredIn" title="https://saref.etsi.org/core#isMeasuredIn">is measured in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>has members</dt>
          <dd>
             <a href="#http://www.ontology-of-units-of-measure.org/resource/om-2/ampere"
@@ -1095,10 +1104,6 @@ This section provides details for each class and property defined by The AURORAL
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#aboutProperty"
-            title="https://auroral.iot.linkeddata.es/def/core#aboutProperty">about property</a>
-      </li>
-      <li>
          <a href="#applicableToGeographicalArea"
             title="https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea">applicable to geographical area</a>
       </li>
@@ -1111,11 +1116,11 @@ This section provides details for each class and property defined by The AURORAL
             title="https://auroral.iot.linkeddata.es/def/core#containsItem">contains item</a>
       </li>
       <li>
-         <a href="#exposes"
-            title="https://auroral.iot.linkeddata.es/def/core#exposes">exposes</a>
+         <a href="#https://saref.etsi.org/core#controlsProperty" title="https://saref.etsi.org/core#controlsProperty">controls property</a>
       </li>
       <li>
-         <a href="#http://www.w3.org/ns/sosa/forProperty" title="http://www.w3.org/ns/sosa/forProperty">for property</a>
+         <a href="#exposes"
+            title="https://auroral.iot.linkeddata.es/def/core#exposes">exposes</a>
       </li>
       <li>
          <a href="#hasAudit"
@@ -1123,6 +1128,10 @@ This section provides details for each class and property defined by The AURORAL
       </li>
       <li>
          <a href="#https://saref.etsi.org/core#hasDomain" title="https://saref.etsi.org/core#hasDomain">has domain</a>
+      </li>
+      <li>
+         <a href="#hasGranularity"
+            title="https://auroral.iot.linkeddata.es/def/core#hasGranularity">has granularity</a>
       </li>
       <li>
          <a href="#hasInput"
@@ -1178,10 +1187,6 @@ This section provides details for each class and property defined by The AURORAL
          </a>
       </li>
       <li>
-         <a href="#hasTemporalUnit"
-            title="https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit">has temporal unit</a>
-      </li>
-      <li>
          <a href="#hasUser"
             title="https://auroral.iot.linkeddata.es/def/core#hasUser">has user</a>
       </li>
@@ -1215,31 +1220,15 @@ This section provides details for each class and property defined by The AURORAL
          <a href="#https://saref.etsi.org/core#makesMeasurement" title="https://saref.etsi.org/core#makesMeasurement">makes measurement</a>
       </li>
       <li>
-         <a href="#http://www.w3.org/ns/sosa/observes" title="http://www.w3.org/ns/sosa/observes">observes</a>
+         <a href="#https://saref.etsi.org/core#measuresProperty" title="https://saref.etsi.org/core#measuresProperty">measures property</a>
+      </li>
+      <li>
+         <a href="#https://saref.etsi.org/core#relatesToMeasurement" title="https://saref.etsi.org/core#relatesToMeasurement">relates to measurement</a>
+      </li>
+      <li>
+         <a href="#https://saref.etsi.org/core#relatesToProperty" title="https://saref.etsi.org/core#relatesToProperty">relates to property</a>
       </li>
    </ul>
-   <div class="entity" id="aboutProperty">
-      <h3>about property<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#aboutProperty</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://saref.etsi.org/core#Measurement" title="https://saref.etsi.org/core#Measurement">Measurement</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#https://saref.etsi.org/core#Property" title="https://saref.etsi.org/core#Property">Property</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="applicableToGeographicalArea">
       <h3>applicable to geographical area<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1280,6 +1269,28 @@ This section provides details for each class and property defined by The AURORAL
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#containsItem</p>
    </div>
+   <div class="entity" id="https://saref.etsi.org/core#controlsProperty">
+      <h3>controls property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#controlsProperty</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Device" title="https://saref.etsi.org/core#Device">Device</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Property" title="https://saref.etsi.org/core#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="exposes">
       <h3>exposes<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1287,14 +1298,6 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#exposes</p>
-   </div>
-   <div class="entity" id="http://www.w3.org/ns/sosa/forProperty">
-      <h3>for property<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/sosa/forProperty</p>
    </div>
    <div class="entity" id="hasAudit">
       <h3>has audit<sup class="type-op" title="object property">op</sup>
@@ -1315,14 +1318,35 @@ This section provides details for each class and property defined by The AURORAL
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Service"
-                  title="https://auroral.iot.linkeddata.es/def/core#Service">Service</a>
+               <a href="#Item" title="https://auroral.iot.linkeddata.es/def/core#Item">Item</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Domain"
                   title="https://auroral.iot.linkeddata.es/def/core#Domain">Domain</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasGranularity">
+      <h3>has granularity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#hasGranularity</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Measurement" title="https://saref.etsi.org/core#Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://www.w3.org/2006/time#TemporalUnit" title="https://www.w3.org/2006/time#TemporalUnit">Temporal Unit</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1604,28 +1628,6 @@ This section provides details for each class and property defined by The AURORAL
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasTemporalUnit">
-      <h3>has temporal unit<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://saref.etsi.org/core#Measurement" title="https://saref.etsi.org/core#Measurement">Measurement</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#https://www.w3.org/2006/time#TemporalUnit" title="https://www.w3.org/2006/time#TemporalUnit">Temporal Unit</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="hasUser">
       <h3>has user<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1671,6 +1673,20 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> https://saref.etsi.org/core#isMeasuredIn</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Measurement" title="https://saref.etsi.org/core#Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="https://saref.etsi.org/core#isPropertyOf">
       <h3>is property of<sup class="type-op" title="object property">op</sup>
@@ -1774,13 +1790,71 @@ This section provides details for each class and property defined by The AURORAL
          </dl>
       </div>
    </div>
-   <div class="entity" id="http://www.w3.org/ns/sosa/observes">
-      <h3>observes<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="https://saref.etsi.org/core#measuresProperty">
+      <h3>measures property<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://www.w3.org/ns/sosa/observes</p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#measuresProperty</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Device" title="https://saref.etsi.org/core#Device">Device</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Property" title="https://saref.etsi.org/core#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://saref.etsi.org/core#relatesToMeasurement">
+      <h3>relates to measurement<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#relatesToMeasurement</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Property" title="https://saref.etsi.org/core#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Measurement" title="https://saref.etsi.org/core#Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://saref.etsi.org/core#relatesToProperty">
+      <h3>relates to property<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://saref.etsi.org/core#relatesToProperty</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Measurement" title="https://saref.etsi.org/core#Measurement">Measurement</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://saref.etsi.org/core#Property" title="https://saref.etsi.org/core#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
@@ -3036,8 +3110,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3052,8 +3125,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3068,8 +3140,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3099,8 +3170,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3147,8 +3217,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3195,8 +3264,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3211,8 +3279,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3227,8 +3294,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3243,8 +3309,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3401,8 +3466,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3417,8 +3481,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3528,8 +3591,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3544,8 +3606,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3560,8 +3621,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3576,8 +3636,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3592,8 +3651,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3608,8 +3666,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3624,8 +3681,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3640,8 +3696,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3656,8 +3711,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3672,8 +3726,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3688,8 +3741,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3704,8 +3756,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3736,8 +3787,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3752,8 +3802,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3933,8 +3982,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3965,8 +4013,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -3981,8 +4028,7 @@ This section provides details for each class and property defined by The AURORAL
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
-               title="http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure">Unit of measure</a>
+            <a href="#https://saref.etsi.org/core#Unit_of_measure" title="https://saref.etsi.org/core#Unit_of_measure">Unit of measure</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>

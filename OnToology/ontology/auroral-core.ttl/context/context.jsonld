@@ -45,6 +45,10 @@
     "Link" : {
       "@id" : "https://www.w3.org/2019/wot/hypermedia#Link"
     },
+    "hasGranularity" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasGranularity",
+      "@type" : "@id"
+    },
     "hasActor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasActor",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -81,12 +85,12 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasID",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "hasTemporalUnit" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit",
-      "@type" : "@id"
-    },
     "FeatureOfInterest" : {
       "@id" : "https://saref.etsi.org/core#FeatureOfInterest"
+    },
+    "measuresProperty" : {
+      "@id" : "https://saref.etsi.org/core#measuresProperty",
+      "@type" : "@id"
     },
     "hasValue" : {
       "@id" : "https://saref.etsi.org/core#hasValue"
@@ -137,10 +141,6 @@
     },
     "Status" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Status"
-    },
-    "aboutProperty" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/core#aboutProperty",
-      "@type" : "@id"
     },
     "hasProperty" : {
       "@id" : "https://saref.etsi.org/core#hasProperty",
@@ -223,6 +223,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#isAbout",
       "@type" : "@id"
     },
+    "relatesToMeasurement" : {
+      "@id" : "https://saref.etsi.org/core#relatesToMeasurement",
+      "@type" : "@id"
+    },
     "hasTimeStamp" : {
       "@id" : "https://saref.etsi.org/core#hasTimeStamp",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -241,16 +245,8 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#knows",
       "@type" : "@id"
     },
-    "observes" : {
-      "@id" : "http://www.w3.org/ns/sosa/observes",
-      "@type" : "@id"
-    },
     "makesMeasurement" : {
       "@id" : "https://saref.etsi.org/core#makesMeasurement",
-      "@type" : "@id"
-    },
-    "forProperty" : {
-      "@id" : "http://www.w3.org/ns/sosa/forProperty",
       "@type" : "@id"
     },
     "Property" : {
@@ -310,6 +306,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasToken",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "relatesToProperty" : {
+      "@id" : "https://saref.etsi.org/core#relatesToProperty",
+      "@type" : "@id"
+    },
     "hasPartnershipRequestedBy" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy",
       "@type" : "@id"
@@ -319,7 +319,7 @@
       "@type" : "@id"
     },
     "Actuator" : {
-      "@id" : "http://www.w3.org/ns/sosa/Actuator"
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Actuator"
     },
     "SpatialThing" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
@@ -345,6 +345,10 @@
     },
     "Image" : {
       "@id" : "http://xmlns.com/foaf/0.1/Image"
+    },
+    "controlsProperty" : {
+      "@id" : "https://saref.etsi.org/core#controlsProperty",
+      "@type" : "@id"
     },
     "hasKey" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasKey",
@@ -379,7 +383,7 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Unit_of_measure" : {
-      "@id" : "http://www.wurvoc.org/vocabularies/om-2/Unit_of_measure"
+      "@id" : "https://saref.etsi.org/core#Unit_of_measure"
     },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"
