@@ -271,6 +271,12 @@
            rdfs:label "adapter id" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#code
+:code rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Place ;
+      rdfs:range xsd:string .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#currentStatus
 :currentStatus rdf:type owl:DatatypeProperty ;
                rdfs:range xsd:string ;
@@ -428,6 +434,12 @@
 :isUnread rdf:type owl:DatatypeProperty ;
           rdfs:range xsd:boolean ;
           rdfs:label "is unread" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Place ;
+      rdfs:range xsd:string .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#numberOfDownloads
