@@ -167,6 +167,10 @@
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
     },
+    "name" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "hasSubDomain" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasSubDomain",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -384,6 +388,10 @@
     },
     "Unit_of_measure" : {
       "@id" : "https://saref.etsi.org/core#Unit_of_measure"
+    },
+    "code" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#code",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"

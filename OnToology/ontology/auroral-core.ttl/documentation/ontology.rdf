@@ -452,6 +452,16 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#code -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#code">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#currentStatus -->
 
 
@@ -711,6 +721,16 @@
     <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#isUnread">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:label>is unread</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#name">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
