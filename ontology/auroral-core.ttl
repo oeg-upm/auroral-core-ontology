@@ -16,6 +16,7 @@
 @prefix lexvo: <http://lexvo.org/ontology> .
 @prefix saref: <https://saref.etsi.org/core#> .
 @prefix geonames: <http://www.geonames.org/ontology#> .
+@prefix geosparql: <http://www.opengis.net/ont/geosparql#> .
 @base <https://auroral.iot.linkeddata.es/def/core#> .
 
 <https://auroral.iot.linkeddata.es/def/core#> rdf:type owl:Ontology ;
@@ -56,6 +57,12 @@ dc:title rdf:type owl:AnnotationProperty .
 ###  http://lexvo.org/ontology#language
 <http://lexvo.org/ontology#language> rdf:type owl:ObjectProperty ;
                                      rdfs:label "language" .
+
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+geosparql:hasGeometry rdf:type owl:ObjectProperty ;
+                      rdfs:domain core:PhysicalThing ;
+                      rdfs:range geosparql:Geometry .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#location
@@ -532,6 +539,11 @@ saref:hasValue rdf:type owl:DatatypeProperty ;
 ###  http://www.geonames.org/ontology#Feature
 geonames:Feature rdf:type owl:Class ;
                  rdfs:label "Feature" .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+geosparql:Geometry rdf:type owl:Class ;
+                   rdfs:subClassOf geo:SpatialThing .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
