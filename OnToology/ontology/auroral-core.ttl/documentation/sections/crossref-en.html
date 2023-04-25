@@ -42,6 +42,11 @@ This section provides details for each class and property defined by The AURORAL
          <a href="#https://saref.etsi.org/core#FeatureOfInterest" title="https://saref.etsi.org/core#FeatureOfInterest">Feature of interest</a>
       </li>
       <li>
+         <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">
+            <span>geometry</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://xmlns.com/foaf/0.1/Image" title="http://xmlns.com/foaf/0.1/Image">Image</a>
       </li>
       <li>
@@ -367,6 +372,27 @@ This section provides details for each class and property defined by The AURORAL
             <a href="#isAbout"
                title="https://auroral.iot.linkeddata.es/def/core#isAbout">is about</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://saref.etsi.org/core#isPropertyOf" title="https://saref.etsi.org/core#isPropertyOf">is property of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://www.opengis.net/ont/geosparql#Geometry">
+      <h3>geometry<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#Geometry</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
+               title="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">Spatial Thing</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://www.opengis.net/ont/geosparql#hasGeometry" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -727,6 +753,11 @@ This section provides details for each class and property defined by The AURORAL
                title="https://auroral.iot.linkeddata.es/def/core#Device">Device</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://www.opengis.net/ont/geosparql#hasGeometry" title="http://www.opengis.net/ont/geosparql#hasGeometry">has geometry</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="Place">
@@ -892,6 +923,13 @@ This section provides details for each class and property defined by The AURORAL
       </h3>
       <p>
          <strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</p>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">geometry</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="Status">
       <h3>Status<sup class="type-c" title="class">c</sup>
@@ -1136,6 +1174,11 @@ This section provides details for each class and property defined by The AURORAL
          <a href="#https://saref.etsi.org/core#hasDomain" title="https://saref.etsi.org/core#hasDomain">has domain</a>
       </li>
       <li>
+         <a href="#http://www.opengis.net/ont/geosparql#hasGeometry" title="http://www.opengis.net/ont/geosparql#hasGeometry">
+            <span>has geometry</span>
+         </a>
+      </li>
+      <li>
          <a href="#hasGranularity"
             title="https://auroral.iot.linkeddata.es/def/core#hasGranularity">has granularity</a>
       </li>
@@ -1331,6 +1374,29 @@ This section provides details for each class and property defined by The AURORAL
             <dd>
                <a href="#Domain"
                   title="https://auroral.iot.linkeddata.es/def/core#Domain">Domain</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://www.opengis.net/ont/geosparql#hasGeometry">
+      <h3>has geometry<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.opengis.net/ont/geosparql#hasGeometry</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PhysicalThing"
+                  title="https://auroral.iot.linkeddata.es/def/core#PhysicalThing">Physical Thing</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.opengis.net/ont/geosparql#Geometry" title="http://www.opengis.net/ont/geosparql#Geometry">geometry</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>

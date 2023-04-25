@@ -83,6 +83,16 @@
     
 
 
+    <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
+        <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#PhysicalThing"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#location -->
 
 
@@ -867,6 +877,15 @@
 
     <owl:Class rdf:about="http://www.geonames.org/ontology#Feature">
         <rdfs:label>Feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#Geometry -->
+
+
+    <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#Geometry">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
     </owl:Class>
     
 
