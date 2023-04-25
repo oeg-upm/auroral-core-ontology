@@ -46,6 +46,12 @@
                                      rdfs:label "language" .
 
 
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty ;
+                                                   rdfs:domain :PhysicalThing ;
+                                                   rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> .
+
+
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#location
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> rdf:type owl:ObjectProperty ;
                                                    rdfs:label "location" .
@@ -520,6 +526,11 @@
 ###  http://www.geonames.org/ontology#Feature
 <http://www.geonames.org/ontology#Feature> rdf:type owl:Class ;
                                            rdfs:label "Feature" .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing

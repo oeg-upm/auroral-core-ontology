@@ -92,6 +92,9 @@
       "@id" : "https://saref.etsi.org/core#measuresProperty",
       "@type" : "@id"
     },
+    "Geometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
     "hasValue" : {
       "@id" : "https://saref.etsi.org/core#hasValue"
     },
@@ -251,6 +254,10 @@
     },
     "makesMeasurement" : {
       "@id" : "https://saref.etsi.org/core#makesMeasurement",
+      "@type" : "@id"
+    },
+    "hasGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
       "@type" : "@id"
     },
     "Property" : {
