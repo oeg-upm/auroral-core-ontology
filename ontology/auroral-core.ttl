@@ -144,6 +144,13 @@ core:hasPartnershipRequestedTo rdf:type owl:ObjectProperty ;
                                rdfs:label "has partnership requested to" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#hasReadability
+core:hasReadability rdf:type owl:ObjectProperty ;
+                    rdfs:domain saref:Measurement ;
+                    rdfs:range core:Readability ;
+                    rdfs:label "has Readability" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#hasRole
 core:hasRole rdf:type owl:ObjectProperty ;
              rdfs:domain core:User ;
@@ -486,6 +493,12 @@ core:serviceFree rdf:type owl:DatatypeProperty ;
                  rdfs:label "service free" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#value
+core:value rdf:type owl:DatatypeProperty ;
+           rdfs:domain core:Readability ;
+           rdfs:range xsd:integer .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#versionNumber
 core:versionNumber rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:string ;
@@ -794,6 +807,11 @@ core:PhysicalThing rdf:type owl:Class ;
 core:Place rdf:type owl:Class ;
            rdfs:subClassOf geonames:Feature ;
            rdfs:label "Place" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Readability
+core:Readability rdf:type owl:Class ;
+                 rdfs:label "Readability" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Role
