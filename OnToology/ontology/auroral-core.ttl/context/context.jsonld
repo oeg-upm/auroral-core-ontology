@@ -27,6 +27,10 @@
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
+    "hasReadability" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasReadability",
+      "@type" : "@id"
+    },
     "hasModel" : {
       "@id" : "https://saref.etsi.org/core#hasModel",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -44,6 +48,9 @@
     },
     "Link" : {
       "@id" : "https://www.w3.org/2019/wot/hypermedia#Link"
+    },
+    "Country" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Country"
     },
     "hasGranularity" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasGranularity",
@@ -79,6 +86,10 @@
     },
     "hasName" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isoCode" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#isoCode",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "hasID" : {
@@ -199,6 +210,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasTarget",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "value" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#value",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
     "containsItem" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#containsItem",
       "@type" : "@id"
@@ -277,6 +292,9 @@
     "Municipality" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Municipality"
     },
+    "Readability" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Readability"
+    },
     "isUnread" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#isUnread",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -302,6 +320,10 @@
     },
     "hasCreationDate" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasCreationDate"
+    },
+    "continentCode" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#continentCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "hasDomain" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasDomain",

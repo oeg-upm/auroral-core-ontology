@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="22" parse.nodes="30" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="23" parse.nodes="31" parse.order="free">
       <node id="nid_core:ItemStatus">
          <data key="d0">
             <y:ShapeNode>
@@ -76,6 +76,41 @@
          </data>
          <data key="d3" />
       </edge>
+      <node id="nid_core:Country">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="120.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">core:Country</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_geonames:Feature">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">geonames:Feature</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf2" source="nid_core:Country" target="nid_geonames:Feature">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_core:Organisation">
          <data key="d0">
             <y:ShapeNode>
@@ -100,7 +135,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf2" source="nid_core:Organisation" target="nid_org:Organization">
+    <edge id="eid_rdfs:subClassOf3" source="nid_core:Organisation" target="nid_org:Organization">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -135,7 +170,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf3" source="nid_core:User" target="nid_foaf:Person">
+    <edge id="eid_rdfs:subClassOf4" source="nid_core:User" target="nid_foaf:Person">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -170,7 +205,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf4" source="nid_core:Building" target="nid_saref:FeatureOfInterest">
+    <edge id="eid_rdfs:subClassOf5" source="nid_core:Building" target="nid_saref:FeatureOfInterest">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -205,7 +240,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf5" source="nid_core:PhysicalThing" target="nid_core:Item">
+    <edge id="eid_rdfs:subClassOf6" source="nid_core:PhysicalThing" target="nid_core:Item">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -240,7 +275,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf6" source="nid_core:Device" target="nid_saref:Device">
+    <edge id="eid_rdfs:subClassOf7" source="nid_core:Device" target="nid_saref:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -251,7 +286,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf7" source="nid_core:Device" target="nid_core:PhysicalThing">
+    <edge id="eid_rdfs:subClassOf8" source="nid_core:Device" target="nid_core:PhysicalThing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -274,7 +309,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf8" source="nid_core:Municipality" target="nid_saref:FeatureOfInterest">
+    <edge id="eid_rdfs:subClassOf9" source="nid_core:Municipality" target="nid_saref:FeatureOfInterest">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -297,7 +332,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf9" source="nid_core:NodeStatus" target="nid_core:Status">
+    <edge id="eid_rdfs:subClassOf10" source="nid_core:NodeStatus" target="nid_core:Status">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -320,7 +355,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf10" source="nid_core:UserStatus" target="nid_core:Status">
+    <edge id="eid_rdfs:subClassOf11" source="nid_core:UserStatus" target="nid_core:Status">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -355,7 +390,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf11" source="nid_core:Sensor" target="nid_saref:Sensor">
+    <edge id="eid_rdfs:subClassOf12" source="nid_core:Sensor" target="nid_saref:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -366,7 +401,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf12" source="nid_core:Sensor" target="nid_core:Device">
+    <edge id="eid_rdfs:subClassOf13" source="nid_core:Sensor" target="nid_core:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -377,7 +412,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf13" source="nid_core:VirtualThing" target="nid_core:Item">
+    <edge id="eid_rdfs:subClassOf14" source="nid_core:VirtualThing" target="nid_core:Item">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -412,7 +447,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf14" source="nid_core:Actuator" target="nid_saref:Actuator">
+    <edge id="eid_rdfs:subClassOf15" source="nid_core:Actuator" target="nid_saref:Actuator">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -423,7 +458,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf15" source="nid_core:Actuator" target="nid_core:Device">
+    <edge id="eid_rdfs:subClassOf16" source="nid_core:Actuator" target="nid_core:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -446,7 +481,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf16" source="nid_core:Item" target="nid_wot:Thing">
+    <edge id="eid_rdfs:subClassOf17" source="nid_core:Item" target="nid_wot:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -469,19 +504,7 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_geonames:Feature">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="160.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">geonames:Feature</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf17" source="nid_core:Place" target="nid_geonames:Feature">
+    <edge id="eid_rdfs:subClassOf18" source="nid_core:Place" target="nid_geonames:Feature">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -516,7 +539,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf18" source="nid_geosparql:Geometry" target="nid_geo:SpatialThing">
+    <edge id="eid_rdfs:subClassOf19" source="nid_geosparql:Geometry" target="nid_geo:SpatialThing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -539,19 +562,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_c09e7d09332ca38b6f170b58cc7e6e3d">
+      <node id="nid_a6cd14b457a54b1818161e7af51bb09e">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">c09e7d09332ca38b6f170b58cc7e6e3d</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">a6cd14b457a54b1818161e7af51bb09e</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf19" source="nid_core:Notification" target="nid_c09e7d09332ca38b6f170b58cc7e6e3d">
+    <edge id="eid_rdfs:subClassOf20" source="nid_core:Notification" target="nid_a6cd14b457a54b1818161e7af51bb09e">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -574,7 +597,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf20" source="nid_core:NotificationStatus" target="nid_core:Status">
+    <edge id="eid_rdfs:subClassOf21" source="nid_core:NotificationStatus" target="nid_core:Status">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -597,7 +620,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf21" source="nid_core:City" target="nid_saref:FeatureOfInterest">
+    <edge id="eid_rdfs:subClassOf22" source="nid_core:City" target="nid_saref:FeatureOfInterest">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

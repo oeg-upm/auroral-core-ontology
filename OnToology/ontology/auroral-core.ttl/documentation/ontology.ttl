@@ -131,6 +131,13 @@
                            rdfs:label "has partnership requested to" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#hasReadability
+:hasReadability rdf:type owl:ObjectProperty ;
+                rdfs:domain <https://saref.etsi.org/core#Measurement> ;
+                rdfs:range :Readability ;
+                rdfs:label "has Readability" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#hasRole
 :hasRole rdf:type owl:ObjectProperty ;
          rdfs:domain :User ;
@@ -281,6 +288,13 @@
 :code rdf:type owl:DatatypeProperty ;
       rdfs:domain :Place ;
       rdfs:range xsd:string .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#continentCode
+:continentCode rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Country ;
+               rdfs:range xsd:string ;
+               rdfs:label "continent Code" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#currentStatus
@@ -442,9 +456,15 @@
           rdfs:label "is unread" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#isoCode
+:isoCode rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Country ;
+         rdfs:range xsd:string ;
+         rdfs:label "iso Code" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#name
 :name rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Place ;
       rdfs:range xsd:string .
 
 
@@ -471,6 +491,12 @@
 :serviceFree rdf:type owl:DatatypeProperty ;
              rdfs:range xsd:boolean ;
              rdfs:label "service free" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Readability ;
+       rdfs:range xsd:integer .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#versionNumber
@@ -568,6 +594,11 @@
 ###  https://auroral.iot.linkeddata.es/def/core#City
 :City rdf:type owl:Class ;
       rdfs:subClassOf <https://saref.etsi.org/core#FeatureOfInterest> .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.geonames.org/ontology#Feature> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Device
@@ -781,6 +812,11 @@
 :Place rdf:type owl:Class ;
        rdfs:subClassOf <http://www.geonames.org/ontology#Feature> ;
        rdfs:label "Place" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Readability
+:Readability rdf:type owl:Class ;
+             rdfs:label "Readability" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Role

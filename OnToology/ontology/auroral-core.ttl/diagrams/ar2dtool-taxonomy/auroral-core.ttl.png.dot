@@ -1,9 +1,10 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "wot:Thing" "saref:Actuator" "core:User" "saref:Device" "core:City" "core:NotificationStatus" "geonames:Feature" "c09e7d09332ca38b6f170b58cc7e6e3d" "core:Status" "core:Service" "core:Device" "core:Sensor" "core:Actuator" "core:Organisation" "foaf:Person" "core:Building" "org:Organization" "core:Item" "geosparql:Geometry" "core:Place" "core:Notification" "core:ItemStatus" "geo:SpatialThing" "core:PhysicalThing" "core:UserStatus" "core:NodeStatus" "core:Municipality" "core:VirtualThing" "saref:FeatureOfInterest" "saref:Sensor" ; /*classes style*/
+node [shape = rectangle, color="black"]; "wot:Thing" "saref:Actuator" "core:User" "saref:Device" "core:City" "core:NotificationStatus" "geonames:Feature" "core:Status" "core:Service" "core:Device" "core:Sensor" "core:Actuator" "core:Organisation" "foaf:Person" "core:Building" "org:Organization" "core:Country" "core:Item" "geosparql:Geometry" "core:Place" "core:Notification" "core:ItemStatus" "geo:SpatialThing" "core:PhysicalThing" "core:UserStatus" "core:NodeStatus" "core:Municipality" "core:VirtualThing" "saref:FeatureOfInterest" "saref:Sensor" "a6cd14b457a54b1818161e7af51bb09e" ; /*classes style*/
 	"core:ItemStatus" -> "core:Status" [ label = "rdfs:subClassOf" ];
 	"core:Service" -> "core:VirtualThing" [ label = "rdfs:subClassOf" ];
+	"core:Country" -> "geonames:Feature" [ label = "rdfs:subClassOf" ];
 	"core:Organisation" -> "org:Organization" [ label = "rdfs:subClassOf" ];
 	"core:User" -> "foaf:Person" [ label = "rdfs:subClassOf" ];
 	"core:Building" -> "saref:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
@@ -21,7 +22,7 @@ node [shape = rectangle, color="black"]; "wot:Thing" "saref:Actuator" "core:User
 	"core:Item" -> "wot:Thing" [ label = "rdfs:subClassOf" ];
 	"core:Place" -> "geonames:Feature" [ label = "rdfs:subClassOf" ];
 	"geosparql:Geometry" -> "geo:SpatialThing" [ label = "rdfs:subClassOf" ];
-	"core:Notification" -> "c09e7d09332ca38b6f170b58cc7e6e3d" [ label = "rdfs:subClassOf" ];
+	"core:Notification" -> "a6cd14b457a54b1818161e7af51bb09e" [ label = "rdfs:subClassOf" ];
 	"core:NotificationStatus" -> "core:Status" [ label = "rdfs:subClassOf" ];
 	"core:City" -> "saref:FeatureOfInterest" [ label = "rdfs:subClassOf" ];
 
