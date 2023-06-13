@@ -303,6 +303,13 @@ core:code rdf:type owl:DatatypeProperty ;
           rdfs:range xsd:string .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#continentCode
+core:continentCode rdf:type owl:DatatypeProperty ;
+                   rdfs:domain core:Country ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "continent Code" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#currentStatus
 core:currentStatus rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:string ;
@@ -462,9 +469,15 @@ core:isUnread rdf:type owl:DatatypeProperty ;
               rdfs:label "is unread" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#isoCode
+core:isoCode rdf:type owl:DatatypeProperty ;
+             rdfs:domain core:Country ;
+             rdfs:range xsd:string ;
+             rdfs:label "iso Code" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#name
 core:name rdf:type owl:DatatypeProperty ;
-          rdfs:domain core:Place ;
           rdfs:range xsd:string .
 
 
@@ -594,6 +607,11 @@ core:Building rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/core#City
 core:City rdf:type owl:Class ;
           rdfs:subClassOf saref:FeatureOfInterest .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Country
+core:Country rdf:type owl:Class ;
+             rdfs:subClassOf geonames:Feature .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Device
