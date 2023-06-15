@@ -2339,6 +2339,15 @@
     
 
 
+    <!-- https://www.w3.org/2006/time#unitMinute -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.w3.org/2006/time#unitMinute">
+        <rdf:type rdf:resource="https://www.w3.org/2006/time#TemporalUnit"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
