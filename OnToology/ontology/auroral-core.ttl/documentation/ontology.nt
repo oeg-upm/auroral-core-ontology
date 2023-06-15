@@ -1233,6 +1233,10 @@ _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://www.w3.org/2006/time#unitHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2006/time#TemporalUnit> .
 <https://www.w3.org/2006/time#unitHour> <http://www.w3.org/2000/01/rdf-schema#label> "unit Hour" .
 # 
+# https://www.w3.org/2006/time#unitMinute
+<https://www.w3.org/2006/time#unitMinute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.w3.org/2006/time#unitMinute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.w3.org/2006/time#TemporalUnit> .
+# 
 # 
 # 
 # #################################################################
