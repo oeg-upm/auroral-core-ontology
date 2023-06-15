@@ -1418,6 +1418,11 @@ core:kilowattHourYear rdf:type owl:NamedIndividual ,
                                         rdfs:label "unit Hour" .
 
 
+###  https://www.w3.org/2006/time#unitMinute
+<https://www.w3.org/2006/time#unitMinute> rdf:type owl:NamedIndividual ,
+                                                   <https://www.w3.org/2006/time#TemporalUnit> .
+
+
 #################################################################
 #    Annotations
 #################################################################
