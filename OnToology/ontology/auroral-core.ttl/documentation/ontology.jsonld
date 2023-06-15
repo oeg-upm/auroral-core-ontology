@@ -2260,6 +2260,12 @@
     "@value" : "unit Hour"
   } ]
 }, {
+  "@id" : "https://www.w3.org/2006/time#unitMinute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://www.w3.org/2006/time#TemporalUnit"
+  } ]
+}, {
   "@id" : "https://www.w3.org/2019/wot/hypermedia#Link",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
