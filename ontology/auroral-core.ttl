@@ -1412,6 +1412,12 @@ core:kilowattHourYear rdf:type owl:NamedIndividual ,
                                saref:Unit_of_measure .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#wattHour
+core:wattHour rdf:type owl:NamedIndividual ,
+                       saref:Unit_of_measure ;
+              rdfs:comment "watt Hour" .
+
+
 ###  https://www.w3.org/2006/time#unitHour
 <https://www.w3.org/2006/time#unitHour> rdf:type owl:NamedIndividual ,
                                                  <https://www.w3.org/2006/time#TemporalUnit> ;
