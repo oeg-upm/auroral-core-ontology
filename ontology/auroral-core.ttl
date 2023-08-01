@@ -9,6 +9,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix core: <https://auroral.iot.linkeddata.es/def/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix hctl: <https://www.w3.org/2019/wot/hypermedia#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -290,6 +291,20 @@ wot:hasValueType rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
+###  http://www.w3.org/ns/dcat#accessURL
+dcat:accessURL rdf:type owl:DatatypeProperty ;
+               rdfs:domain dcat:Dataset ;
+               rdfs:range xsd:anyURI ;
+               rdfs:label "accessURL" .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+dcat:keyword rdf:type owl:DatatypeProperty ;
+             rdfs:domain dcat:Dataset ;
+             rdfs:range xsd:string ;
+             rdfs:label "keyword" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#adapterId
 core:adapterId rdf:type owl:DatatypeProperty ;
                rdfs:domain core:Item ;
@@ -525,6 +540,12 @@ core:versionOfService rdf:type owl:DatatypeProperty ;
                       rdfs:label "version of service" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#visibility
+core:visibility rdf:type owl:DatatypeProperty ;
+                rdfs:domain core:Dataset ;
+                rdfs:range xsd:boolean .
+
+
 ###  https://saref.etsi.org/core#hasManufacturer
 saref:hasManufacturer rdf:type owl:DatatypeProperty ;
                       rdfs:range xsd:string ;
@@ -577,6 +598,11 @@ geo:SpatialThing rdf:type owl:Class ;
                  rdfs:label "Spatial Thing" .
 
 
+###  http://www.w3.org/ns/dcat#Dataset
+dcat:Dataset rdf:type owl:Class ;
+             rdfs:label "Dataset" .
+
+
 ###  http://xmlns.com/foaf/0.1/Image
 foaf:Image rdf:type owl:Class ;
            rdfs:label "Image" .
@@ -612,6 +638,11 @@ core:City rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/core#Country
 core:Country rdf:type owl:Class ;
              rdfs:subClassOf geonames:Feature .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Dataset
+core:Dataset rdf:type owl:Class ;
+             rdfs:subClassOf dcat:Dataset .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Device
