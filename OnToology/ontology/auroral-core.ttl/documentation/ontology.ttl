@@ -277,6 +277,20 @@
 #    Data properties
 #################################################################
 
+###  http://www.w3.org/ns/dcat#accessURL
+<http://www.w3.org/ns/dcat#accessURL> rdf:type owl:DatatypeProperty ;
+                                      rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+                                      rdfs:range xsd:anyURI ;
+                                      rdfs:label "accessURL" .
+
+
+###  http://www.w3.org/ns/dcat#keyword
+<http://www.w3.org/ns/dcat#keyword> rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain <http://www.w3.org/ns/dcat#Dataset> ;
+                                    rdfs:range xsd:string ;
+                                    rdfs:label "keyword" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#adapterId
 :adapterId rdf:type owl:DatatypeProperty ;
            rdfs:domain :Item ;
@@ -512,6 +526,12 @@
                   rdfs:label "version of service" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#visibility
+:visibility rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Dataset ;
+            rdfs:range xsd:boolean .
+
+
 ###  https://saref.etsi.org/core#hasManufacturer
 <https://saref.etsi.org/core#hasManufacturer> rdf:type owl:DatatypeProperty ;
                                               rdfs:range xsd:string ;
@@ -564,6 +584,11 @@
                                                        rdfs:label "Spatial Thing" .
 
 
+###  http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> rdf:type owl:Class ;
+                                    rdfs:label "Dataset" .
+
+
 ###  http://xmlns.com/foaf/0.1/Image
 <http://xmlns.com/foaf/0.1/Image> rdf:type owl:Class ;
                                   rdfs:label "Image" .
@@ -599,6 +624,11 @@
 ###  https://auroral.iot.linkeddata.es/def/core#Country
 :Country rdf:type owl:Class ;
          rdfs:subClassOf <http://www.geonames.org/ontology#Feature> .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Dataset
+:Dataset rdf:type owl:Class ;
+         rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Device
@@ -1397,6 +1427,12 @@
 ###  https://auroral.iot.linkeddata.es/def/core#kilowattHourYear
 :kilowattHourYear rdf:type owl:NamedIndividual ,
                            <https://saref.etsi.org/core#Unit_of_measure> .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#wattHour
+:wattHour rdf:type owl:NamedIndividual ,
+                   <https://saref.etsi.org/core#Unit_of_measure> ;
+          rdfs:comment "watt Hour" .
 
 
 ###  https://www.w3.org/2006/time#unitHour

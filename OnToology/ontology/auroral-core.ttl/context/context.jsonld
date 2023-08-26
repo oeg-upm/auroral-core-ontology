@@ -31,6 +31,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasReadability",
       "@type" : "@id"
     },
+    "Dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#Dataset"
+    },
     "hasModel" : {
       "@id" : "https://saref.etsi.org/core#hasModel",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -167,6 +170,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#versionOfService",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "visibility" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#visibility",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
     "provider" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#provider",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -244,6 +251,10 @@
     "isAbout" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#isAbout",
       "@type" : "@id"
+    },
+    "keyword" : {
+      "@id" : "http://www.w3.org/ns/dcat#keyword",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "relatesToMeasurement" : {
       "@id" : "https://saref.etsi.org/core#relatesToMeasurement",
@@ -369,6 +380,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasContactMail",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
     "versionNumber" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#versionNumber",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -424,6 +438,10 @@
     },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "accessURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#accessURL",
+      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "hasFunctionality" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasFunctionality"
