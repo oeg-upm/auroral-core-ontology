@@ -21,6 +21,7 @@
 @base <https://auroral.iot.linkeddata.es/def/core#> .
 
 <https://auroral.iot.linkeddata.es/def/core#> rdf:type owl:Ontology ;
+                                               dc:contributor "David Buján Carballal" ;
                                                dc:creator "Ahlem Rhayem" ,
                                                           "Alba Fernández Izquierdo" ,
                                                           "Andrea Cimmino" ,
@@ -34,6 +35,10 @@
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+dc:contributor rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/elements/1.1/creator
 dc:creator rdf:type owl:AnnotationProperty .
@@ -290,6 +295,19 @@ wot:hasValueType rdf:type owl:ObjectProperty ;
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+dc:license rdf:type owl:DatatypeProperty ;
+           rdfs:label "license" .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:DatatypeProperty .
+
 
 ###  http://www.w3.org/ns/dcat#accessURL
 dcat:accessURL rdf:type owl:DatatypeProperty ;
@@ -642,7 +660,24 @@ core:Country rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#Dataset
 core:Dataset rdf:type owl:Class ;
-             rdfs:subClassOf dcat:Dataset .
+             rdfs:subClassOf dcat:Dataset ,
+                             core:VirtualThing ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dc:description ;
+                               owl:someValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dc:title ;
+                               owl:someValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty dcat:accessURL ;
+                               owl:someValuesFrom xsd:anyURI
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty core:provider ;
+                               owl:someValuesFrom xsd:string
+                             ] .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Device
@@ -671,6 +706,10 @@ core:Item rdf:type owl:Class ;
                           [ rdf:type owl:Restriction ;
                             owl:onProperty core:hasStatus ;
                             owl:someValuesFrom core:ItemStatus
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty saref:hasDomain ;
+                            owl:someValuesFrom core:Domain
                           ] ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty core:hasCreationDate ;
@@ -1005,6 +1044,10 @@ core:VirtualThing rdf:type owl:Class ;
                                   [ rdf:type owl:Restriction ;
                                     owl:onProperty core:exposes ;
                                     owl:someValuesFrom core:PhysicalThing
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty dc:license ;
+                                    owl:someValuesFrom xsd:string
                                   ] ;
                   rdfs:label "Virtual Thing" .
 
@@ -1463,6 +1506,12 @@ core:wattHour rdf:type owl:NamedIndividual ,
 #################################################################
 #    Annotations
 #################################################################
+
+dc:description rdfs:label "description" .
+
+
+dc:title rdfs:label "title" .
+
 
 core:User rdfs:label "User" .
 
