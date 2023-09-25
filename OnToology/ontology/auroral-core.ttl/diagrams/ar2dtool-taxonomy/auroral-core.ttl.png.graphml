@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="24" parse.nodes="33" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="25" parse.nodes="33" parse.order="free">
       <node id="nid_core:ItemStatus">
          <data key="d0">
             <y:ShapeNode>
@@ -527,6 +527,17 @@
          </data>
          <data key="d1" />
       </node>
+    <edge id="eid_rdfs:subClassOf19" source="nid_core:Dataset" target="nid_core:VirtualThing">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
       <node id="nid_dcat:Dataset">
          <data key="d0">
             <y:ShapeNode>
@@ -539,7 +550,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf19" source="nid_core:Dataset" target="nid_dcat:Dataset">
+    <edge id="eid_rdfs:subClassOf20" source="nid_core:Dataset" target="nid_dcat:Dataset">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -574,7 +585,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf20" source="nid_geosparql:Geometry" target="nid_geo:SpatialThing">
+    <edge id="eid_rdfs:subClassOf21" source="nid_geosparql:Geometry" target="nid_geo:SpatialThing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -597,19 +608,19 @@
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_d3dc6d8a21624e3ee8057e7ab6b6085d">
+      <node id="nid_e22ae8828878a2c49f2de627efd58244">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="320.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">d3dc6d8a21624e3ee8057e7ab6b6085d</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">e22ae8828878a2c49f2de627efd58244</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf21" source="nid_core:Notification" target="nid_d3dc6d8a21624e3ee8057e7ab6b6085d">
+    <edge id="eid_rdfs:subClassOf22" source="nid_core:Notification" target="nid_e22ae8828878a2c49f2de627efd58244">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -632,7 +643,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf22" source="nid_core:NotificationStatus" target="nid_core:Status">
+    <edge id="eid_rdfs:subClassOf23" source="nid_core:NotificationStatus" target="nid_core:Status">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -655,7 +666,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf23" source="nid_core:City" target="nid_saref:FeatureOfInterest">
+    <edge id="eid_rdfs:subClassOf24" source="nid_core:City" target="nid_saref:FeatureOfInterest">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

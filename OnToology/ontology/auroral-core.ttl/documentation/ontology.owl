@@ -9,6 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://auroral.iot.linkeddata.es/def/core#">
+        <dc:contributor>David Buján Carballal</dc:contributor>
         <dc:creator>Ahlem Rhayem</dc:creator>
         <dc:creator>Alba Fernández Izquierdo</dc:creator>
         <dc:creator>Andrea Cimmino</dc:creator>
@@ -31,6 +32,13 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
 
 
@@ -459,6 +467,29 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/license">
+        <rdfs:label>license</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -1052,6 +1083,31 @@
 
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Dataset">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:subClassOf rdf:resource="https://auroral.iot.linkeddata.es/def/core#VirtualThing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/dcat#accessURL"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#provider"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1097,6 +1153,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasStatus"/>
                 <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/core#ItemStatus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core#hasDomain"/>
+                <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/core#Domain"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1616,6 +1678,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#exposes"/>
                 <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/core#PhysicalThing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/dc/elements/1.1/license"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label>Virtual Thing</rdfs:label>
@@ -2417,6 +2485,12 @@
      -->
 
 
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+        <rdfs:label>description</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:label>title</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="https://auroral.iot.linkeddata.es/def/core#User">
         <rdfs:label>User</rdfs:label>
     </rdf:Description>

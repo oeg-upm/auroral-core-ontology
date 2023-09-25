@@ -43,7 +43,7 @@
       "@type" : "@id"
     },
     "license" : {
-      "@id" : "http://purl.org/dc/terms/license"
+      "@id" : "http://purl.org/dc/elements/1.1/license"
     },
     "hasObject" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasObject",
@@ -407,6 +407,9 @@
     "language" : {
       "@id" : "http://lexvo.org/ontology#language",
       "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
     },
     "Device" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
