@@ -7,6 +7,7 @@
 @base <https://auroral.iot.linkeddata.es/def/core#> .
 
 <https://auroral.iot.linkeddata.es/def/core#> rdf:type owl:Ontology ;
+                                               <http://purl.org/dc/elements/1.1/contributor> "David Buján Carballal" ;
                                                <http://purl.org/dc/elements/1.1/creator> "Ahlem Rhayem" ,
                                                                                          "Alba Fernández Izquierdo" ,
                                                                                          "Andrea Cimmino" ,
@@ -20,6 +21,10 @@
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/elements/1.1/creator
 <http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
@@ -276,6 +281,19 @@
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:DatatypeProperty ;
+                                          rdfs:label "license" .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:DatatypeProperty .
+
 
 ###  http://www.w3.org/ns/dcat#accessURL
 <http://www.w3.org/ns/dcat#accessURL> rdf:type owl:DatatypeProperty ;
@@ -628,7 +646,24 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#Dataset
 :Dataset rdf:type owl:Class ;
-         rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> .
+         rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ,
+                         :VirtualThing ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://purl.org/dc/elements/1.1/description> ;
+                           owl:someValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://purl.org/dc/elements/1.1/title> ;
+                           owl:someValuesFrom xsd:string
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.w3.org/ns/dcat#accessURL> ;
+                           owl:someValuesFrom xsd:anyURI
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :provider ;
+                           owl:someValuesFrom xsd:string
+                         ] .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Device
@@ -657,6 +692,10 @@
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :hasStatus ;
                         owl:someValuesFrom :ItemStatus
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty <https://saref.etsi.org/core#hasDomain> ;
+                        owl:someValuesFrom :Domain
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :hasCreationDate ;
@@ -991,6 +1030,10 @@
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :exposes ;
                                 owl:someValuesFrom :PhysicalThing
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://purl.org/dc/elements/1.1/license> ;
+                                owl:someValuesFrom xsd:string
                               ] ;
               rdfs:label "Virtual Thing" .
 
@@ -1449,6 +1492,12 @@
 #################################################################
 #    Annotations
 #################################################################
+
+<http://purl.org/dc/elements/1.1/description> rdfs:label "description" .
+
+
+<http://purl.org/dc/elements/1.1/title> rdfs:label "title" .
+
 
 :User rdfs:label "User" .
 
