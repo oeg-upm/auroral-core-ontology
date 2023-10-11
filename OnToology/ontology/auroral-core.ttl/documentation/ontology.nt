@@ -259,13 +259,10 @@
 # 
 # http://www.w3.org/ns/dcat#accessURL
 <http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
-<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "accessURL" .
 # 
 # http://www.w3.org/ns/dcat#keyword
 <http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Dataset> .
 <http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/2000/01/rdf-schema#label> "keyword" .
 # 
@@ -326,14 +323,6 @@
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasID
 <https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Device> .
-<https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Node> .
-<https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Notification> .
-<https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Organisation> .
-<https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#User> .
-<https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Device> .
-<https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#FeatureOfInterest> .
-<https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3.org/ns/org#Organization> .
 <https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#label> "has i d" .
 # 
@@ -468,7 +457,6 @@
 # 
 # https://auroral.iot.linkeddata.es/def/core#visibility
 <https://auroral.iot.linkeddata.es/def/core#visibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://auroral.iot.linkeddata.es/def/core#visibility> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Dataset> .
 <https://auroral.iot.linkeddata.es/def/core#visibility> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 # 
 # https://saref.etsi.org/core#hasManufacturer
@@ -484,10 +472,6 @@
 # https://saref.etsi.org/core#hasTimeStamp
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Actuator> .
-<https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Device> .
-<https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
-<https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Device> .
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#label> "has time stamp" .
 # 
@@ -572,21 +556,29 @@ _:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/dcat#a
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
 _:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#provider> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/dcat#keyword> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#provider> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#visibility> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Device
 <https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#PhysicalThing> .
 <https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core#Device> .
-<https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
-_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#serialNumber> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
-_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#versionNumber> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#serialNumber> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#versionNumber> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Domain
@@ -596,26 +588,26 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://auroral.iot.linkeddata.es/def/core#Item
 <https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/2019/wot/td#Thing> .
-<https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
-_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/core#ItemStatus> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasStatus> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
-_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Domain> .
-_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core#hasDomain> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/core#ItemStatus> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasStatus> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
-_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasName> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Domain> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core#hasDomain> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
 _:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasUpdateDate> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasName> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasUpdateDate> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#label> "Item" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#ItemStatus
@@ -629,38 +621,38 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://auroral.iot.linkeddata.es/def/core#Node
 <https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
-_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Item> .
-_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#containsItem> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
-_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#NodeStatus> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasStatus> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Item> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#containsItem> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasID> .
+_:genid15 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#NodeStatus> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasStatus> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasKey> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
 _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasLocation> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasID> .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
 _:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasName> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasKey> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
 _:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasToken> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasLocation> .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasName> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasToken> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#label> "Node" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#NodeStatus
@@ -670,46 +662,46 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://auroral.iot.linkeddata.es/def/core#Notification
 <https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/2002/07/owl#unionOf> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/core#User> .
-_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasOwner> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://auroral.iot.linkeddata.es/def/core#Organisation> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
-_:genid24 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#NotificationStatus> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasStatus> .
+<https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
+_:genid22 <http://www.w3.org/2002/07/owl#unionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/core#User> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasOwner> .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
-_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasActor> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://auroral.iot.linkeddata.es/def/core#Organisation> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasKey> .
+_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#NotificationStatus> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasStatus> .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
 _:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasObject> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasActor> .
 _:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
 _:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasTarget> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasKey> .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
-_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasObject> .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
-_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#isUnread> .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasTarget> .
 _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#isUnread> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#label> "Notification" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#NotificationStatus
@@ -720,58 +712,58 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#Organisation
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/ns/org#Organization> .
-<https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
-_:genid31 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
-_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2003/01/geo/wgs84_pos#location> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
-_:genid32 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Audit> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasAudit> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
-_:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Node> .
-_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasNode> .
+_:genid33 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2003/01/geo/wgs84_pos#location> .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
-_:genid34 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Notification> .
-_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasNotification> .
+_:genid34 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Audit> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasAudit> .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
-_:genid35 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#User> .
-_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasUser> .
+_:genid35 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Node> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasNode> .
 _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
-_:genid36 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Image> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar> .
+_:genid36 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Notification> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasNotification> .
 _:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
-_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> .
+_:genid37 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#User> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasUser> .
 _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
-_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasID> .
+_:genid38 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Image> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar> .
 _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
-_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasLocation> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> .
 _:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
 _:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasName> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasID> .
 _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
 _:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasRegistrationNumber> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasLocation> .
 _:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
 _:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasSkinColor> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasName> .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
-_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#isLastUpdated> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasRegistrationNumber> .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasSkinColor> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#isLastUpdated> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#PhysicalThing
@@ -801,44 +793,48 @@ _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#Service
 <https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#VirtualThing> .
-<https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
-_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://lexvo.org/ontology#Language> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://lexvo.org/ontology#language> .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
-_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core#Property> .
-_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasInput> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
-_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasDomain> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://lexvo.org/ontology#Language> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://lexvo.org/ontology#language> .
 _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
-_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasFunctionality> .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://saref.etsi.org/core#Property> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasInput> .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
 _:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasRequirement> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasDomain> .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
 _:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasSubDomain> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasFunctionality> .
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
-_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
-_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#serviceFree> .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasRequirement> .
 _:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
-_:genid51 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid51 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#currentStatus> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasSubDomain> .
 _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
-_:genid52 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid52 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#provider> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#numberOfDownloads> .
 _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#serviceFree> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid54 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#currentStatus> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid55 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#provider> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Status
@@ -848,70 +844,70 @@ _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#User
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
-<https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
-_:genid53 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Organisation> .
-_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#belongsTo> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
-_:genid54 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Item> .
-_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#containsItem> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
-_:genid55 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Audit> .
-_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasAudit> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
-_:genid56 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Node> .
-_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasNode> .
+_:genid56 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Organisation> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#belongsTo> .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
-_:genid57 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#UserStatus> .
-_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasStatus> .
+_:genid57 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Item> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#containsItem> .
 _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
-_:genid58 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Image> .
-_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar> .
+_:genid58 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Audit> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasAudit> .
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
-_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasContactMail> .
+_:genid59 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Node> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasNode> .
 _:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
-_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> .
+_:genid60 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#UserStatus> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasStatus> .
 _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
-_:genid61 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasEmail> .
+_:genid61 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Image> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar> .
 _:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
 _:genid62 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasFirstName> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasContactMail> .
 _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
-_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasID> .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> .
 _:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
 _:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasLastName> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasEmail> .
 _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
 _:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasLocation> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasFirstName> .
 _:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
 _:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasName> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasID> .
 _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
 _:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasOccupation> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasLastName> .
 _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
-_:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
-_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasUpdateDate> .
+_:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasLocation> .
 _:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasName> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasOccupation> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasUpdateDate> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#UserStatus
 <https://auroral.iot.linkeddata.es/def/core#UserStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -921,14 +917,14 @@ _:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#VirtualThing
 <https://auroral.iot.linkeddata.es/def/core#VirtualThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#VirtualThing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Item> .
-<https://auroral.iot.linkeddata.es/def/core#VirtualThing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
-_:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/core#PhysicalThing> .
-_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#exposes> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://auroral.iot.linkeddata.es/def/core#VirtualThing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
-_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/elements/1.1/license> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#VirtualThing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/core#PhysicalThing> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#exposes> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#VirtualThing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid73 .
+_:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/dc/elements/1.1/license> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#VirtualThing> <http://www.w3.org/2000/01/rdf-schema#label> "Virtual Thing" .
 # 
 # https://saref.etsi.org/core#Actuator
@@ -937,14 +933,14 @@ _:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://saref.etsi.org/core#Device
 <https://saref.etsi.org/core#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://saref.etsi.org/core#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
-_:genid71 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core#hasManufacturer> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://saref.etsi.org/core#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
-_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
-_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core#hasModel> .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core#hasManufacturer> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core#hasModel> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://saref.etsi.org/core#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
 # 
 # https://saref.etsi.org/core#FeatureOfInterest

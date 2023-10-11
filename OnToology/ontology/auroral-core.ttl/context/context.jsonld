@@ -443,8 +443,7 @@
       "@id" : "http://purl.org/dc/elements/1.1/description"
     },
     "accessURL" : {
-      "@id" : "http://www.w3.org/ns/dcat#accessURL",
-      "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+      "@id" : "http://www.w3.org/ns/dcat#accessURL"
     },
     "hasFunctionality" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasFunctionality"
