@@ -311,14 +311,11 @@ dc:title rdf:type owl:DatatypeProperty .
 
 ###  http://www.w3.org/ns/dcat#accessURL
 dcat:accessURL rdf:type owl:DatatypeProperty ;
-               rdfs:domain dcat:Dataset ;
-               rdfs:range xsd:anyURI ;
                rdfs:label "accessURL" .
 
 
 ###  http://www.w3.org/ns/dcat#keyword
 dcat:keyword rdf:type owl:DatatypeProperty ;
-             rdfs:domain dcat:Dataset ;
              rdfs:range xsd:string ;
              rdfs:label "keyword" .
 
@@ -391,14 +388,6 @@ core:hasFunctionality rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasID
 core:hasID rdf:type owl:DatatypeProperty ;
-           rdfs:domain core:Device ,
-                       core:Node ,
-                       core:Notification ,
-                       core:Organisation ,
-                       core:User ,
-                       saref:Device ,
-                       saref:FeatureOfInterest ,
-                       org:Organization ;
            rdfs:range xsd:string ;
            rdfs:label "has i d" .
 
@@ -560,7 +549,6 @@ core:versionOfService rdf:type owl:DatatypeProperty ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#visibility
 core:visibility rdf:type owl:DatatypeProperty ;
-                rdfs:domain core:Dataset ;
                 rdfs:range xsd:boolean .
 
 
@@ -579,10 +567,6 @@ saref:hasModel rdf:type owl:DatatypeProperty ;
 ###  https://saref.etsi.org/core#hasTimeStamp
 saref:hasTimeStamp rdf:type owl:DatatypeProperty ,
                             owl:FunctionalProperty ;
-                   rdfs:domain core:Actuator ,
-                               core:Device ,
-                               core:Sensor ,
-                               saref:Device ;
                    rdfs:range xsd:dateTime ;
                    rdfs:label "has time stamp" .
 
@@ -675,8 +659,16 @@ core:Dataset rdf:type owl:Class ;
                                owl:someValuesFrom xsd:anyURI
                              ] ,
                              [ rdf:type owl:Restriction ;
+                               owl:onProperty dcat:keyword ;
+                               owl:someValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
                                owl:onProperty core:provider ;
                                owl:someValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty core:visibility ;
+                               owl:someValuesFrom xsd:boolean
                              ] .
 
 
@@ -940,6 +932,10 @@ core:Service rdf:type owl:Class ;
                              [ rdf:type owl:Restriction ;
                                owl:onProperty core:hasSubDomain ;
                                owl:someValuesFrom xsd:string
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty core:numberOfDownloads ;
+                               owl:someValuesFrom xsd:integer
                              ] ,
                              [ rdf:type owl:Restriction ;
                                owl:onProperty core:serviceFree ;
