@@ -53,8 +53,7 @@
 
 ###  http://www.opengis.net/ont/geosparql#hasGeometry
 <http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty ;
-                                                   rdfs:domain :PhysicalThing ;
-                                                   rdfs:range <http://www.opengis.net/ont/geosparql#Geometry> .
+                                                   rdfs:label "has Geometry" .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#location
@@ -76,6 +75,7 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#containsItem
 :containsItem rdf:type owl:ObjectProperty ;
+              rdfs:range :Item ;
               rdfs:label "contains item" .
 
 
@@ -86,6 +86,7 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasAudit
 :hasAudit rdf:type owl:ObjectProperty ;
+          rdfs:range :Audit ;
           rdfs:label "has audit" .
 
 
@@ -109,11 +110,14 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasNode
 :hasNode rdf:type owl:ObjectProperty ;
+         rdfs:range :Node ;
          rdfs:label "has node" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasNotification
 :hasNotification rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Organization ;
+                 rdfs:range :Notification ;
                  rdfs:label "has notification" .
 
 
@@ -124,15 +128,15 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy
 :hasPartnershipRequestedBy rdf:type owl:ObjectProperty ;
-                           rdfs:domain :Organisation ;
-                           rdfs:range :Organisation ;
+                           rdfs:domain :Organization ;
+                           rdfs:range :Organization ;
                            rdfs:label "has partnership requested by" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedTo
 :hasPartnershipRequestedTo rdf:type owl:ObjectProperty ;
-                           rdfs:domain :Organisation ;
-                           rdfs:range :Organisation ;
+                           rdfs:domain :Organization ;
+                           rdfs:range :Organization ;
                            rdfs:label "has partnership requested to" .
 
 
@@ -156,7 +160,7 @@
                        :Device ,
                        :Node ,
                        :Notification ,
-                       :Organisation ,
+                       :Organization ,
                        :Sensor ,
                        :User ,
                        <https://saref.etsi.org/core#Device> ,
@@ -165,6 +169,8 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasUser
 :hasUser rdf:type owl:ObjectProperty ;
+         rdfs:domain :Organization ;
+         rdfs:range :User ;
          rdfs:label "has user" .
 
 
@@ -177,21 +183,20 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar
 :isRepresentedByAvatar rdf:type owl:ObjectProperty ;
+                       rdfs:range <http://xmlns.com/foaf/0.1/Image> ;
                        rdfs:label "is represented by avatar" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#knows
 :knows rdf:type owl:ObjectProperty ,
                 owl:SymmetricProperty ;
-       rdfs:domain :Organisation ;
-       rdfs:range :Organisation ;
+       rdfs:domain :Organization ;
+       rdfs:range :Organization ;
        rdfs:label "knows" .
 
 
 ###  https://saref.etsi.org/core#controlsProperty
 <https://saref.etsi.org/core#controlsProperty> rdf:type owl:ObjectProperty ;
-                                               rdfs:domain <https://saref.etsi.org/core#Device> ;
-                                               rdfs:range <https://saref.etsi.org/core#Property> ;
                                                rdfs:label "controls property" .
 
 
@@ -233,15 +238,11 @@
 
 ###  https://saref.etsi.org/core#makesMeasurement
 <https://saref.etsi.org/core#makesMeasurement> rdf:type owl:ObjectProperty ;
-                                               rdfs:domain :Device ;
-                                               rdfs:range <https://saref.etsi.org/core#Measurement> ;
                                                rdfs:label "makes measurement" .
 
 
 ###  https://saref.etsi.org/core#measuresProperty
 <https://saref.etsi.org/core#measuresProperty> rdf:type owl:ObjectProperty ;
-                                               rdfs:domain <https://saref.etsi.org/core#Device> ;
-                                               rdfs:range <https://saref.etsi.org/core#Property> ;
                                                rdfs:label "measures property" .
 
 
@@ -328,47 +329,56 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#currentStatus
 :currentStatus rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Service ;
                rdfs:range xsd:string ;
                rdfs:label "current status" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#datasetProvider
+:datasetProvider rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Dataset ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "dataset provider" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#hasActor
 :hasActor rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Notification ;
           rdfs:range xsd:string ;
           rdfs:label "has actor" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasContactMail
 :hasContactMail rdf:type owl:DatatypeProperty ;
+                rdfs:domain :User ;
                 rdfs:range xsd:string ;
                 rdfs:label "has contact mail" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasCreationDate
 :hasCreationDate rdf:type owl:DatatypeProperty ;
+                 rdfs:range xsd:dateTime ;
                  rdfs:label "has creation date" .
-
-
-###  https://auroral.iot.linkeddata.es/def/core#hasDomain
-:hasDomain rdf:type owl:DatatypeProperty ;
-           rdfs:range xsd:string ;
-           rdfs:label "has domain" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasEmail
 :hasEmail rdf:type owl:DatatypeProperty ;
+          rdfs:domain :User ;
           rdfs:range xsd:string ;
           rdfs:label "has email" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasFirstName
 :hasFirstName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :User ;
               rdfs:range xsd:string ;
               rdfs:label "has first name" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasFunctionality
 :hasFunctionality rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Service ;
+                  rdfs:range xsd:string ;
                   rdfs:label "has functionality" .
 
 
@@ -380,12 +390,14 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasKey
 :hasKey rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Node ;
         rdfs:range xsd:string ;
         rdfs:label "has key" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasLastName
 :hasLastName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :User ;
              rdfs:range xsd:string ;
              rdfs:label "has last name" .
 
@@ -409,12 +421,14 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasObject
 :hasObject rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Notification ;
            rdfs:range xsd:string ;
            rdfs:label "has object" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasOccupation
 :hasOccupation rdf:type owl:DatatypeProperty ;
+               rdfs:domain :User ;
                rdfs:range xsd:string ;
                rdfs:label "has occupation" .
 
@@ -427,6 +441,7 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasRequirement
 :hasRequirement rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Service ;
                 rdfs:range xsd:string ;
                 rdfs:label "has requirement" .
 
@@ -444,24 +459,28 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasSubDomain
 :hasSubDomain rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Service ;
               rdfs:range xsd:string ;
               rdfs:label "has sub domain" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasTarget
 :hasTarget rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Notification ;
            rdfs:range xsd:string ;
            rdfs:label "has target" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasToken
 :hasToken rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Node ;
           rdfs:range xsd:string ;
           rdfs:label "has token" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasUpdateDate
 :hasUpdateDate rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Item ;
                rdfs:range xsd:dateTime ;
                rdfs:label "has update date" .
 
@@ -473,6 +492,7 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#isUnread
 :isUnread rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Notification ;
           rdfs:range xsd:boolean ;
           rdfs:label "is unread" .
 
@@ -489,6 +509,20 @@
       rdfs:range xsd:string .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#nameCountry
+:nameCountry rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Country ;
+             rdfs:range xsd:string ;
+             rdfs:label "name country" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#namePlace
+:namePlace rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Place ;
+           rdfs:range xsd:string ;
+           rdfs:label "name place" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#numberOfDownloads
 :numberOfDownloads rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Service ;
@@ -496,22 +530,25 @@
                    rdfs:label "number of downloads" .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#provider
-:provider rdf:type owl:DatatypeProperty ;
-          rdfs:range xsd:string ;
-          rdfs:label "provider" .
-
-
 ###  https://auroral.iot.linkeddata.es/def/core#serialNumber
 :serialNumber rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Device ;
               rdfs:range xsd:string ;
               rdfs:label "serial number" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#serviceFree
 :serviceFree rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Service ;
              rdfs:range xsd:boolean ;
              rdfs:label "service free" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#serviceProvider
+:serviceProvider rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Service ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "service provider" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#value
@@ -522,6 +559,7 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#versionNumber
 :versionNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Device ;
                rdfs:range xsd:string ;
                rdfs:label "version number" .
 
@@ -535,17 +573,26 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#visibility
 :visibility rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Dataset ;
             rdfs:range xsd:boolean .
+
+
+###  https://saref.etsi.org/core#deviceId
+<https://saref.etsi.org/core#deviceId> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :Device ;
+                                       rdfs:range xsd:string .
 
 
 ###  https://saref.etsi.org/core#hasManufacturer
 <https://saref.etsi.org/core#hasManufacturer> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain :Device ;
                                               rdfs:range xsd:string ;
                                               rdfs:label "has manufacturer" .
 
 
 ###  https://saref.etsi.org/core#hasModel
 <https://saref.etsi.org/core#hasModel> rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain :Device ;
                                        rdfs:range xsd:string ;
                                        rdfs:label "has model" .
 
@@ -649,28 +696,19 @@
                            owl:someValuesFrom xsd:string
                          ] ,
                          [ rdf:type owl:Restriction ;
-                           owl:onProperty :provider ;
+                           owl:onProperty :datasetProvider ;
                            owl:someValuesFrom xsd:string
                          ] ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :visibility ;
                            owl:someValuesFrom xsd:boolean
-                         ] ;
-         rdfs:label "Dataset" .
+                         ] .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Device
 :Device rdf:type owl:Class ;
         rdfs:subClassOf :PhysicalThing ,
-                        <https://saref.etsi.org/core#Device> ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :serialNumber ;
-                          owl:someValuesFrom xsd:string
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :versionNumber ;
-                          owl:someValuesFrom xsd:string
-                        ] ;
+                        <https://saref.etsi.org/core#Device> ;
         rdfs:label "Device" .
 
 
@@ -735,19 +773,11 @@
                         owl:someValuesFrom xsd:string
                       ] ,
                       [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasKey ;
-                        owl:someValuesFrom xsd:string
-                      ] ,
-                      [ rdf:type owl:Restriction ;
                         owl:onProperty :hasLocation ;
                         owl:someValuesFrom xsd:string
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :hasName ;
-                        owl:someValuesFrom xsd:string
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasToken ;
                         owl:someValuesFrom xsd:string
                       ] ;
       rdfs:label "Node" .
@@ -761,41 +791,17 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#Notification
 :Notification rdf:type owl:Class ;
-              rdfs:subClassOf [ rdf:type owl:Class ;
-                                owl:unionOf ( :Organisation
-                                              [ rdf:type owl:Restriction ;
-                                                owl:onProperty :hasOwner ;
-                                                owl:someValuesFrom :User
-                                              ]
-                                            )
-                              ] ,
-                              [ rdf:type owl:Restriction ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasStatus ;
                                 owl:allValuesFrom :NotificationStatus
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasActor ;
-                                owl:someValuesFrom xsd:string
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasKey ;
-                                owl:someValuesFrom xsd:string
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasObject ;
-                                owl:someValuesFrom xsd:string
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty :hasTarget ;
-                                owl:someValuesFrom xsd:string
-                              ] ,
-                              [ rdf:type owl:Restriction ;
                                 owl:onProperty :hasCreationDate ;
-                                owl:allValuesFrom xsd:dateTime
+                                owl:someValuesFrom xsd:dateTime
                               ] ,
                               [ rdf:type owl:Restriction ;
-                                owl:onProperty :isUnread ;
-                                owl:allValuesFrom xsd:boolean
+                                owl:onProperty :hasID ;
+                                owl:someValuesFrom xsd:string
                               ] ;
               rdfs:label "Notification" .
 
@@ -806,8 +812,8 @@
                     rdfs:label "Notification status" .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#Organisation
-:Organisation rdf:type owl:Class ;
+###  https://auroral.iot.linkeddata.es/def/core#Organization
+:Organization rdf:type owl:Class ;
               rdfs:subClassOf <https://www.w3.org/ns/org#Organization> ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty <http://www.w3.org/2003/01/geo/wgs84_pos#location> ;
@@ -861,7 +867,7 @@
                                 owl:onProperty :isLastUpdated ;
                                 owl:someValuesFrom xsd:dateTime
                               ] ;
-              rdfs:label "Organisation" .
+              rdfs:label "Organization" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#PhysicalThing
@@ -905,7 +911,7 @@
                            owl:someValuesFrom <https://saref.etsi.org/core#Property>
                          ] ,
                          [ rdf:type owl:Restriction ;
-                           owl:onProperty :hasDomain ;
+                           owl:onProperty <http://purl.org/dc/elements/1.1/license> ;
                            owl:someValuesFrom xsd:string
                          ] ,
                          [ rdf:type owl:Restriction ;
@@ -934,7 +940,7 @@
                            owl:onDataRange xsd:string
                          ] ,
                          [ rdf:type owl:Restriction ;
-                           owl:onProperty :provider ;
+                           owl:onProperty :serviceProvider ;
                            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                            owl:onDataRange xsd:string
                          ] ;
@@ -950,8 +956,12 @@
 :User rdf:type owl:Class ;
       rdfs:subClassOf <http://xmlns.com/foaf/0.1/Person> ,
                       [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasNode ;
+                        owl:someValuesFrom :Node
+                      ] ,
+                      [ rdf:type owl:Restriction ;
                         owl:onProperty :belongsTo ;
-                        owl:allValuesFrom :Organisation
+                        owl:allValuesFrom :Organization
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :containsItem ;
@@ -960,10 +970,6 @@
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :hasAudit ;
                         owl:allValuesFrom :Audit
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasNode ;
-                        owl:allValuesFrom :Node
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :hasStatus ;
@@ -982,19 +988,7 @@
                         owl:someValuesFrom xsd:dateTime
                       ] ,
                       [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasEmail ;
-                        owl:someValuesFrom xsd:string
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasFirstName ;
-                        owl:someValuesFrom xsd:string
-                      ] ,
-                      [ rdf:type owl:Restriction ;
                         owl:onProperty :hasID ;
-                        owl:someValuesFrom xsd:string
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasLastName ;
                         owl:someValuesFrom xsd:string
                       ] ,
                       [ rdf:type owl:Restriction ;
@@ -1003,10 +997,6 @@
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty :hasName ;
-                        owl:someValuesFrom xsd:string
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :hasOccupation ;
                         owl:someValuesFrom xsd:string
                       ] ,
                       [ rdf:type owl:Restriction ;
@@ -1027,10 +1017,6 @@
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty :exposes ;
                                 owl:someValuesFrom :PhysicalThing
-                              ] ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty <http://purl.org/dc/elements/1.1/license> ;
-                                owl:someValuesFrom xsd:string
                               ] ;
               rdfs:label "Virtual Thing" .
 
@@ -1505,4 +1491,4 @@
 :hasStatus rdfs:label "has status" .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
