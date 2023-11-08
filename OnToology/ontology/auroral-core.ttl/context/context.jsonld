@@ -16,6 +16,9 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasEmail",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "UnitOfMeasure" : {
+      "@id" : "https://saref.etsi.org/core#UnitOfMeasure"
+    },
     "hasManufacturer" : {
       "@id" : "https://saref.etsi.org/core#hasManufacturer",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
@@ -23,6 +26,9 @@
     "currentStatus" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#currentStatus",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ServiceType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#ServiceType"
     },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
@@ -62,6 +68,10 @@
     "hasActor" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasActor",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "serviceType" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#serviceType",
+      "@type" : "@id"
     },
     "Organization" : {
       "@id" : "https://www.w3.org/ns/org#Organization"
@@ -146,6 +156,10 @@
     "hasValueType" : {
       "@id" : "https://www.w3.org/2019/wot/td#hasValueType",
       "@type" : "@id"
+    },
+    "serviceDescription" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#serviceDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Measurement" : {
       "@id" : "https://saref.etsi.org/core#Measurement"
@@ -334,6 +348,10 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasRequirement",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
+    "locatedIn" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#locatedIn",
+      "@type" : "@id"
+    },
     "isPropertyOf" : {
       "@id" : "https://saref.etsi.org/core#isPropertyOf",
       "@type" : "@id"
@@ -441,9 +459,6 @@
     "hasLocation" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#hasLocation",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
-    "Unit_of_measure" : {
-      "@id" : "https://saref.etsi.org/core#Unit_of_measure"
     },
     "code" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#code",

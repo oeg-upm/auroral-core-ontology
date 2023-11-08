@@ -88,11 +88,6 @@
 <https://auroral.iot.linkeddata.es/def/core#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasInput> <http://www.w3.org/2000/01/rdf-schema#label> "has Input" .
 # 
-# https://auroral.iot.linkeddata.es/def/core#hasLocation
-<https://auroral.iot.linkeddata.es/def/core#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://auroral.iot.linkeddata.es/def/core#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Device> .
-<https://auroral.iot.linkeddata.es/def/core#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Place> .
-# 
 # https://auroral.iot.linkeddata.es/def/core#hasNode
 <https://auroral.iot.linkeddata.es/def/core#hasNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasNode> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Node> .
@@ -110,6 +105,7 @@
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy
 <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedTo> .
 <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Organization> .
 <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Organization> .
 <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy> <http://www.w3.org/2000/01/rdf-schema#label> "has partnership requested by" .
@@ -134,15 +130,6 @@
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasStatus
 <https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Actuator> .
-<https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Device> .
-<https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Node> .
-<https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Notification> .
-<https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Organization> .
-<https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Sensor> .
-<https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#User> .
-<https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Device> .
-<https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3.org/ns/org#Organization> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasUser
 <https://auroral.iot.linkeddata.es/def/core#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -168,6 +155,16 @@
 <https://auroral.iot.linkeddata.es/def/core#knows> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Organization> .
 <https://auroral.iot.linkeddata.es/def/core#knows> <http://www.w3.org/2000/01/rdf-schema#label> "knows" .
 # 
+# https://auroral.iot.linkeddata.es/def/core#locatedIn
+<https://auroral.iot.linkeddata.es/def/core#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/core#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Device> .
+<https://auroral.iot.linkeddata.es/def/core#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Place> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#serviceType
+<https://auroral.iot.linkeddata.es/def/core#serviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/core#serviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
+<https://auroral.iot.linkeddata.es/def/core#serviceType> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#ServiceType> .
+# 
 # https://saref.etsi.org/core#controlsProperty
 <https://saref.etsi.org/core#controlsProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://saref.etsi.org/core#controlsProperty> <http://www.w3.org/2000/01/rdf-schema#label> "controls property" .
@@ -186,6 +183,7 @@
 # 
 # https://saref.etsi.org/core#hasProperty
 <https://saref.etsi.org/core#hasProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core#hasProperty> <http://www.w3.org/2002/07/owl#inverseOf> <https://saref.etsi.org/core#isPropertyOf> .
 <https://saref.etsi.org/core#hasProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#FeatureOfInterest> .
 <https://saref.etsi.org/core#hasProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#Property> .
 <https://saref.etsi.org/core#hasProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has property" .
@@ -193,7 +191,7 @@
 # https://saref.etsi.org/core#isMeasuredIn
 <https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
-<https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#Unit_of_measure> .
+<https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#UnitOfMeasure> .
 <https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "is measured in" .
 # 
 # https://saref.etsi.org/core#isPropertyOf
@@ -213,6 +211,7 @@
 # 
 # https://saref.etsi.org/core#relatesToMeasurement
 <https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2002/07/owl#inverseOf> <https://saref.etsi.org/core#relatesToProperty> .
 <https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Property> .
 <https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#Measurement> .
 <https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "relates to measurement" .
@@ -462,6 +461,12 @@
 <https://auroral.iot.linkeddata.es/def/core#serialNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://auroral.iot.linkeddata.es/def/core#serialNumber> <http://www.w3.org/2000/01/rdf-schema#label> "serial number" .
 # 
+# https://auroral.iot.linkeddata.es/def/core#serviceDescription
+<https://auroral.iot.linkeddata.es/def/core#serviceDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://auroral.iot.linkeddata.es/def/core#serviceDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
+<https://auroral.iot.linkeddata.es/def/core#serviceDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#serviceDescription> <http://www.w3.org/2000/01/rdf-schema#label> "service description" .
+# 
 # https://auroral.iot.linkeddata.es/def/core#serviceFree
 <https://auroral.iot.linkeddata.es/def/core#serviceFree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#serviceFree> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
@@ -573,10 +578,12 @@
 # https://auroral.iot.linkeddata.es/def/core#Building
 <https://auroral.iot.linkeddata.es/def/core#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core#FeatureOfInterest> .
+<https://auroral.iot.linkeddata.es/def/core#Building> <http://www.w3.org/2000/01/rdf-schema#label> "Building" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#City
 <https://auroral.iot.linkeddata.es/def/core#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core#FeatureOfInterest> .
+<https://auroral.iot.linkeddata.es/def/core#City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Country
 <https://auroral.iot.linkeddata.es/def/core#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -610,6 +617,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 _:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#visibility> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Device
 <https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -654,6 +662,7 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#Municipality
 <https://auroral.iot.linkeddata.es/def/core#Municipality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Municipality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core#FeatureOfInterest> .
+<https://auroral.iot.linkeddata.es/def/core#Municipality> <http://www.w3.org/2000/01/rdf-schema#label> "Municipality" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Node
 <https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -837,6 +846,10 @@ _:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linked
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service" .
 # 
+# https://auroral.iot.linkeddata.es/def/core#ServiceType
+<https://auroral.iot.linkeddata.es/def/core#ServiceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/core#ServiceType> <http://www.w3.org/2000/01/rdf-schema#label> "Service Type" .
+# 
 # https://auroral.iot.linkeddata.es/def/core#Status
 <https://auroral.iot.linkeddata.es/def/core#Status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Status> <http://www.w3.org/2000/01/rdf-schema#label> "Status" .
@@ -939,9 +952,9 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://saref.etsi.org/core#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://saref.etsi.org/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor" .
 # 
-# https://saref.etsi.org/core#Unit_of_measure
-<https://saref.etsi.org/core#Unit_of_measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://saref.etsi.org/core#Unit_of_measure> <http://www.w3.org/2000/01/rdf-schema#label> "Unit of measure" .
+# https://saref.etsi.org/core#UnitOfMeasure
+<https://saref.etsi.org/core#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Unit of measure" .
 # 
 # https://www.w3.org/2006/time#TemporalUnit
 <https://www.w3.org/2006/time#TemporalUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -974,97 +987,97 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://www.ontology-of-units-of-measure.org/page/om-2#centimetre
 <http://www.ontology-of-units-of-measure.org/page/om-2#centimetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/page/om-2#centimetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/page/om-2#centimetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/page/om-2#hectopascal
 <http://www.ontology-of-units-of-measure.org/page/om-2#hectopascal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/page/om-2#hectopascal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/page/om-2#hectopascal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/page/om-2#kelvin
 <http://www.ontology-of-units-of-measure.org/page/om-2#kelvin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/page/om-2#kelvin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/page/om-2#kelvin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/page/om-2#kilowatt
 <http://www.ontology-of-units-of-measure.org/page/om-2#kilowatt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/page/om-2#kilowatt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/page/om-2#kilowatt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/page/om-2#litre
 <http://www.ontology-of-units-of-measure.org/page/om-2#litre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/page/om-2#litre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/page/om-2#litre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/page/om-2#millimetre
 <http://www.ontology-of-units-of-measure.org/page/om-2#millimetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/page/om-2#millimetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/page/om-2#millimetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/page/om-2#wattSquareMetre
 <http://www.ontology-of-units-of-measure.org/page/om-2#wattSquareMetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/page/om-2#wattSquareMetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/page/om-2#wattSquareMetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage
 <http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/ampere
 <http://www.ontology-of-units-of-measure.org/resource/om-2/ampere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/ampere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/ampere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre
 <http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre
 <http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/degree
 <http://www.ontology-of-units-of-measure.org/resource/om-2/degree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/degree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/degree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius
 <http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit
 <http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal
 <http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram
 <http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt
 <http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour
 <http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/lux
 <http://www.ontology-of-units-of-measure.org/resource/om-2/lux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/lux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/lux> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared
 <http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre
 <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion
 <http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/volt
 <http://www.ontology-of-units-of-measure.org/resource/om-2/volt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/volt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/volt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # http://www.ontology-of-units-of-measure.org/resource/om-2/watt
 <http://www.ontology-of-units-of-measure.org/resource/om-2/watt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.ontology-of-units-of-measure.org/resource/om-2/watt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<http://www.ontology-of-units-of-measure.org/resource/om-2/watt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#AcceptedNotificationStatus
 <https://auroral.iot.linkeddata.es/def/core#AcceptedNotificationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1088,16 +1101,21 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://auroral.iot.linkeddata.es/def/core#AmpereHour
 <https://auroral.iot.linkeddata.es/def/core#AmpereHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#AmpereHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<https://auroral.iot.linkeddata.es/def/core#AmpereHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#AngularDegree
 <https://auroral.iot.linkeddata.es/def/core#AngularDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#AngularDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<https://auroral.iot.linkeddata.es/def/core#AngularDegree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Auroral
 <https://auroral.iot.linkeddata.es/def/core#Auroral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#Auroral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Node> .
 <https://auroral.iot.linkeddata.es/def/core#Auroral> <http://www.w3.org/2000/01/rdf-schema#label> "Auroral" .
+# 
+# https://auroral.iot.linkeddata.es/def/core#Commodity
+<https://auroral.iot.linkeddata.es/def/core#Commodity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/core#Commodity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#ServiceType> .
+<https://auroral.iot.linkeddata.es/def/core#Commodity> <http://www.w3.org/2000/01/rdf-schema#label> "Commodity" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#ContractAcceptedNotification
 <https://auroral.iot.linkeddata.es/def/core#ContractAcceptedNotification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1121,7 +1139,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://auroral.iot.linkeddata.es/def/core#Decibel
 <https://auroral.iot.linkeddata.es/def/core#Decibel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#Decibel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<https://auroral.iot.linkeddata.es/def/core#Decibel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#DeletedItemStatus
 <https://auroral.iot.linkeddata.es/def/core#DeletedItemStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1200,12 +1218,17 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://auroral.iot.linkeddata.es/def/core#MilliAmpereHour
 <https://auroral.iot.linkeddata.es/def/core#MilliAmpereHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#MilliAmpereHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<https://auroral.iot.linkeddata.es/def/core#MilliAmpereHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Mobility
 <https://auroral.iot.linkeddata.es/def/core#Mobility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#Mobility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Domain> .
 <https://auroral.iot.linkeddata.es/def/core#Mobility> <http://www.w3.org/2000/01/rdf-schema#label> "Mobility" .
+# 
+# https://auroral.iot.linkeddata.es/def/core#NotCommodity
+<https://auroral.iot.linkeddata.es/def/core#NotCommodity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/core#NotCommodity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#ServiceType> .
+<https://auroral.iot.linkeddata.es/def/core#NotCommodity> <http://www.w3.org/2000/01/rdf-schema#label> "Not commodity" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#RegistrationRequestNotification
 <https://auroral.iot.linkeddata.es/def/core#RegistrationRequestNotification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1260,18 +1283,18 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://auroral.iot.linkeddata.es/def/core#WaitingNotificationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#NotificationStatus> .
 <https://auroral.iot.linkeddata.es/def/core#WaitingNotificationStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Waiting notification status" .
 # 
+# https://auroral.iot.linkeddata.es/def/core#WattHour
+<https://auroral.iot.linkeddata.es/def/core#WattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/core#WattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
+<https://auroral.iot.linkeddata.es/def/core#WattHour> <http://www.w3.org/2000/01/rdf-schema#comment> "watt Hour" .
+# 
 # https://auroral.iot.linkeddata.es/def/core#kilowattHourSquareMeter
 <https://auroral.iot.linkeddata.es/def/core#kilowattHourSquareMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#kilowattHourSquareMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
+<https://auroral.iot.linkeddata.es/def/core#kilowattHourSquareMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#kilowattHourYear
 <https://auroral.iot.linkeddata.es/def/core#kilowattHourYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#kilowattHourYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
-# 
-# https://auroral.iot.linkeddata.es/def/core#wattHour
-<https://auroral.iot.linkeddata.es/def/core#wattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#wattHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#Unit_of_measure> .
-<https://auroral.iot.linkeddata.es/def/core#wattHour> <http://www.w3.org/2000/01/rdf-schema#comment> "watt Hour" .
+<https://auroral.iot.linkeddata.es/def/core#kilowattHourYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://saref.etsi.org/core#UnitOfMeasure> .
 # 
 # https://www.w3.org/2006/time#unitHour
 <https://www.w3.org/2006/time#unitHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1296,8 +1319,6 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#label> "title" .
 # 
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#label> "User" .
-# 
-<https://auroral.iot.linkeddata.es/def/core#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has location" .
 # 
 <https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has status" .
 # 
