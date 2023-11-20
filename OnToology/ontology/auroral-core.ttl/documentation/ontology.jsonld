@@ -41,7 +41,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#NodeStatus"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus"
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#status"
   } ]
 }, {
   "@id" : "_:genid14",
@@ -86,7 +86,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#NotificationStatus"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus"
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#status"
   } ]
 }, {
   "@id" : "_:genid19",
@@ -388,19 +388,19 @@
   "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#UserStatus"
+    "@id" : "http://xmlns.com/foaf/0.1/Image"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus"
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar"
   } ]
 }, {
   "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Image"
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#UserStatus"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar"
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#status"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -505,7 +505,7 @@
   "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus"
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#status"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#ItemStatus"
@@ -1877,15 +1877,6 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has status"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasSubDomain",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -2127,6 +2118,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#ServiceType"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#value",

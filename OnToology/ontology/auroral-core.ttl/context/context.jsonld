@@ -259,13 +259,13 @@
       "@id" : "https://auroral.iot.linkeddata.es/def/core#namePlace",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
-    "hasStatus" : {
-      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
-    },
     "exposes" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#exposes",
       "@type" : "@id"
+    },
+    "status" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#status",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "datasetProvider" : {
       "@id" : "https://auroral.iot.linkeddata.es/def/core#datasetProvider",
