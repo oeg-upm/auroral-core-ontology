@@ -1,0 +1,112 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://lexvo.org/ontology#language
+<http://lexvo.org/ontology#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#applicableToGeographicArea
+<https://auroral.iot.linkeddata.es/def/core#applicableToGeographicArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#code
+<https://auroral.iot.linkeddata.es/def/core#code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#currentStatus
+<https://auroral.iot.linkeddata.es/def/core#currentStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#hasDomain
+<https://auroral.iot.linkeddata.es/def/core#hasDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#hasFunctionality
+<https://auroral.iot.linkeddata.es/def/core#hasFunctionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#hasRequirement
+<https://auroral.iot.linkeddata.es/def/core#hasRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#hasSubDomain
+<https://auroral.iot.linkeddata.es/def/core#hasSubDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#name
+<https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#numberOfDownload
+<https://auroral.iot.linkeddata.es/def/core#numberOfDownload> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#provider
+<https://auroral.iot.linkeddata.es/def/core#provider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#serviceFree
+<https://auroral.iot.linkeddata.es/def/core#serviceFree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#versionOfservice
+<https://auroral.iot.linkeddata.es/def/core#versionOfservice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.w3.org/2019/wot/td#created
+<https://www.w3.org/2019/wot/td#created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.w3.org/2019/wot/td#description
+<https://www.w3.org/2019/wot/td#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.w3.org/2019/wot/td#modified
+<https://www.w3.org/2019/wot/td#modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://www.w3.org/2019/wot/td#title
+<https://www.w3.org/2019/wot/td#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://auroral.iot.linkeddata.es/def/core#Place
+<https://auroral.iot.linkeddata.es/def/core#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://auroral.iot.linkeddata.es/def/core#Service
+<https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://auroral.iot.linkeddata.es/def/core#PlaceService1
+<https://auroral.iot.linkeddata.es/def/core#PlaceService1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/core#PlaceService1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Place> .
+<https://auroral.iot.linkeddata.es/def/core#PlaceService1> <https://auroral.iot.linkeddata.es/def/core#code> "codeCountry" .
+<https://auroral.iot.linkeddata.es/def/core#PlaceService1> <https://auroral.iot.linkeddata.es/def/core#name> "nameCountry" .
+# 
+# https://auroral.iot.linkeddata.es/def/core#Service1
+<https://auroral.iot.linkeddata.es/def/core#Service1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Service> .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <http://lexvo.org/ontology#language> <http://lexvo.org/ontology#English> .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <http://lexvo.org/ontology#language> <http://lexvo.org/ontology#Spanich> .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://auroral.iot.linkeddata.es/def/core#applicableToGeographicArea> <https://auroral.iot.linkeddata.es/def/core#PlaceService1> .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://auroral.iot.linkeddata.es/def/core#currentStatus> "available" .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://auroral.iot.linkeddata.es/def/core#hasDomain> <https://auroral.iot.linkeddata.es/def/core#Tourism> .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://auroral.iot.linkeddata.es/def/core#hasFunctionality> "Guide in Musuem" .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://auroral.iot.linkeddata.es/def/core#hasRequirement> "Photo not allowed" .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://auroral.iot.linkeddata.es/def/core#hasSubDomain> "Musuemvisit" .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://auroral.iot.linkeddata.es/def/core#numberOfDownload> "15"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://auroral.iot.linkeddata.es/def/core#provider> "Luxactive" .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://auroral.iot.linkeddata.es/def/core#serviceFree> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://auroral.iot.linkeddata.es/def/core#versionOfservice> "version1" .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://www.w3.org/2019/wot/td#created> "12-01-2022T12:10:14"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://www.w3.org/2019/wot/td#description> "service for accomodation" .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://www.w3.org/2019/wot/td#modified> "12-01-2023T11:05:34"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://auroral.iot.linkeddata.es/def/core#Service1> <https://www.w3.org/2019/wot/td#title> "accomodationService" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

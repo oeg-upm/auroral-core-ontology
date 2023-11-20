@@ -1,0 +1,127 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://lexvo.org/ontology#language
+<http://lexvo.org/ontology#language> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#applicableToGeographicArea
+<https://auroral.iot.linkeddata.es/def/core#applicableToGeographicArea> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#code
+<https://auroral.iot.linkeddata.es/def/core#code> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#currentStatus
+<https://auroral.iot.linkeddata.es/def/core#currentStatus> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#hasDomain
+<https://auroral.iot.linkeddata.es/def/core#hasDomain> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#hasFunctionality
+<https://auroral.iot.linkeddata.es/def/core#hasFunctionality> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#hasRequirement
+<https://auroral.iot.linkeddata.es/def/core#hasRequirement> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#hasSubDomain
+<https://auroral.iot.linkeddata.es/def/core#hasSubDomain> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#name
+<https://auroral.iot.linkeddata.es/def/core#name> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#numberOfDownload
+<https://auroral.iot.linkeddata.es/def/core#numberOfDownload> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#provider
+<https://auroral.iot.linkeddata.es/def/core#provider> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#serviceFree
+<https://auroral.iot.linkeddata.es/def/core#serviceFree> rdf:type owl:AnnotationProperty .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#versionOfservice
+<https://auroral.iot.linkeddata.es/def/core#versionOfservice> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/2019/wot/td#created
+<https://www.w3.org/2019/wot/td#created> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/2019/wot/td#description
+<https://www.w3.org/2019/wot/td#description> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/2019/wot/td#modified
+<https://www.w3.org/2019/wot/td#modified> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/2019/wot/td#title
+<https://www.w3.org/2019/wot/td#title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/core#Place
+<https://auroral.iot.linkeddata.es/def/core#Place> rdf:type owl:Class .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Service
+<https://auroral.iot.linkeddata.es/def/core#Service> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://auroral.iot.linkeddata.es/def/core#PlaceService1
+<https://auroral.iot.linkeddata.es/def/core#PlaceService1> rdf:type owl:NamedIndividual ,
+                                                                    <https://auroral.iot.linkeddata.es/def/core#Place> ;
+                                                           <https://auroral.iot.linkeddata.es/def/core#code> "codeCountry" ;
+                                                           <https://auroral.iot.linkeddata.es/def/core#name> "nameCountry" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Service1
+<https://auroral.iot.linkeddata.es/def/core#Service1> rdf:type owl:NamedIndividual ,
+                                                               <https://auroral.iot.linkeddata.es/def/core#Service> ;
+                                                      <http://lexvo.org/ontology#language> <http://lexvo.org/ontology#English> ,
+                                                                                           <http://lexvo.org/ontology#Spanich> ;
+                                                      <https://auroral.iot.linkeddata.es/def/core#applicableToGeographicArea> <https://auroral.iot.linkeddata.es/def/core#PlaceService1> ;
+                                                      <https://auroral.iot.linkeddata.es/def/core#currentStatus> "available" ;
+                                                      <https://auroral.iot.linkeddata.es/def/core#hasDomain> <https://auroral.iot.linkeddata.es/def/core#Tourism> ;
+                                                      <https://auroral.iot.linkeddata.es/def/core#hasFunctionality> "Guide in Musuem" ;
+                                                      <https://auroral.iot.linkeddata.es/def/core#hasRequirement> "Photo not allowed" ;
+                                                      <https://auroral.iot.linkeddata.es/def/core#hasSubDomain> "Musuemvisit" ;
+                                                      <https://auroral.iot.linkeddata.es/def/core#numberOfDownload> 15 ;
+                                                      <https://auroral.iot.linkeddata.es/def/core#provider> "Luxactive" ;
+                                                      <https://auroral.iot.linkeddata.es/def/core#serviceFree> "true"^^xsd:boolean ;
+                                                      <https://auroral.iot.linkeddata.es/def/core#versionOfservice> "version1" ;
+                                                      <https://www.w3.org/2019/wot/td#created> "12-01-2022T12:10:14"^^xsd:dateTime ;
+                                                      <https://www.w3.org/2019/wot/td#description> "service for accomodation" ;
+                                                      <https://www.w3.org/2019/wot/td#modified> "12-01-2023T11:05:34"^^xsd:dateTime ;
+                                                      <https://www.w3.org/2019/wot/td#title> "accomodationService" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

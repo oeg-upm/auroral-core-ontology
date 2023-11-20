@@ -1,0 +1,130 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://lexvo.org/ontology#language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#Place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#PlaceService1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Place"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#code" : [ {
+    "@value" : "codeCountry"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#name" : [ {
+    "@value" : "nameCountry"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#Service1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://lexvo.org/ontology#language" : [ {
+    "@id" : "http://lexvo.org/ontology#English"
+  }, {
+    "@id" : "http://lexvo.org/ontology#Spanich"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#applicableToGeographicArea" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#PlaceService1"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#currentStatus" : [ {
+    "@value" : "available"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#hasDomain" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Tourism"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#hasFunctionality" : [ {
+    "@value" : "Guide in Musuem"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#hasRequirement" : [ {
+    "@value" : "Photo not allowed"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#hasSubDomain" : [ {
+    "@value" : "Musuemvisit"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#numberOfDownload" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "15"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#provider" : [ {
+    "@value" : "Luxactive"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#serviceFree" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "https://auroral.iot.linkeddata.es/def/core#versionOfservice" : [ {
+    "@value" : "version1"
+  } ],
+  "https://www.w3.org/2019/wot/td#created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "12-01-2022T12:10:14"
+  } ],
+  "https://www.w3.org/2019/wot/td#description" : [ {
+    "@value" : "service for accomodation"
+  } ],
+  "https://www.w3.org/2019/wot/td#modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "12-01-2023T11:05:34"
+  } ],
+  "https://www.w3.org/2019/wot/td#title" : [ {
+    "@value" : "accomodationService"
+  } ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#applicableToGeographicArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#currentStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasFunctionality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasRequirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasSubDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#numberOfDownload",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#provider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#serviceFree",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#versionOfservice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/2019/wot/td#created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/2019/wot/td#description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/2019/wot/td#modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://www.w3.org/2019/wot/td#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"ns1:Service1" -> "ns1:PlaceService1" [ label = "ns1:applicableToGeographicArea" ];
+	"ns1:Service1" -> "ns1:Tourism" [ label = "ns1:hasDomain" ];
+	"ns1:Service1" -> "ns3:Spanich" [ label = "ns3:language" ];
+	"ns1:Service1" -> "ns3:English" [ label = "ns3:language" ];
+
+}

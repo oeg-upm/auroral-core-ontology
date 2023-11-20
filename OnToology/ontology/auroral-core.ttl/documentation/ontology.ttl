@@ -102,12 +102,6 @@
           rdfs:label "has Input" .
 
 
-###  https://auroral.iot.linkeddata.es/def/core#hasLocation
-:hasLocation rdf:type owl:ObjectProperty ;
-             rdfs:domain <https://saref.etsi.org/core#Device> ;
-             rdfs:range :Place .
-
-
 ###  https://auroral.iot.linkeddata.es/def/core#hasNode
 :hasNode rdf:type owl:ObjectProperty ;
          rdfs:range :Node ;
@@ -128,6 +122,7 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy
 :hasPartnershipRequestedBy rdf:type owl:ObjectProperty ;
+                           owl:inverseOf :hasPartnershipRequestedTo ;
                            rdfs:domain :Organization ;
                            rdfs:range :Organization ;
                            rdfs:label "has partnership requested by" .
@@ -155,16 +150,7 @@
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasStatus
-:hasStatus rdf:type owl:ObjectProperty ;
-           rdfs:domain :Actuator ,
-                       :Device ,
-                       :Node ,
-                       :Notification ,
-                       :Organization ,
-                       :Sensor ,
-                       :User ,
-                       <https://saref.etsi.org/core#Device> ,
-                       <https://www.w3.org/ns/org#Organization> .
+:hasStatus rdf:type owl:ObjectProperty .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasUser
@@ -195,6 +181,18 @@
        rdfs:label "knows" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain <https://saref.etsi.org/core#Device> ;
+           rdfs:range :Place .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#serviceType
+:serviceType rdf:type owl:ObjectProperty ;
+             rdfs:domain :Service ;
+             rdfs:range :ServiceType .
+
+
 ###  https://saref.etsi.org/core#controlsProperty
 <https://saref.etsi.org/core#controlsProperty> rdf:type owl:ObjectProperty ;
                                                rdfs:label "controls property" .
@@ -216,6 +214,7 @@
 
 ###  https://saref.etsi.org/core#hasProperty
 <https://saref.etsi.org/core#hasProperty> rdf:type owl:ObjectProperty ;
+                                          owl:inverseOf <https://saref.etsi.org/core#isPropertyOf> ;
                                           rdfs:domain <https://saref.etsi.org/core#FeatureOfInterest> ;
                                           rdfs:range <https://saref.etsi.org/core#Property> ;
                                           rdfs:label "has property" .
@@ -224,7 +223,7 @@
 ###  https://saref.etsi.org/core#isMeasuredIn
 <https://saref.etsi.org/core#isMeasuredIn> rdf:type owl:ObjectProperty ;
                                            rdfs:domain <https://saref.etsi.org/core#Measurement> ;
-                                           rdfs:range <https://saref.etsi.org/core#Unit_of_measure> ;
+                                           rdfs:range <https://saref.etsi.org/core#UnitOfMeasure> ;
                                            rdfs:label "is measured in" .
 
 
@@ -248,6 +247,7 @@
 
 ###  https://saref.etsi.org/core#relatesToMeasurement
 <https://saref.etsi.org/core#relatesToMeasurement> rdf:type owl:ObjectProperty ;
+                                                   owl:inverseOf <https://saref.etsi.org/core#relatesToProperty> ;
                                                    rdfs:domain <https://saref.etsi.org/core#Property> ;
                                                    rdfs:range <https://saref.etsi.org/core#Measurement> ;
                                                    rdfs:label "relates to measurement" .
@@ -537,6 +537,13 @@
               rdfs:label "serial number" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#serviceDescription
+:serviceDescription rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Service ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "service description" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#serviceFree
 :serviceFree rdf:type owl:DatatypeProperty ;
              rdfs:domain :Service ;
@@ -662,12 +669,14 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#Building
 :Building rdf:type owl:Class ;
-          rdfs:subClassOf <https://saref.etsi.org/core#FeatureOfInterest> .
+          rdfs:subClassOf <https://saref.etsi.org/core#FeatureOfInterest> ;
+          rdfs:label "Building" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#City
 :City rdf:type owl:Class ;
-      rdfs:subClassOf <https://saref.etsi.org/core#FeatureOfInterest> .
+      rdfs:subClassOf <https://saref.etsi.org/core#FeatureOfInterest> ;
+      rdfs:label "City" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Country
@@ -702,7 +711,8 @@
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :visibility ;
                            owl:someValuesFrom xsd:boolean
-                         ] .
+                         ] ;
+         rdfs:label "Dataset" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Device
@@ -751,7 +761,8 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#Municipality
 :Municipality rdf:type owl:Class ;
-              rdfs:subClassOf <https://saref.etsi.org/core#FeatureOfInterest> .
+              rdfs:subClassOf <https://saref.etsi.org/core#FeatureOfInterest> ;
+              rdfs:label "Municipality" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Node
@@ -947,6 +958,11 @@
          rdfs:label "Service" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#ServiceType
+:ServiceType rdf:type owl:Class ;
+             rdfs:label "Service Type" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#Status
 :Status rdf:type owl:Class ;
         rdfs:label "Status" .
@@ -1059,9 +1075,9 @@
                                      rdfs:label "Sensor" .
 
 
-###  https://saref.etsi.org/core#Unit_of_measure
-<https://saref.etsi.org/core#Unit_of_measure> rdf:type owl:Class ;
-                                              rdfs:label "Unit of measure" .
+###  https://saref.etsi.org/core#UnitOfMeasure
+<https://saref.etsi.org/core#UnitOfMeasure> rdf:type owl:Class ;
+                                            rdfs:label "Unit of measure" .
 
 
 ###  https://www.w3.org/2006/time#TemporalUnit
@@ -1095,47 +1111,47 @@
 
 ###  http://www.ontology-of-units-of-measure.org/page/om-2#centimetre
 <http://www.ontology-of-units-of-measure.org/page/om-2#centimetre> rdf:type owl:NamedIndividual ,
-                                                                            <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                            <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/page/om-2#hectopascal
 <http://www.ontology-of-units-of-measure.org/page/om-2#hectopascal> rdf:type owl:NamedIndividual ,
-                                                                             <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                             <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/page/om-2#kelvin
 <http://www.ontology-of-units-of-measure.org/page/om-2#kelvin> rdf:type owl:NamedIndividual ,
-                                                                        <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                        <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/page/om-2#kilowatt
 <http://www.ontology-of-units-of-measure.org/page/om-2#kilowatt> rdf:type owl:NamedIndividual ,
-                                                                          <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                          <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/page/om-2#litre
 <http://www.ontology-of-units-of-measure.org/page/om-2#litre> rdf:type owl:NamedIndividual ,
-                                                                       <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                       <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/page/om-2#millimetre
 <http://www.ontology-of-units-of-measure.org/page/om-2#millimetre> rdf:type owl:NamedIndividual ,
-                                                                            <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                            <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/page/om-2#wattSquareMetre
 <http://www.ontology-of-units-of-measure.org/page/om-2#wattSquareMetre> rdf:type owl:NamedIndividual ,
-                                                                                 <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                                 <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage
 <http://www.ontology-of-units-of-measure.org/resource/om-2/Percentage> rdf:type owl:NamedIndividual ,
-                                                                                <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                                <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/ampere
 <http://www.ontology-of-units-of-measure.org/resource/om-2/ampere> rdf:type owl:NamedIndividual ,
-                                                                            <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                            <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/centimetre
@@ -1144,32 +1160,32 @@
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre
 <http://www.ontology-of-units-of-measure.org/resource/om-2/cubicMetre> rdf:type owl:NamedIndividual ,
-                                                                                <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                                <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/degree
 <http://www.ontology-of-units-of-measure.org/resource/om-2/degree> rdf:type owl:NamedIndividual ,
-                                                                            <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                            <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius
 <http://www.ontology-of-units-of-measure.org/resource/om-2/degreeCelsius> rdf:type owl:NamedIndividual ,
-                                                                                   <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                                   <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit
 <http://www.ontology-of-units-of-measure.org/resource/om-2/degreeFahrenheit> rdf:type owl:NamedIndividual ,
-                                                                                      <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                                      <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal
 <http://www.ontology-of-units-of-measure.org/resource/om-2/hectopascal> rdf:type owl:NamedIndividual ,
-                                                                                 <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                                 <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram
 <http://www.ontology-of-units-of-measure.org/resource/om-2/kilogram> rdf:type owl:NamedIndividual ,
-                                                                              <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                              <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/kilowatt
@@ -1178,37 +1194,37 @@
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour
 <http://www.ontology-of-units-of-measure.org/resource/om-2/kilowattHour> rdf:type owl:NamedIndividual ,
-                                                                                  <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                                  <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/lux
 <http://www.ontology-of-units-of-measure.org/resource/om-2/lux> rdf:type owl:NamedIndividual ,
-                                                                         <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                         <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared
 <http://www.ontology-of-units-of-measure.org/resource/om-2/metersPerSecond-TimeSquared> rdf:type owl:NamedIndividual ,
-                                                                                                 <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                                                 <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre
 <http://www.ontology-of-units-of-measure.org/resource/om-2/millimetre> rdf:type owl:NamedIndividual ,
-                                                                                <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                                <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion
 <http://www.ontology-of-units-of-measure.org/resource/om-2/partsPerMillion> rdf:type owl:NamedIndividual ,
-                                                                                     <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                                     <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/volt
 <http://www.ontology-of-units-of-measure.org/resource/om-2/volt> rdf:type owl:NamedIndividual ,
-                                                                          <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                          <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  http://www.ontology-of-units-of-measure.org/resource/om-2/watt
 <http://www.ontology-of-units-of-measure.org/resource/om-2/watt> rdf:type owl:NamedIndividual ,
-                                                                          <https://saref.etsi.org/core#Unit_of_measure> .
+                                                                          <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#AcceptedNotificationStatus
@@ -1237,18 +1253,24 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#AmpereHour
 :AmpereHour rdf:type owl:NamedIndividual ,
-                     <https://saref.etsi.org/core#Unit_of_measure> .
+                     <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#AngularDegree
 :AngularDegree rdf:type owl:NamedIndividual ,
-                        <https://saref.etsi.org/core#Unit_of_measure> .
+                        <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Auroral
 :Auroral rdf:type owl:NamedIndividual ,
                   :Node ;
          rdfs:label "Auroral" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#Commodity
+:Commodity rdf:type owl:NamedIndividual ,
+                    :ServiceType ;
+           rdfs:label "Commodity" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#ContractAcceptedNotification
@@ -1277,7 +1299,7 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#Decibel
 :Decibel rdf:type owl:NamedIndividual ,
-                  <https://saref.etsi.org/core#Unit_of_measure> .
+                  <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#DeletedItemStatus
@@ -1372,13 +1394,19 @@
 
 ###  https://auroral.iot.linkeddata.es/def/core#MilliAmpereHour
 :MilliAmpereHour rdf:type owl:NamedIndividual ,
-                          <https://saref.etsi.org/core#Unit_of_measure> .
+                          <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Mobility
 :Mobility rdf:type owl:NamedIndividual ,
                    :Domain ;
           rdfs:label "Mobility" .
+
+
+###  https://auroral.iot.linkeddata.es/def/core#NotCommodity
+:NotCommodity rdf:type owl:NamedIndividual ,
+                       :ServiceType ;
+              rdfs:label "Not commodity" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#RegistrationRequestNotification
@@ -1445,20 +1473,20 @@
                            rdfs:label "Waiting notification status" .
 
 
+###  https://auroral.iot.linkeddata.es/def/core#WattHour
+:WattHour rdf:type owl:NamedIndividual ,
+                   <https://saref.etsi.org/core#UnitOfMeasure> ;
+          rdfs:comment "watt Hour" .
+
+
 ###  https://auroral.iot.linkeddata.es/def/core#kilowattHourSquareMeter
 :kilowattHourSquareMeter rdf:type owl:NamedIndividual ,
-                                  <https://saref.etsi.org/core#Unit_of_measure> .
+                                  <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#kilowattHourYear
 :kilowattHourYear rdf:type owl:NamedIndividual ,
-                           <https://saref.etsi.org/core#Unit_of_measure> .
-
-
-###  https://auroral.iot.linkeddata.es/def/core#wattHour
-:wattHour rdf:type owl:NamedIndividual ,
-                   <https://saref.etsi.org/core#Unit_of_measure> ;
-          rdfs:comment "watt Hour" .
+                           <https://saref.etsi.org/core#UnitOfMeasure> .
 
 
 ###  https://www.w3.org/2006/time#unitHour
@@ -1483,9 +1511,6 @@
 
 
 :User rdfs:label "User" .
-
-
-:hasLocation rdfs:label "has location" .
 
 
 :hasStatus rdfs:label "has status" .

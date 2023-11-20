@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:td="https://www.w3.org/2019/wot/td#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="https://auroral.iot.linkeddata.es/def/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology="http://lexvo.org/ontology#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://lexvo.org/ontology#language -->
+
+
+    <AnnotationProperty rdf:about="http://lexvo.org/ontology#language"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#applicableToGeographicArea -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#applicableToGeographicArea"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#code -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#code"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#currentStatus -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#currentStatus"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasDomain -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasDomain"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasFunctionality -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasFunctionality"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasRequirement -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasRequirement"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasSubDomain -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasSubDomain"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#name -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#name"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#numberOfDownload -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#numberOfDownload"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#provider -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#provider"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#serviceFree -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#serviceFree"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#versionOfservice -->
+
+
+    <AnnotationProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#versionOfservice"/>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/td#created -->
+
+
+    <AnnotationProperty rdf:about="https://www.w3.org/2019/wot/td#created"/>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/td#description -->
+
+
+    <AnnotationProperty rdf:about="https://www.w3.org/2019/wot/td#description"/>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/td#modified -->
+
+
+    <AnnotationProperty rdf:about="https://www.w3.org/2019/wot/td#modified"/>
+    
+
+
+    <!-- https://www.w3.org/2019/wot/td#title -->
+
+
+    <AnnotationProperty rdf:about="https://www.w3.org/2019/wot/td#title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#Place -->
+
+
+    <Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Place"/>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#Service -->
+
+
+    <Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Service"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#PlaceService1 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#PlaceService1">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#Place"/>
+        <core:code>codeCountry</core:code>
+        <core:name>nameCountry</core:name>
+    </NamedIndividual>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#Service1 -->
+
+
+    <NamedIndividual rdf:about="https://auroral.iot.linkeddata.es/def/core#Service1">
+        <rdf:type rdf:resource="https://auroral.iot.linkeddata.es/def/core#Service"/>
+        <ontology:language rdf:resource="http://lexvo.org/ontology#English"/>
+        <ontology:language rdf:resource="http://lexvo.org/ontology#Spanich"/>
+        <core:applicableToGeographicArea rdf:resource="https://auroral.iot.linkeddata.es/def/core#PlaceService1"/>
+        <core:currentStatus>available</core:currentStatus>
+        <core:hasDomain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Tourism"/>
+        <core:hasFunctionality>Guide in Musuem</core:hasFunctionality>
+        <core:hasRequirement>Photo not allowed</core:hasRequirement>
+        <core:hasSubDomain>Musuemvisit</core:hasSubDomain>
+        <core:numberOfDownload rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</core:numberOfDownload>
+        <core:provider>Luxactive</core:provider>
+        <core:serviceFree rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</core:serviceFree>
+        <core:versionOfservice>version1</core:versionOfservice>
+        <td:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">12-01-2022T12:10:14</td:created>
+        <td:description>service for accomodation</td:description>
+        <td:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">12-01-2023T11:05:34</td:modified>
+        <td:title>accomodationService</td:title>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

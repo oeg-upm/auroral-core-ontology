@@ -1,0 +1,61 @@
+{
+  "@context" : {
+    "currentStatus" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#currentStatus"
+    },
+    "created" : {
+      "@id" : "https://www.w3.org/2019/wot/td#created"
+    },
+    "provider" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#provider"
+    },
+    "name" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#name"
+    },
+    "hasSubDomain" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasSubDomain"
+    },
+    "numberOfDownload" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#numberOfDownload"
+    },
+    "Place" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Place"
+    },
+    "title" : {
+      "@id" : "https://www.w3.org/2019/wot/td#title"
+    },
+    "modified" : {
+      "@id" : "https://www.w3.org/2019/wot/td#modified"
+    },
+    "hasRequirement" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasRequirement"
+    },
+    "versionOfservice" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#versionOfservice"
+    },
+    "hasDomain" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasDomain"
+    },
+    "Service" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
+    },
+    "language" : {
+      "@id" : "http://lexvo.org/ontology#language"
+    },
+    "code" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#code"
+    },
+    "description" : {
+      "@id" : "https://www.w3.org/2019/wot/td#description"
+    },
+    "hasFunctionality" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#hasFunctionality"
+    },
+    "serviceFree" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#serviceFree"
+    },
+    "applicableToGeographicArea" : {
+      "@id" : "https://auroral.iot.linkeddata.es/def/core#applicableToGeographicArea"
+    }
+  }
+}
