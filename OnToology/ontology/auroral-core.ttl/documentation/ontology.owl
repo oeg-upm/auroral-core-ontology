@@ -253,13 +253,6 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#hasStatus -->
-
-
-    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasStatus"/>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/core#hasUser -->
 
 
@@ -321,6 +314,13 @@
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Service"/>
         <rdfs:range rdf:resource="https://auroral.iot.linkeddata.es/def/core#ServiceType"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#status -->
+
+
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#status"/>
     
 
 
@@ -749,15 +749,6 @@
     
 
 
-    <!-- https://auroral.iot.linkeddata.es/def/core#hasStatus -->
-
-
-    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasStatus">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://auroral.iot.linkeddata.es/def/core#hasSubDomain -->
 
 
@@ -915,6 +906,15 @@
         <rdfs:domain rdf:resource="https://auroral.iot.linkeddata.es/def/core#Service"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:label>service provider</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#status -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#status">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -1211,7 +1211,7 @@
         <rdfs:subClassOf rdf:resource="https://www.w3.org/2019/wot/td#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasStatus"/>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#status"/>
                 <owl:someValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/core#ItemStatus"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1276,7 +1276,7 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasStatus"/>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#status"/>
                 <owl:allValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/core#NodeStatus"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1325,7 +1325,7 @@
     <owl:Class rdf:about="https://auroral.iot.linkeddata.es/def/core#Notification">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasStatus"/>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#status"/>
                 <owl:allValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/core#NotificationStatus"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1614,14 +1614,14 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#hasStatus"/>
-                <owl:allValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/core#UserStatus"/>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar"/>
+                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar"/>
-                <owl:allValuesFrom rdf:resource="http://xmlns.com/foaf/0.1/Image"/>
+                <owl:onProperty rdf:resource="https://auroral.iot.linkeddata.es/def/core#status"/>
+                <owl:allValuesFrom rdf:resource="https://auroral.iot.linkeddata.es/def/core#UserStatus"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2513,8 +2513,8 @@
     <rdf:Description rdf:about="https://auroral.iot.linkeddata.es/def/core#User">
         <rdfs:label>User</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://auroral.iot.linkeddata.es/def/core#hasStatus">
-        <rdfs:label>has status</rdfs:label>
+    <rdf:Description rdf:about="https://auroral.iot.linkeddata.es/def/core#status">
+        <rdfs:label>status</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
