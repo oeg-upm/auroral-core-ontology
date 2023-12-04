@@ -67,7 +67,7 @@ dc:title rdf:type owl:AnnotationProperty .
 
 ###  http://www.opengis.net/ont/geosparql#hasGeometry
 geosparql:hasGeometry rdf:type owl:ObjectProperty ;
-                      rdfs:label "has Geometry" .
+                      rdfs:label "has geometry" .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#location
@@ -153,7 +153,7 @@ core:hasPartnershipRequestedTo rdf:type owl:ObjectProperty ;
 core:hasReadability rdf:type owl:ObjectProperty ;
                     rdfs:domain saref:Measurement ;
                     rdfs:range core:Readability ;
-                    rdfs:label "has Readability" .
+                    rdfs:label "has readability" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#hasRole
@@ -312,7 +312,7 @@ dc:title rdf:type owl:DatatypeProperty .
 
 ###  http://www.w3.org/ns/dcat#accessURL
 dcat:accessURL rdf:type owl:DatatypeProperty ;
-               rdfs:label "accessURL" .
+               rdfs:label "access url" .
 
 
 ###  http://www.w3.org/ns/dcat#keyword
@@ -338,7 +338,7 @@ core:code rdf:type owl:DatatypeProperty ;
 core:continentCode rdf:type owl:DatatypeProperty ;
                    rdfs:domain core:Country ;
                    rdfs:range xsd:string ;
-                   rdfs:label "continent Code" .
+                   rdfs:label "continent code" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#currentStatus
@@ -510,7 +510,7 @@ core:isUnread rdf:type owl:DatatypeProperty ;
 core:isoCode rdf:type owl:DatatypeProperty ;
              rdfs:domain core:Country ;
              rdfs:range xsd:string ;
-             rdfs:label "iso Code" .
+             rdfs:label "iso code" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#name
@@ -636,17 +636,20 @@ saref:hasValue rdf:type owl:DatatypeProperty ;
 
 ###  http://lexvo.org/ontology#Language
 <http://lexvo.org/ontology#Language> rdf:type owl:Class ;
+                                     rdfs:comment "The used languages for services" ;
                                      rdfs:label "Language" .
 
 
 ###  http://www.geonames.org/ontology#Feature
 geonames:Feature rdf:type owl:Class ;
+                 rdfs:comment "refers to the location" ;
                  rdfs:label "Feature" .
 
 
 ###  http://www.opengis.net/ont/geosparql#Geometry
 geosparql:Geometry rdf:type owl:Class ;
-                   rdfs:subClassOf geo:SpatialThing .
+                   rdfs:subClassOf geo:SpatialThing ;
+                   rdfs:label "Geometry" .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
@@ -656,6 +659,7 @@ geo:SpatialThing rdf:type owl:Class ;
 
 ###  http://www.w3.org/ns/dcat#Dataset
 dcat:Dataset rdf:type owl:Class ;
+             rdfs:comment "collect the datasets in the AURORAL project" ;
              rdfs:label "Dataset" .
 
 
@@ -673,6 +677,7 @@ foaf:Person rdf:type owl:Class ;
 core:Actuator rdf:type owl:Class ;
               rdfs:subClassOf core:Device ,
                               saref:Actuator ;
+              rdfs:comment "a device that causes a machine or other device to operate." ;
               rdfs:label "Actuator" .
 
 
@@ -695,7 +700,8 @@ core:City rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#Country
 core:Country rdf:type owl:Class ;
-             rdfs:subClassOf geonames:Feature .
+             rdfs:subClassOf geonames:Feature ;
+             rdfs:label "Country" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Dataset
@@ -733,11 +739,13 @@ core:Dataset rdf:type owl:Class ;
 core:Device rdf:type owl:Class ;
             rdfs:subClassOf core:PhysicalThing ,
                             saref:Device ;
+            rdfs:comment "physical object used in the AURORAL project (sensor, actuator)" ;
             rdfs:label "Device" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Domain
 core:Domain rdf:type owl:Class ;
+            rdfs:comment "refers to the domains in the AURORAL project (Farming, mobility, energy, health, tourism)" ;
             rdfs:label "Domain" .
 
 
@@ -1053,6 +1061,7 @@ core:VirtualThing rdf:type owl:Class ;
 
 ###  https://saref.etsi.org/core#Actuator
 saref:Actuator rdf:type owl:Class ;
+               rdfs:comment "a device that causes a machine or other device to operate." ;
                rdfs:label "Actuator" .
 
 
@@ -1066,16 +1075,19 @@ saref:Device rdf:type owl:Class ;
                                owl:onProperty saref:hasModel ;
                                owl:someValuesFrom xsd:string
                              ] ;
+             rdfs:comment "Physical object used in a use case (sensor, actuator, etc)" ;
              rdfs:label "Device" .
 
 
 ###  https://saref.etsi.org/core#FeatureOfInterest
 saref:FeatureOfInterest rdf:type owl:Class ;
+                        rdfs:comment "A feature of interest is an abstraction of a real world phenomena (thing, person, event, etc)" ;
                         rdfs:label "Feature of interest" .
 
 
 ###  https://saref.etsi.org/core#Measurement
 saref:Measurement rdf:type owl:Class ;
+                  rdfs:comment "Measurement is the quantification of attributes of an object or event" ;
                   rdfs:label "Measurement" .
 
 
@@ -1262,7 +1274,7 @@ core:ActiveUserStatus rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/core#Admin
 core:Admin rdf:type owl:NamedIndividual ,
                     core:Role ;
-           rdfs:label "Admin" .
+           rdfs:label "admin" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#AmpereHour
@@ -1284,7 +1296,7 @@ core:Auroral rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/core#Commodity
 core:Commodity rdf:type owl:NamedIndividual ,
                         core:ServiceType ;
-               rdfs:label "Commodity" .
+               rdfs:label "commodity" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#ContractAcceptedNotification
@@ -1302,13 +1314,13 @@ core:ContractRequestNotification rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/core#CyclingEconomy
 core:CyclingEconomy rdf:type owl:NamedIndividual ,
                              core:Domain ;
-                    rdfs:label "Cycling economy" .
+                    rdfs:label "cycling economy" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#DairyFarming
 core:DairyFarming rdf:type owl:NamedIndividual ,
                            core:Domain ;
-                  rdfs:label "Dairy farming" .
+                  rdfs:label "dairy farming" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Decibel
@@ -1337,13 +1349,13 @@ core:DeletedUserStatus rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/core#Dev_ops
 core:Dev_ops rdf:type owl:NamedIndividual ,
                       core:Role ;
-             rdfs:label "Dev ops" .
+             rdfs:label "dev ops" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Dev_owner
 core:Dev_owner rdf:type owl:NamedIndividual ,
                         core:Role ;
-               rdfs:label "Dev owner" .
+               rdfs:label "dev owner" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#DisabledItemStatus
@@ -1361,13 +1373,13 @@ core:EnabledItemStatus rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/core#Energy
 core:Energy rdf:type owl:NamedIndividual ,
                      core:Domain ;
-            rdfs:label "Energy" .
+            rdfs:label "energy" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Health
 core:Health rdf:type owl:NamedIndividual ,
                      core:Domain ;
-            rdfs:label "Health" .
+            rdfs:label "health" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#InfoNotificationStatus
@@ -1414,13 +1426,13 @@ core:MilliAmpereHour rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/core#Mobility
 core:Mobility rdf:type owl:NamedIndividual ,
                        core:Domain ;
-              rdfs:label "Mobility" .
+              rdfs:label "mobility" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#NotCommodity
 core:NotCommodity rdf:type owl:NamedIndividual ,
                            core:ServiceType ;
-                  rdfs:label "Not commodity" .
+                  rdfs:label "not commodity" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#RegistrationRequestNotification
@@ -1444,7 +1456,7 @@ core:RespondedNotificationStatus rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/core#Sev_provider
 core:Sev_provider rdf:type owl:NamedIndividual ,
                            core:Role ;
-                  rdfs:label "Service provider" .
+                  rdfs:label "service provider" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Sharq
@@ -1456,18 +1468,19 @@ core:Sharq rdf:type owl:NamedIndividual ,
 ###  https://auroral.iot.linkeddata.es/def/core#Super_user
 core:Super_user rdf:type owl:NamedIndividual ,
                          core:Role ;
-                rdfs:label "Super user" .
+                rdfs:label "super user" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Sys_integrator
 core:Sys_integrator rdf:type owl:NamedIndividual ,
                              core:Role ;
-                    rdfs:label "System integrator" .
+                    rdfs:label "system integrator" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Tourism
-core:Tourism rdf:type owl:NamedIndividual ;
-             rdfs:label "Tourism" .
+core:Tourism rdf:type owl:NamedIndividual ,
+                      core:Domain ;
+             rdfs:label "tourism" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#User
@@ -1524,7 +1537,7 @@ dc:description rdfs:label "description" .
 dc:title rdfs:label "title" .
 
 
-core:User rdfs:label "User" .
+core:User rdfs:label "user" .
 
 
 core:status rdfs:label "status" .

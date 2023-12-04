@@ -1,409 +1,724 @@
 @prefix : <https://auroral.iot.linkeddata.es/tests/core#> .
+@prefix dc: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc:    <http://purl.org/dc/terms/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
 
 
-:TestsuiteCore rdf:type <http://w3id.org/def/vtc#TestSuite>, owl:NamedIndividual;
-            dcterms:source <https://auroral.iot.linkeddata.es/def/core>.
+###  https://w3id.org/def/vtc#belongsTo
+<https://w3id.org/def/vtc#belongsTo> rdf:type owl:AnnotationProperty .
 
-:Test1 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-               <https://w3id.org/def/vtc#desiredBehaviour> "User containsItem Item" .
 
-:Test2 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "User hasAudit Audit" .
+###  https://w3id.org/def/vtc#desiredBehaviour
+<https://w3id.org/def/vtc#desiredBehaviour> rdf:type owl:AnnotationProperty .
 
-:Test3 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "User hasNotification Notification" .
 
-:Test4 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-               <https://w3id.org/def/vtc#desiredBehaviour> "Dev_ops type Role" .
+#################################################################
+#    Classes
+#################################################################
 
-:Test5 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Infras_operator type Role" .
+###  http://w3id.org/def/vtc#TestSuite
+<http://w3id.org/def/vtc#TestSuite> rdf:type owl:Class .
 
-:Test6 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "User type Role" .
 
-:Test7 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "Admin type Role" .
+###  https://w3id.org/def/vtc#TestCaseDesign
+<https://w3id.org/def/vtc#TestCaseDesign> rdf:type owl:Class .
 
-:Test8 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "User hasRole Role" .
 
-:Test9 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
-        <https://w3id.org/def/vtc#desiredBehaviour> "DeletedUserStatus type UserStatus" .
+#################################################################
+#    Individuals
+#################################################################
 
-:Test10 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+###  https://auroral.iot.linkeddata.es/tests/core#Test1
+:Test1 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "User containsItem Item" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test10
+:Test10 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "ActiveUserStatus type UserStatus" .
 
-:Test11 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test11
+:Test11 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "User isRepresentedByAvatar Image" .
 
-:Test12 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test12
+:Test12 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "User belongsTo Organisation" .
 
-:Test13 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test13
+:Test13 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasID only string" .
 
-:Test14 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test14
+:Test14 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasUpdateDate only datetime" .
 
-:Test15 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test15
+:Test15 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasCreationDate only datetime" .
 
-:Test16 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test16
+:Test16 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasLocation only string" .
 
-:Test17 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test17
+:Test17 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasOccupation only string" .
 
-:Test18 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test18
+:Test18 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasContactMail only string" .
 
-:Test19 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test19
+:Test19 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasEmail only string" .
 
-:Test20 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test2
+:Test2 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "User hasAudit Audit" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test20
+:Test20 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasLastName only string" .
 
-:Test21 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test21
+:Test21 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasFirstName only string" .
 
-:Test22 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test22
+:Test22 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "User subclassOf hasName only string" .
 
-:Test23 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test23
+:Test23 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "DeletedItemStatus type ItemStatus" .
 
-:Test24 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test24
+:Test24 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "EnabledItemStatus type ItemStatus" .
 
-:Test25 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test25
+:Test25 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "DisabledItemStatus type ItemStatus" .
 
-:Test26 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test26
+:Test26 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Service subclassOf Item" .
 
-:Test27 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test27
+:Test27 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Device subclassOf Item" .
 
-:Test28 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test28
+:Test28 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Item isRepresentedByAvatar Image" .
 
-:Test29 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test29
+:Test29 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Item belongsTo Organisation" .
 
-:Test30 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test3
+:Test3 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "User hasNotification Notification" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test30
+:Test30 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Item hasUser User" .
 
-:Test31 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test31
+:Test31 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Item belongsTo Node" .
 
-:Test32 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test32
+:Test32 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Item subclassof hasUpdateDate only datetime" .
 
-:Test33 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test33
+:Test33 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Item subclassof hasCreationDate only datetime" .
 
-:Test34 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test34
+:Test34 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Item subclassof hasStatus only string" .
 
-:Test35 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test35
+:Test35 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Item subclassof hasName only string" .
 
-:Test36 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test36
+:Test36 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "DeletedNodeStatus type NodeStatus" .
 
-:Test37 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test37
+:Test37 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "ActiveNodeStatus type NodeStatus" .
 
-:Test38 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test38
+:Test38 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Node containsItem Item" .
 
-:Test39 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test39
+:Test39 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Auroral type Node" .
 
-:Test40 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test4
+:Test4 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "Dev_ops type Role" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test40
+:Test40 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Sharq type Node" .
 
-:Test41 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test41
+:Test41 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Vicinity type Node" .
 
-:Test42 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test42
+:Test42 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Node belongsTo Organisation" .
 
-:Test43 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test43
+:Test43 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Node subclassOf hasID only string" .
 
-:Test44 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test44
+:Test44 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Node subclassOf hasUpdateDate only datetime" .
 
-:Test45 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test45
+:Test45 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Node subclassOf hasCreationDate only datetime" .
 
-:Test46 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test46
+:Test46 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Node subclassOf hasToken only string" .
 
-:Test47 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test47
+:Test47 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Node subclassOf hasKey only string" .
 
-:Test48 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test48
+:Test48 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Node subclassOf hasName only string" .
 
-:Test49 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test49
+:Test49 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "ContractAcceptedNotification type Notification" .
 
-:Test50 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test5
+:Test5 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "Infras_operator type Role" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test50
+:Test50 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "ContractRequestNotification type Notification" .
 
-:Test51 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test51
+:Test51 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "ItemUpdatedNotification type Notification" .
 
-:Test52 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test52
+:Test52 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "ItemDiscoveredNotification type Notification" .
 
-:Test53 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test53
+:Test53 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "ItemDisabledNotification type Notification" .
 
-:Test54 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test54
+:Test54 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "ItemEnabledNotification type Notification" .
 
-:Test55 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test55
+:Test55 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "RegistrationRequestNotification type Notification" .
 
-:Test56 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test56
+:Test56 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Notification subclassOf isUnread only boolean" .
 
-:Test57 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test57
+:Test57 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Notification hasStatus NotificationStatus" .
 
-:Test58 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test58
+:Test58 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "RespondedNotificationStatus type NotificationStatus" .
 
-:Test59 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test59
+:Test59 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "RejectedNotificationStatus type NotificationStatus" .
 
-:Test60 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test6
+:Test6 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "User type Role" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test60
+:Test60 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "AcceptedNotificationStatus type NotificationStatus" .
 
-:Test61 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test61
+:Test61 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "InfoNotificationStatus type NotificationStatus" .
 
-:Test62 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test62
+:Test62 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "WaitingNotificationStatus type NotificationStatus" .
 
-:Test63 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test63
+:Test63 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Notification subClassOf hasObject only string" .
 
-:Test64 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test64
+:Test64 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Notification subClassOf hasActor only string" .
 
-:Test65 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test65
+:Test65 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Notification subClassOf hasCreationDate only Datetime" .
 
-:Test66 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test66
+:Test66 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Notification subClassOf hasTarget only string" .
 
-:Test67 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test67
+:Test67 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Notification subClassOf hasOwner only string" .
 
-:Test68 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test68
+:Test68 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Notification subClassOf hasID only string" .
 
-:Test69 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test69
+:Test69 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Organisation hasPartnershipRequestedTo Organisation" .
 
-:Test70 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test7
+:Test7 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "Admin type Role" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test70
+:Test70 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Organisation hasPartnershipRequestedBy Organisation" .
 
-:Test71 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test71
+:Test71 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Organisation knows Organisation" .
 
-:Test72 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test72
+:Test72 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Organisation hasNode Node" .
 
-:Test73 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test73
+:Test73 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Organisation hasUser User" .
 
-:Test74 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test74
+:Test74 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Organisation hasAudit Audit" .
 
-:Test75 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test75
+:Test75 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Organisation hasNotification Notification" .
 
-:Test76 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test76
+:Test76 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Organisation subclassOf hasCreationDate only DateTime" .
 
-:Test77 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test77
+:Test77 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Organisation subclassOf hasLocation only string" .
 
-:Test78 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test78
+:Test78 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Organisation subclassOf hasID only string" .
 
-:Test79 rdf:type <https://w3id.org/def/vtc#TestCaseDesign> ,
-                               owl:NamedIndividual ;
-        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore;
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test79
+:Test79 rdf:type owl:NamedIndividual ,
+                 <https://w3id.org/def/vtc#TestCaseDesign> ;
+        <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
         <https://w3id.org/def/vtc#desiredBehaviour> "Organisation subclassOf hasSkinColor only string" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test8
+:Test8 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "User hasRole Role" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/core#Test9
+:Test9 rdf:type owl:NamedIndividual ,
+                <https://w3id.org/def/vtc#TestCaseDesign> ;
+       <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+       <https://w3id.org/def/vtc#desiredBehaviour> "DeletedUserStatus type UserStatus" .
+
+
+###  https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore
+:TestsuiteCore rdf:type owl:NamedIndividual ,
+                        <http://w3id.org/def/vtc#TestSuite> ;
+               dcterms:source <https://auroral.iot.linkeddata.es/def/core> .
+
+
+###  https://w3id.org/def/vtc#Test80
+<https://w3id.org/def/vtc#Test80> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Service subClassOf VirtualThing" .
+
+
+###  https://w3id.org/def/vtc#Test81
+<https://w3id.org/def/vtc#Test81> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Commodity type ServiceType" .
+
+
+###  https://w3id.org/def/vtc#Test82
+<https://w3id.org/def/vtc#Test82> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "NotCommodity type ServiceType" .
+
+
+###  https://w3id.org/def/vtc#Test83
+<https://w3id.org/def/vtc#Test83> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Service language Language" .
+
+
+###  https://w3id.org/def/vtc#Test84
+<https://w3id.org/def/vtc#Test84> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Service applicableToGeographicalArea Place" .
+
+
+###  https://w3id.org/def/vtc#Test85
+<https://w3id.org/def/vtc#Test85> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Dataset subClassOf VirtualThing" .
+
+
+###  https://w3id.org/def/vtc#Test86
+<https://w3id.org/def/vtc#Test86> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Dataset subClassOf Dataset" .
+
+
+###  https://w3id.org/def/vtc#Test87
+<https://w3id.org/def/vtc#Test87> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Item hasDomain Domain" .
+
+
+###  https://w3id.org/def/vtc#Test88
+<https://w3id.org/def/vtc#Test88> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Tourism type Domain" .
+
+
+###  https://w3id.org/def/vtc#Test89
+<https://w3id.org/def/vtc#Test89> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Health type Domain" .
+
+
+###  https://w3id.org/def/vtc#Test90
+<https://w3id.org/def/vtc#Test90> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Energy type Domain" .
+
+
+###  https://w3id.org/def/vtc#Test91
+<https://w3id.org/def/vtc#Test91> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Mobility type Domain" .
+
+
+###  https://w3id.org/def/vtc#Test92
+<https://w3id.org/def/vtc#Test92> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "DairyFarming type Domain" .
+
+
+###  https://w3id.org/def/vtc#Test93
+<https://w3id.org/def/vtc#Test93> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "CircularEconomy type Domain" .
+
+
+###  https://w3id.org/def/vtc#Test94
+<https://w3id.org/def/vtc#Test94> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "PhysicalThing hasGeometry Geometry" .
+
+
+###  https://w3id.org/def/vtc#Test95
+<https://w3id.org/def/vtc#Test95> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ,
+                                                                       "Measurement hasReadability Readability" .
+
+
+###  https://w3id.org/def/vtc#Test96
+<https://w3id.org/def/vtc#Test96> rdf:type owl:NamedIndividual ,
+                                           <https://w3id.org/def/vtc#TestCaseDesign> ;
+                                  <https://w3id.org/def/vtc#belongsTo> :TestsuiteCore ;
+                                  <https://w3id.org/def/vtc#desiredBehaviour> "Measurement hasTemporalUnit TemporalUnit" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
