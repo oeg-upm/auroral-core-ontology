@@ -1137,7 +1137,7 @@ saref:UnitOfMeasure rdf:type owl:Class ;
 
 ###  https://www.w3.org/2006/time#TemporalUnit
 <https://www.w3.org/2006/time#TemporalUnit> rdf:type owl:Class ;
-                                            rdfs:comment "presnte the temporal aspect of the detected measurement." ;
+                                            rdfs:comment "presents the temporal aspect of the detected measurement." ;
                                             rdfs:label "Temporal Unit" .
 
 
