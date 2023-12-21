@@ -62,19 +62,19 @@ dc:title rdf:type owl:AnnotationProperty .
 
 ###  http://lexvo.org/ontology#language
 <http://lexvo.org/ontology#language> rdf:type owl:ObjectProperty ;
-                                     rdfs:comment "a relationship between a service and its language" ;
+                                     rdfs:comment "A relationship between a service and its language" ;
                                      rdfs:label "language" .
 
 
 ###  http://www.opengis.net/ont/geosparql#hasGeometry
 geosparql:hasGeometry rdf:type owl:ObjectProperty ;
-                      rdfs:comment "A relationship speifying the geospatial information of a physical thing" ;
+                      rdfs:comment "A relationship specifying the geospatial information of a physical thing" ;
                       rdfs:label "has geometry" .
 
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#location
 geo:location rdf:type owl:ObjectProperty ;
-             rdfs:comment "a relationship specfiying the geospatial location of an entity" ;
+             rdfs:comment "A relationship specfiying the geospatial location of an entity" ;
              rdfs:label "location" .
 
 
@@ -129,7 +129,7 @@ core:hasNode rdf:type owl:ObjectProperty ;
 core:hasNotification rdf:type owl:ObjectProperty ;
                      rdfs:domain core:Organization ;
                      rdfs:range core:Notification ;
-                     rdfs:comment "a relationship specifying that an organization has notifications" ;
+                     rdfs:comment "A relationship specifying that an organization has notifications" ;
                      rdfs:label "has notification" .
 
 
@@ -206,7 +206,7 @@ core:knows rdf:type owl:ObjectProperty ,
                     owl:SymmetricProperty ;
            rdfs:domain core:Organization ;
            rdfs:range core:Organization ;
-           rdfs:comment "a relationship specifying that an organization knows another organization" ;
+           rdfs:comment "A relationship specifying that an organization knows another organization" ;
            rdfs:label "knows" .
 
 
@@ -222,7 +222,7 @@ core:locatedIn rdf:type owl:ObjectProperty ;
 core:serviceType rdf:type owl:ObjectProperty ;
                  rdfs:domain core:Service ;
                  rdfs:range core:ServiceType ;
-                 rdfs:comment "relationship between the service and its type" ;
+                 rdfs:comment "A relationship between the service and its type" ;
                  rdfs:label "service type" .
 
 
@@ -261,7 +261,7 @@ saref:hasProperty rdf:type owl:ObjectProperty ;
 saref:isMeasuredIn rdf:type owl:ObjectProperty ;
                    rdfs:domain saref:Measurement ;
                    rdfs:range saref:UnitOfMeasure ;
-                   rdfs:comment "a relationship specifying that a measurement is measured in units" ;
+                   rdfs:comment "A relationship specifying that a measurement is measured in units" ;
                    rdfs:label "is measured in" .
 
 
@@ -362,7 +362,7 @@ core:adapterId rdf:type owl:DatatypeProperty ;
 core:code rdf:type owl:DatatypeProperty ;
           rdfs:domain core:Place ;
           rdfs:range xsd:string ;
-          rdfs:comment "code of an entity" ;
+          rdfs:comment "The code of an entity" ;
           rdfs:label "code" .
 
 
@@ -440,7 +440,7 @@ core:hasFunctionality rdf:type owl:DatatypeProperty ;
 ###  https://auroral.iot.linkeddata.es/def/core#hasID
 core:hasID rdf:type owl:DatatypeProperty ;
            rdfs:range xsd:string ;
-           rdfs:comment "The identiifer of an entity" ;
+           rdfs:comment "The identifier of an entity" ;
            rdfs:label "has i d" .
 
 
@@ -664,7 +664,7 @@ core:versionOfService rdf:type owl:DatatypeProperty ;
 core:visibility rdf:type owl:DatatypeProperty ;
                 rdfs:domain core:Dataset ;
                 rdfs:range xsd:boolean ;
-                rdfs:comment "the visibility of a dataset" ;
+                rdfs:comment "The visibility of a dataset" ;
                 rdfs:label "visibility" .
 
 
@@ -696,7 +696,7 @@ saref:hasModel rdf:type owl:DatatypeProperty ;
 saref:hasTimeStamp rdf:type owl:DatatypeProperty ,
                             owl:FunctionalProperty ;
                    rdfs:range xsd:dateTime ;
-                   rdfs:comment "The timsstapm of an entity" ;
+                   rdfs:comment "The timestamp of an entity" ;
                    rdfs:label "has time stamp" .
 
 
@@ -718,7 +718,7 @@ saref:hasValue rdf:type owl:DatatypeProperty ;
 
 ###  http://www.geonames.org/ontology#Feature
 geonames:Feature rdf:type owl:Class ;
-                 rdfs:comment "refers to the location" ;
+                 rdfs:comment "Refers to a specific location" ;
                  rdfs:label "Feature" .
 
 
@@ -737,13 +737,13 @@ geo:SpatialThing rdf:type owl:Class ;
 
 ###  http://www.w3.org/ns/dcat#Dataset
 dcat:Dataset rdf:type owl:Class ;
-             rdfs:comment "collect the datasets in the AURORAL project" ;
+             rdfs:comment "A collection of data, published or curated by a single agent, and available for access or download in one or more representations" ;
              rdfs:label "Dataset" .
 
 
 ###  http://xmlns.com/foaf/0.1/Image
 foaf:Image rdf:type owl:Class ;
-           rdfs:comment "presents the image of users" ;
+           rdfs:comment "Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.)  of users" ;
            rdfs:label "Image" .
 
 
@@ -763,28 +763,28 @@ core:Actuator rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#Audit
 core:Audit rdf:type owl:Class ;
-           rdfs:comment "IT is the  examination  and  evaluation  of  the  organisations or users." ;
+           rdfs:comment "It correponds to the  examination  and  evaluation  of  organisations or users." ;
            rdfs:label "Audit" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Building
 core:Building rdf:type owl:Class ;
               rdfs:subClassOf saref:FeatureOfInterest ;
-              rdfs:comment "Building is a subclass of feature of Interest." ;
+              rdfs:comment "Building is a feature of Interest." ;
               rdfs:label "Building" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#City
 core:City rdf:type owl:Class ;
           rdfs:subClassOf saref:FeatureOfInterest ;
-          rdfs:comment "Building is a subclass of feature of Interest." ;
+          rdfs:comment "City is a feature of Interest." ;
           rdfs:label "City" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Country
 core:Country rdf:type owl:Class ;
              rdfs:subClassOf geonames:Feature ;
-             rdfs:comment "refers to the country where a service is applied" ;
+             rdfs:comment "Refers to the country where a service is applied" ;
              rdfs:label "Country" .
 
 
@@ -816,7 +816,7 @@ core:Dataset rdf:type owl:Class ;
                                owl:onProperty core:visibility ;
                                owl:someValuesFrom xsd:boolean
                              ] ;
-             rdfs:comment "collect the datasets in the AURORAL project" ;
+             rdfs:comment "A collection of data, published or curated by a single agent, and available for access or download in one or more representations" ;
              rdfs:label "Dataset" .
 
 
@@ -824,7 +824,7 @@ core:Dataset rdf:type owl:Class ;
 core:Device rdf:type owl:Class ;
             rdfs:subClassOf core:PhysicalThing ,
                             saref:Device ;
-            rdfs:comment "physical object used in the AURORAL project (sensor, actuator)" ;
+            rdfs:comment "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function" ;
             rdfs:label "Device" .
 
 
@@ -857,21 +857,21 @@ core:Item rdf:type owl:Class ;
                             owl:onProperty core:hasUpdateDate ;
                             owl:allValuesFrom xsd:dateTime
                           ] ;
-          rdfs:comment "is defined as the physical object that is part of a list of things" ;
+          rdfs:comment "Is defined as the physical or a virtual things" ;
           rdfs:label "Item" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#ItemStatus
 core:ItemStatus rdf:type owl:Class ;
                 rdfs:subClassOf core:Status ;
-                rdfs:comment "presents the possible status of item: enabled, disabled, deleted" ;
+                rdfs:comment "Presents the possible status of item: enabled, disabled, deleted" ;
                 rdfs:label "Item status" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Municipality
 core:Municipality rdf:type owl:Class ;
                   rdfs:subClassOf saref:FeatureOfInterest ;
-                  rdfs:comment "Building is a subclass of feature of Interest." ;
+                  rdfs:comment "Municipality is a  feature of Interest." ;
                   rdfs:label "Municipality" .
 
 
@@ -901,14 +901,14 @@ core:Node rdf:type owl:Class ;
                             owl:onProperty core:hasName ;
                             owl:someValuesFrom xsd:string
                           ] ;
-          rdfs:comment "is defined as the way to organise the users into distinct groups" ;
+          rdfs:comment "Is defined as the way to organise the users into distinct groups" ;
           rdfs:label "Node" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#NodeStatus
 core:NodeStatus rdf:type owl:Class ;
                 rdfs:subClassOf core:Status ;
-                rdfs:comment "presents the status of the Node: active, deleted, etc." ;
+                rdfs:comment "Presents the status of the Node: active, deleted, etc." ;
                 rdfs:label "Node status" .
 
 
@@ -926,14 +926,14 @@ core:Notification rdf:type owl:Class ;
                                     owl:onProperty core:hasID ;
                                     owl:someValuesFrom xsd:string
                                   ] ;
-                  rdfs:comment "is defined  as  the  act of reporting a message to a set of users" ;
+                  rdfs:comment "Is defined  as  the  act of reporting a message to a set of users" ;
                   rdfs:label "Notification" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#NotificationStatus
 core:NotificationStatus rdf:type owl:Class ;
                         rdfs:subClassOf core:Status ;
-                        rdfs:comment "presents the possible status of the notificationÑ rejected, accepted, waiting, etc." ;
+                        rdfs:comment "Presents the possible status of the notificationÑ rejected, accepted, waiting, etc." ;
                         rdfs:label "Notification status" .
 
 
@@ -992,33 +992,33 @@ core:Organization rdf:type owl:Class ;
                                     owl:onProperty core:isLastUpdated ;
                                     owl:someValuesFrom xsd:dateTime
                                   ] ;
-                  rdfs:comment ": is defined as an entity comprising one or more users" ;
+                  rdfs:comment "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization." ;
                   rdfs:label "Organization" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#PhysicalThing
 core:PhysicalThing rdf:type owl:Class ;
                    rdfs:subClassOf core:Item ;
-                   rdfs:comment "refers to the objects in real word, that could be a sensor or an actuator" ;
+                   rdfs:comment "Refers to the objects in real word, that could be a sensor or an actuator" ;
                    rdfs:label "Physical Thing" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Place
 core:Place rdf:type owl:Class ;
            rdfs:subClassOf geonames:Feature ;
-           rdfs:comment "it is a place in general that could be a city, a home, etc. where the service is located" ;
+           rdfs:comment "It is a place in general that could be a city, a home, etc. where the service is located" ;
            rdfs:label "Place" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Readability
 core:Readability rdf:type owl:Class ;
-                 rdfs:comment "represents the status of the detected measurement, that could be redable or not." ;
+                 rdfs:comment "Represents the status of the detected measurement, that could be redable or not." ;
                  rdfs:label "Readability" .
 
 
 ###  https://auroral.iot.linkeddata.es/def/core#Role
 core:Role rdf:type owl:Class ;
-          rdfs:comment "is defined  as  the  function assumed by a user inside the organisation." ;
+          rdfs:comment "Is defined  as  the  function assumed by a user inside the organisation." ;
           rdfs:label "Role" .
 
 
@@ -1026,7 +1026,7 @@ core:Role rdf:type owl:Class ;
 core:Sensor rdf:type owl:Class ;
             rdfs:subClassOf core:Device ,
                             saref:Sensor ;
-            rdfs:comment "a device which detects or measures a physical property and records, indicates, or otherwise responds to it." ;
+            rdfs:comment "A device which detects or measures a physical property and records, indicates, or otherwise responds to it." ;
             rdfs:label "Sensor" .
 
 
@@ -1087,7 +1087,7 @@ core:ServiceType rdf:type owl:Class ;
 
 ###  https://auroral.iot.linkeddata.es/def/core#Status
 core:Status rdf:type owl:Class ;
-            rdfs:comment "presents the status of item, node, user and notification" ;
+            rdfs:comment "Presents the status of item, node, user and notification" ;
             rdfs:label "Status" .
 
 
@@ -1147,7 +1147,7 @@ core:User rdf:type owl:Class ;
 ###  https://auroral.iot.linkeddata.es/def/core#UserStatus
 core:UserStatus rdf:type owl:Class ;
                 rdfs:subClassOf core:Status ;
-                rdfs:comment "presents the Status of the  user : delected or active" ;
+                rdfs:comment "Presents the Status of the  user : delected or active" ;
                 rdfs:label "User status" .
 
 
@@ -1158,13 +1158,13 @@ core:VirtualThing rdf:type owl:Class ;
                                     owl:onProperty core:exposes ;
                                     owl:someValuesFrom core:PhysicalThing
                                   ] ;
-                  rdfs:comment "presents virtual things which are  the service and the dataset" ;
+                  rdfs:comment "Presents virtual things which are  the service and the dataset" ;
                   rdfs:label "Virtual Thing" .
 
 
 ###  https://saref.etsi.org/core#Actuator
 saref:Actuator rdf:type owl:Class ;
-               rdfs:comment "a device that causes a machine or other device to operate." ;
+               rdfs:comment "A device that causes a machine or other device to operate." ;
                rdfs:label "Actuator" .
 
 
@@ -1178,7 +1178,7 @@ saref:Device rdf:type owl:Class ;
                                owl:onProperty saref:hasModel ;
                                owl:someValuesFrom xsd:string
                              ] ;
-             rdfs:comment "Physical object used in a use case (sensor, actuator, etc)" ;
+             rdfs:comment "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function" ;
              rdfs:label "Device" .
 
 
@@ -1202,19 +1202,19 @@ saref:Property rdf:type owl:Class ;
 
 ###  https://saref.etsi.org/core#Sensor
 saref:Sensor rdf:type owl:Class ;
-             rdfs:comment "a device which detects or measures a physical property and records, indicates, or otherwise responds to it." ;
+             rdfs:comment "A device which detects or measures a physical property and records, indicates, or otherwise responds to it." ;
              rdfs:label "Sensor" .
 
 
 ###  https://saref.etsi.org/core#UnitOfMeasure
 saref:UnitOfMeasure rdf:type owl:Class ;
-                    rdfs:comment "defines the unit of each mesurement dtected by a sensor" ;
+                    rdfs:comment "Defines the unit of each mesurement dtected by a sensor" ;
                     rdfs:label "Unit of measure" .
 
 
 ###  https://www.w3.org/2006/time#TemporalUnit
 <https://www.w3.org/2006/time#TemporalUnit> rdf:type owl:Class ;
-                                            rdfs:comment "presents the temporal aspect of the detected measurement." ;
+                                            rdfs:comment "A standard duration, which provides a scale factor for a time extent, or the granularity or precision for a time position." ;
                                             rdfs:label "Temporal Unit" .
 
 
@@ -1226,7 +1226,7 @@ hctl:Link rdf:type owl:Class ;
 
 ###  https://www.w3.org/2019/wot/td#InteractionAffordance
 wot:InteractionAffordance rdf:type owl:Class ;
-                          rdfs:comment "is the ability of an object or system to evoke its use and function." ;
+                          rdfs:comment "It is the ability of an object or system to evoke its use and function." ;
                           rdfs:label "Interaction Affordance" .
 
 
@@ -1238,7 +1238,7 @@ wot:Thing rdf:type owl:Class ;
 
 ###  https://www.w3.org/ns/org#Organization
 org:Organization rdf:type owl:Class ;
-                 rdfs:comment "is defined as an entity comprising one or more users" ;
+                 rdfs:comment "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization." ;
                  rdfs:label "Organization" .
 
 
@@ -1650,7 +1650,7 @@ dc:title rdfs:comment "The title of  an entity" ;
          rdfs:label "title" .
 
 
-core:User rdfs:comment "is defined as a person who belongs to an organisation." ;
+core:User rdfs:comment "Is a person who belongs to an organisation." ;
           rdfs:label "User" .
 
 
