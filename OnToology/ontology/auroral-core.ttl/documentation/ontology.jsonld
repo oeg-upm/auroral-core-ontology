@@ -41,7 +41,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#NodeStatus"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#status"
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus"
   } ]
 }, {
   "@id" : "_:genid14",
@@ -86,7 +86,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#NotificationStatus"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#status"
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus"
   } ]
 }, {
   "@id" : "_:genid19",
@@ -388,19 +388,19 @@
   "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Image"
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#UserStatus"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar"
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus"
   } ]
 }, {
   "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#UserStatus"
+    "@id" : "http://xmlns.com/foaf/0.1/Image"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#status"
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar"
   } ]
 }, {
   "@id" : "_:genid5",
@@ -505,7 +505,7 @@
   "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://auroral.iot.linkeddata.es/def/core#status"
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#ItemStatus"
@@ -531,12 +531,18 @@
 }, {
   "@id" : "http://lexvo.org/ontology#Language",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The used languages for services (english, arabic, spanich, etc)"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Language"
   } ]
 }, {
   "@id" : "http://lexvo.org/ontology#language",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between a service and its language"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "language"
   } ]
@@ -549,18 +555,27 @@
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/description",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A description of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "description"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The license of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "license"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The title of  an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "title"
   } ]
@@ -570,6 +585,9 @@
 }, {
   "@id" : "http://www.geonames.org/ontology#Feature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to a specific location"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Feature"
   } ]
@@ -714,42 +732,66 @@
 }, {
   "@id" : "http://www.opengis.net/ont/geosparql#Geometry",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Geometry consists of a set of coordinates and a specification on how the coordinates should be interpreted."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Geometry"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"
   } ]
 }, {
   "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying the geospatial information of a physical thing"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Geometry"
+    "@value" : "has geometry"
   } ]
 }, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Spatial Thing"
   } ]
 }, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specfiying the geospatial location of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "location"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#Dataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A collection of data, published or curated by a single agent, and available for access or download in one or more representations"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Dataset"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#accessURL",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The URL of an Entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "accessURL"
+    "@value" : "access url"
   } ]
 }, {
   "@id" : "http://www.w3.org/ns/dcat#keyword",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The keyword of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "keyword"
   } ],
@@ -759,12 +801,18 @@
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Image",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.)  of users"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Image"
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Person",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Person class represents people."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Person"
   } ]
@@ -827,6 +875,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Actuator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a device that causes a machine or other device to operate."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Actuator"
   } ],
@@ -842,7 +893,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Role"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Admin"
+    "@value" : "admin"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#AmpereHour",
@@ -859,6 +910,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Audit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It correponds to the  examination  and  evaluation  of  organisations or users."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Audit"
   } ]
@@ -874,6 +928,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Building",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Building is a feature of Interest."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Building"
   } ],
@@ -883,6 +940,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#City",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "City is a feature of Interest."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "City"
   } ],
@@ -896,7 +956,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#ServiceType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Commodity"
+    "@value" : "commodity"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#ContractAcceptedNotification",
@@ -919,6 +979,12 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Country",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the country where a service is applied"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Country"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.geonames.org/ontology#Feature"
   } ]
@@ -929,7 +995,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Cycling economy"
+    "@value" : "cycling economy"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#DairyFarming",
@@ -938,11 +1004,14 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Dairy farming"
+    "@value" : "dairy farming"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Dataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A collection of data, published or curated by a single agent, and available for access or download in one or more representations"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Dataset"
   } ],
@@ -1003,7 +1072,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Role"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Dev ops"
+    "@value" : "dev ops"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Dev_owner",
@@ -1012,11 +1081,14 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Role"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Dev owner"
+    "@value" : "dev owner"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Device"
   } ],
@@ -1037,6 +1109,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Domain",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "refers to the domains in the AURORAL project (Farming, mobility, energy, health, tourism)"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Domain"
   } ]
@@ -1056,7 +1131,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Energy"
+    "@value" : "energy"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Health",
@@ -1065,7 +1140,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Health"
+    "@value" : "health"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#InfoNotificationStatus",
@@ -1088,6 +1163,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Item",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is defined as the physical or a virtual things"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Item"
   } ],
@@ -1134,6 +1212,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#ItemStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Presents the possible status of item: enabled, disabled, deleted"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Item status"
   } ],
@@ -1162,11 +1243,14 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Mobility"
+    "@value" : "mobility"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Municipality",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Municipality is a  feature of Interest."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Municipality"
   } ],
@@ -1176,6 +1260,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Node",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is defined as the way to organise the users into distinct groups"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Node"
   } ],
@@ -1195,6 +1282,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#NodeStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Presents the status of the Node: active, deleted, etc."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Node status"
   } ],
@@ -1208,11 +1298,14 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#ServiceType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Not commodity"
+    "@value" : "not commodity"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Notification",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is defined  as  the  act of reporting a message to a set of users"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Notification"
   } ],
@@ -1226,6 +1319,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#NotificationStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Presents the possible status of the notificationÑ rejected, accepted, waiting, etc."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Notification status"
   } ],
@@ -1235,6 +1331,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Organization"
   } ],
@@ -1270,6 +1369,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#PhysicalThing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Refers to the objects in real word, that could be a sensor or an actuator"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Physical Thing"
   } ],
@@ -1279,6 +1381,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Place",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is a place in general that could be a city, a home, etc. where the service is located"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Place"
   } ],
@@ -1288,6 +1393,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Readability",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents the status of the detected measurement, that could be redable or not."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Readability"
   } ]
@@ -1321,12 +1429,18 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Role",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is defined  as  the  function assumed by a user inside the organisation."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Role"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A device which detects or measures a physical property and records, indicates, or otherwise responds to it."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Sensor"
   } ],
@@ -1338,6 +1452,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Service",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The service that coul dbe provided with the device"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Service"
   } ],
@@ -1367,6 +1484,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#ServiceType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines the service types that could be a Commidity service or a not commidity service"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Service Type"
   } ]
@@ -1377,7 +1497,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Role"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Service provider"
+    "@value" : "service provider"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Sharq",
@@ -1391,6 +1511,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Status",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Presents the status of item, node, user and notification"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Status"
   } ]
@@ -1401,7 +1524,7 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Role"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Super user"
+    "@value" : "super user"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Sys_integrator",
@@ -1410,19 +1533,25 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Role"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "System integrator"
+    "@value" : "system integrator"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#Tourism",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/def/core#Domain"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Tourism"
+    "@value" : "tourism"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#User",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is a person who belongs to an organisation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "User"
@@ -1457,6 +1586,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#UserStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Presents the Status of the  user : delected or active"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "User status"
   } ],
@@ -1475,6 +1607,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#VirtualThing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Presents virtual things which are  the service and the dataset"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Virtual Thing"
   } ],
@@ -1504,6 +1639,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#adapterId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The identifier of an adapter"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Item"
   } ],
@@ -1516,6 +1654,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A service is applicable toa specific  geographical area: a particular place"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
   } ],
@@ -1528,14 +1669,23 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#belongsTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifies that one part belongs to a second part"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "belongs to"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#code",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The code of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "code"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1543,6 +1693,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#containsItem",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a relationship specifies that a node or a user has an item (virtual or physical thing)"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "contains item"
   } ],
@@ -1552,11 +1705,14 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#continentCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The code of a continent"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "continent Code"
+    "@value" : "continent code"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1564,6 +1720,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#currentStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The current status of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
   } ],
@@ -1576,6 +1735,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#datasetProvider",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The provider of a dataset"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Dataset"
   } ],
@@ -1588,12 +1750,18 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#exposes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying that one part exposesthe second one"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "exposes"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasActor",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The actor of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Notification"
   } ],
@@ -1606,6 +1774,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasAudit",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "a relationship specifying that an organization or a user has an examinator or evaluator"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has audit"
   } ],
@@ -1615,6 +1786,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasContactMail",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The contact mail of a user"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
   } ],
@@ -1627,6 +1801,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasCreationDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The creation date of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has creation date"
   } ],
@@ -1636,6 +1813,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasEmail",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The e-mail of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
   } ],
@@ -1648,6 +1828,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasFirstName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The first name of a user"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
   } ],
@@ -1660,6 +1843,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasFunctionality",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The functionality of a given entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
   } ],
@@ -1670,20 +1856,11 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasGranularity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://saref.etsi.org/core#Measurement"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has granularity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://www.w3.org/2006/time#TemporalUnit"
-  } ]
-}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasID",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The identifier of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has i d"
   } ],
@@ -1693,12 +1870,18 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasInput",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying the input of a given class"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has Input"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasKey",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The key of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Node"
   } ],
@@ -1711,6 +1894,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasLastName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The last name of a user"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
   } ],
@@ -1723,12 +1909,21 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The location of an entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has location"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has name"
   } ],
@@ -1738,6 +1933,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasNode",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying that an organization or a user  has  a Node"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has node"
   } ],
@@ -1747,6 +1945,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasNote",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The node of a given entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has note"
   } ],
@@ -1756,6 +1957,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasNotification",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying that an organization has notifications"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Organization"
   } ],
@@ -1768,6 +1972,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasObject",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The object of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Notification"
   } ],
@@ -1780,6 +1987,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasOccupation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The occupation of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
   } ],
@@ -1792,12 +2002,18 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasOwner",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying that an organization or a user are the owner of a notification"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has owner"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying that an organization is requested by another organization"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Organization"
   } ],
@@ -1813,6 +2029,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying that an organization is requested to another organization"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Organization"
   } ],
@@ -1825,11 +2044,14 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasReadability",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying that if a measurement is readable or not"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Measurement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has Readability"
+    "@value" : "has readability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Readability"
@@ -1837,6 +2059,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasRegistrationNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The registration number of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has registration number"
   } ],
@@ -1846,6 +2071,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasRequirement",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The requirement of a service"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
   } ],
@@ -1858,6 +2086,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasRole",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship user and its roles"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
   } ],
@@ -1870,6 +2101,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasSkinColor",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The skin color of a user"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has skin color"
   } ],
@@ -1877,8 +2111,20 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between an entity and its status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has status"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasSubDomain",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The sub domain of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
   } ],
@@ -1891,6 +2137,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasTarget",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The target of a notification"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Notification"
   } ],
@@ -1901,8 +2150,26 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying the temporal garnularity of a given measurement (hour, second, etc... )"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://saref.etsi.org/core#Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has temporal unit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/2006/time#TemporalUnit"
+  } ]
+}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasToken",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The token of a notification"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Node"
   } ],
@@ -1915,6 +2182,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasUpdateDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The update date of an item"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Item"
   } ],
@@ -1927,6 +2197,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#hasUser",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between an organization and its users"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Organization"
   } ],
@@ -1937,26 +2210,20 @@
     "@id" : "https://auroral.iot.linkeddata.es/def/core#User"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/core#isAbout",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://saref.etsi.org/core#Property"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "is about"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://saref.etsi.org/core#FeatureOfInterest"
-  } ]
-}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#isLastUpdated",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The last update of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is last updated"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between the image and its avatar"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "is represented by avatar"
   } ],
@@ -1966,6 +2233,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#isUnread",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The unread status of a notfication"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Notification"
   } ],
@@ -1978,11 +2248,14 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#isoCode",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The iso code of a country"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Country"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "iso Code"
+    "@value" : "iso code"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2002,6 +2275,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#knows",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying that an organization knows another organization"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Organization"
   } ],
@@ -2014,8 +2290,14 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#locatedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between the Device and its location"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "located in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Place"
@@ -2023,12 +2305,21 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of an entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#nameCountry",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of a country"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Country"
   } ],
@@ -2041,6 +2332,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#namePlace",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The name of a place"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Place"
   } ],
@@ -2053,6 +2347,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#numberOfDownloads",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The number of downloads of a service"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
   } ],
@@ -2065,6 +2362,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#serialNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The serial number of device"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
   } ],
@@ -2077,6 +2377,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#serviceDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The description of a service"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
   } ],
@@ -2089,6 +2392,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#serviceFree",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It determines if a service is free or no"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
   } ],
@@ -2101,6 +2407,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#serviceProvider",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The provider of a service"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
   } ],
@@ -2113,26 +2422,29 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#serviceType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between the service and its type"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "service type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#ServiceType"
   } ]
 }, {
-  "@id" : "https://auroral.iot.linkeddata.es/def/core#status",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "status"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#value",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The value of the readability of a measurement"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Readability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -2140,6 +2452,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#versionNumber",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The version number of  a device"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
   } ],
@@ -2152,6 +2467,9 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#versionOfService",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The version of a service"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Service"
   } ],
@@ -2164,8 +2482,14 @@
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#visibility",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The visibility of a dataset"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "visibility"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
@@ -2173,12 +2497,18 @@
 }, {
   "@id" : "https://saref.etsi.org/core#Actuator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A device that causes a machine or other device to operate."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Actuator"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Device"
   } ],
@@ -2190,44 +2520,68 @@
 }, {
   "@id" : "https://saref.etsi.org/core#FeatureOfInterest",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A feature of interest is an abstraction of a real world phenomena (thing, person, event, etc)"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Feature of interest"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core#Measurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Measurement is the quantification of attributes of an object or event"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Measurement"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core#Property",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Anything that can be sensed, measured or controlled in households, common public buildings or offices. We propose here a list of properties that are relevant for the purpose of SAREF, but this list can be extended."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Property"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core#Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A device which detects or measures a physical property and records, indicates, or otherwise responds to it."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Sensor"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core#UnitOfMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Defines the unit of each mesurement dtected by a sensor"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Unit of measure"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core#controlsProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying the property that can be controlled by a certain device"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "controls property"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core#deviceId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The identifier of a device"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "device id"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -2235,6 +2589,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#hasDomain",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying the domain where a physical or a virtual object is applied."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Item"
   } ],
@@ -2247,6 +2604,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#hasManufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The manufacturer of a device"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
   } ],
@@ -2259,6 +2619,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#hasMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying the detected measurement related to the feature of interest"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#FeatureOfInterest"
   } ],
@@ -2271,6 +2634,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#hasModel",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The model of a device"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://auroral.iot.linkeddata.es/def/core#Device"
   } ],
@@ -2283,6 +2649,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#hasProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between a feature of interest and a property of that feature"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#FeatureOfInterest"
   } ],
@@ -2298,6 +2667,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#hasTimeStamp",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The timestamp of an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has time stamp"
   } ],
@@ -2307,12 +2679,18 @@
 }, {
   "@id" : "https://saref.etsi.org/core#hasValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The value related to an entity"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has value"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core#isMeasuredIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying that a measurement is measured in units"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Measurement"
   } ],
@@ -2325,6 +2703,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#isPropertyOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between a property and the feature of interest it belongs to"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Property"
   } ],
@@ -2340,18 +2721,27 @@
 }, {
   "@id" : "https://saref.etsi.org/core#makesMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "makes measurement"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core#measuresProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship specifying the property that can be measured by a certain device"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "measures property"
   } ]
 }, {
   "@id" : "https://saref.etsi.org/core#relatesToMeasurement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between a property and the measurements it relates to"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Property"
   } ],
@@ -2367,6 +2757,9 @@
 }, {
   "@id" : "https://saref.etsi.org/core#relatesToProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A relationship between a measurement and the property it relates to"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://saref.etsi.org/core#Measurement"
   } ],
@@ -2380,6 +2773,9 @@
 }, {
   "@id" : "https://www.w3.org/2006/time#TemporalUnit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A standard duration, which provides a scale factor for a time extent, or the granularity or precision for a time position."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Temporal Unit"
   } ]
@@ -2401,24 +2797,36 @@
 }, {
   "@id" : "https://www.w3.org/2019/wot/hypermedia#Link",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A link can be viewed as a statement of the form \"link context has a relation type resource at link target\", where the optional target attributes may further describe the resource."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Link"
   } ]
 }, {
   "@id" : "https://www.w3.org/2019/wot/td#InteractionAffordance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is the ability of an object or system to evoke its use and function."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Interaction Affordance"
   } ]
 }, {
   "@id" : "https://www.w3.org/2019/wot/td#Thing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An abstraction of a physical or a virtual entity whose metadata and interfaces are described by a WoT Thing Description, whereas a virtual entity is the composition of one or more Things."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Thing"
   } ]
 }, {
   "@id" : "https://www.w3.org/2019/wot/td#hasInteractionAffordance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Offers an affordance to interact with the Thing"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://www.w3.org/2019/wot/td#Thing"
   } ],
@@ -2431,6 +2839,9 @@
 }, {
   "@id" : "https://www.w3.org/2019/wot/td#hasLink",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides Web links to arbitrary resources that relate to the specified Thing Description."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://www.w3.org/2019/wot/td#Thing"
   } ],
@@ -2441,14 +2852,11 @@
     "@id" : "https://www.w3.org/2019/wot/hypermedia#Link"
   } ]
 }, {
-  "@id" : "https://www.w3.org/2019/wot/td#hasValueType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has value type"
-  } ]
-}, {
   "@id" : "https://www.w3.org/ns/org#Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Organization"
   } ]

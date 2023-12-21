@@ -44,63 +44,69 @@
 # 
 # http://lexvo.org/ontology#language
 <http://lexvo.org/ontology#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://lexvo.org/ontology#language> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a service and its language" .
 <http://lexvo.org/ontology#language> <http://www.w3.org/2000/01/rdf-schema#label> "language" .
 # 
 # http://www.opengis.net/ont/geosparql#hasGeometry
 <http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "has Geometry" .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the geospatial information of a physical thing" .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "has geometry" .
 # 
 # http://www.w3.org/2003/01/geo/wgs84_pos#location
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specfiying the geospatial location of an entity" .
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea
 <https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
 <https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Place> .
+<https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea> <http://www.w3.org/2000/01/rdf-schema#comment> "A service is applicable toa specific  geographical area: a particular place" .
 <https://auroral.iot.linkeddata.es/def/core#applicableToGeographicalArea> <http://www.w3.org/2000/01/rdf-schema#label> "applicable to geographical area" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#belongsTo
 <https://auroral.iot.linkeddata.es/def/core#belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/core#belongsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifies that one part belongs to a second part" .
 <https://auroral.iot.linkeddata.es/def/core#belongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#containsItem
 <https://auroral.iot.linkeddata.es/def/core#containsItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#containsItem> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Item> .
+<https://auroral.iot.linkeddata.es/def/core#containsItem> <http://www.w3.org/2000/01/rdf-schema#comment> "a relationship specifies that a node or a user has an item (virtual or physical thing)" .
 <https://auroral.iot.linkeddata.es/def/core#containsItem> <http://www.w3.org/2000/01/rdf-schema#label> "contains item" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#exposes
 <https://auroral.iot.linkeddata.es/def/core#exposes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/core#exposes> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying that one part exposesthe second one" .
 <https://auroral.iot.linkeddata.es/def/core#exposes> <http://www.w3.org/2000/01/rdf-schema#label> "exposes" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasAudit
 <https://auroral.iot.linkeddata.es/def/core#hasAudit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasAudit> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Audit> .
+<https://auroral.iot.linkeddata.es/def/core#hasAudit> <http://www.w3.org/2000/01/rdf-schema#comment> "a relationship specifying that an organization or a user has an examinator or evaluator" .
 <https://auroral.iot.linkeddata.es/def/core#hasAudit> <http://www.w3.org/2000/01/rdf-schema#label> "has audit" .
-# 
-# https://auroral.iot.linkeddata.es/def/core#hasGranularity
-<https://auroral.iot.linkeddata.es/def/core#hasGranularity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://auroral.iot.linkeddata.es/def/core#hasGranularity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
-<https://auroral.iot.linkeddata.es/def/core#hasGranularity> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/2006/time#TemporalUnit> .
-<https://auroral.iot.linkeddata.es/def/core#hasGranularity> <http://www.w3.org/2000/01/rdf-schema#label> "has granularity" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasInput
 <https://auroral.iot.linkeddata.es/def/core#hasInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/core#hasInput> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the input of a given class" .
 <https://auroral.iot.linkeddata.es/def/core#hasInput> <http://www.w3.org/2000/01/rdf-schema#label> "has Input" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasNode
 <https://auroral.iot.linkeddata.es/def/core#hasNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasNode> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Node> .
+<https://auroral.iot.linkeddata.es/def/core#hasNode> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying that an organization or a user  has  a Node" .
 <https://auroral.iot.linkeddata.es/def/core#hasNode> <http://www.w3.org/2000/01/rdf-schema#label> "has node" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasNotification
 <https://auroral.iot.linkeddata.es/def/core#hasNotification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasNotification> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Organization> .
 <https://auroral.iot.linkeddata.es/def/core#hasNotification> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Notification> .
+<https://auroral.iot.linkeddata.es/def/core#hasNotification> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying that an organization has notifications" .
 <https://auroral.iot.linkeddata.es/def/core#hasNotification> <http://www.w3.org/2000/01/rdf-schema#label> "has notification" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasOwner
 <https://auroral.iot.linkeddata.es/def/core#hasOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/core#hasOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying that an organization or a user are the owner of a notification" .
 <https://auroral.iot.linkeddata.es/def/core#hasOwner> <http://www.w3.org/2000/01/rdf-schema#label> "has owner" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy
@@ -108,41 +114,53 @@
 <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedTo> .
 <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Organization> .
 <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Organization> .
+<https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying that an organization is requested by another organization" .
 <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedBy> <http://www.w3.org/2000/01/rdf-schema#label> "has partnership requested by" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedTo
 <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Organization> .
 <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Organization> .
+<https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying that an organization is requested to another organization" .
 <https://auroral.iot.linkeddata.es/def/core#hasPartnershipRequestedTo> <http://www.w3.org/2000/01/rdf-schema#label> "has partnership requested to" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasReadability
 <https://auroral.iot.linkeddata.es/def/core#hasReadability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasReadability> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
 <https://auroral.iot.linkeddata.es/def/core#hasReadability> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Readability> .
-<https://auroral.iot.linkeddata.es/def/core#hasReadability> <http://www.w3.org/2000/01/rdf-schema#label> "has Readability" .
+<https://auroral.iot.linkeddata.es/def/core#hasReadability> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying that if a measurement is readable or not" .
+<https://auroral.iot.linkeddata.es/def/core#hasReadability> <http://www.w3.org/2000/01/rdf-schema#label> "has readability" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasRole
 <https://auroral.iot.linkeddata.es/def/core#hasRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasRole> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#User> .
 <https://auroral.iot.linkeddata.es/def/core#hasRole> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Role> .
+<https://auroral.iot.linkeddata.es/def/core#hasRole> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship user and its roles" .
 <https://auroral.iot.linkeddata.es/def/core#hasRole> <http://www.w3.org/2000/01/rdf-schema#label> "has role" .
+# 
+# https://auroral.iot.linkeddata.es/def/core#hasStatus
+<https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between an entity and its status" .
+<https://auroral.iot.linkeddata.es/def/core#hasStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has status" .
+# 
+# https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit
+<https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
+<https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/2006/time#TemporalUnit> .
+<https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the temporal garnularity of a given measurement (hour, second, etc... )" .
+<https://auroral.iot.linkeddata.es/def/core#hasTemporalUnit> <http://www.w3.org/2000/01/rdf-schema#label> "has temporal unit" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasUser
 <https://auroral.iot.linkeddata.es/def/core#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasUser> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Organization> .
 <https://auroral.iot.linkeddata.es/def/core#hasUser> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#User> .
+<https://auroral.iot.linkeddata.es/def/core#hasUser> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between an organization and its users" .
 <https://auroral.iot.linkeddata.es/def/core#hasUser> <http://www.w3.org/2000/01/rdf-schema#label> "has user" .
-# 
-# https://auroral.iot.linkeddata.es/def/core#isAbout
-<https://auroral.iot.linkeddata.es/def/core#isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://auroral.iot.linkeddata.es/def/core#isAbout> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Property> .
-<https://auroral.iot.linkeddata.es/def/core#isAbout> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#FeatureOfInterest> .
-<https://auroral.iot.linkeddata.es/def/core#isAbout> <http://www.w3.org/2000/01/rdf-schema#label> "is about" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar
 <https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Image> .
+<https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between the image and its avatar" .
 <https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar> <http://www.w3.org/2000/01/rdf-schema#label> "is represented by avatar" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#knows
@@ -150,35 +168,40 @@
 <https://auroral.iot.linkeddata.es/def/core#knows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
 <https://auroral.iot.linkeddata.es/def/core#knows> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Organization> .
 <https://auroral.iot.linkeddata.es/def/core#knows> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Organization> .
+<https://auroral.iot.linkeddata.es/def/core#knows> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying that an organization knows another organization" .
 <https://auroral.iot.linkeddata.es/def/core#knows> <http://www.w3.org/2000/01/rdf-schema#label> "knows" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#locatedIn
 <https://auroral.iot.linkeddata.es/def/core#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Device> .
 <https://auroral.iot.linkeddata.es/def/core#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Place> .
+<https://auroral.iot.linkeddata.es/def/core#locatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between the Device and its location" .
+<https://auroral.iot.linkeddata.es/def/core#locatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "located in" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#serviceType
 <https://auroral.iot.linkeddata.es/def/core#serviceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://auroral.iot.linkeddata.es/def/core#serviceType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
 <https://auroral.iot.linkeddata.es/def/core#serviceType> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#ServiceType> .
-# 
-# https://auroral.iot.linkeddata.es/def/core#status
-<https://auroral.iot.linkeddata.es/def/core#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://auroral.iot.linkeddata.es/def/core#serviceType> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between the service and its type" .
+<https://auroral.iot.linkeddata.es/def/core#serviceType> <http://www.w3.org/2000/01/rdf-schema#label> "service type" .
 # 
 # https://saref.etsi.org/core#controlsProperty
 <https://saref.etsi.org/core#controlsProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core#controlsProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the property that can be controlled by a certain device" .
 <https://saref.etsi.org/core#controlsProperty> <http://www.w3.org/2000/01/rdf-schema#label> "controls property" .
 # 
 # https://saref.etsi.org/core#hasDomain
 <https://saref.etsi.org/core#hasDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://saref.etsi.org/core#hasDomain> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Item> .
 <https://saref.etsi.org/core#hasDomain> <http://www.w3.org/2000/01/rdf-schema#range> <https://auroral.iot.linkeddata.es/def/core#Domain> .
+<https://saref.etsi.org/core#hasDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the domain where a physical or a virtual object is applied." .
 <https://saref.etsi.org/core#hasDomain> <http://www.w3.org/2000/01/rdf-schema#label> "has domain" .
 # 
 # https://saref.etsi.org/core#hasMeasurement
 <https://saref.etsi.org/core#hasMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://saref.etsi.org/core#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#FeatureOfInterest> .
 <https://saref.etsi.org/core#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#Measurement> .
+<https://saref.etsi.org/core#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the detected measurement related to the feature of interest" .
 <https://saref.etsi.org/core#hasMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "has measurement" .
 # 
 # https://saref.etsi.org/core#hasProperty
@@ -186,12 +209,14 @@
 <https://saref.etsi.org/core#hasProperty> <http://www.w3.org/2002/07/owl#inverseOf> <https://saref.etsi.org/core#isPropertyOf> .
 <https://saref.etsi.org/core#hasProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#FeatureOfInterest> .
 <https://saref.etsi.org/core#hasProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#Property> .
+<https://saref.etsi.org/core#hasProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a feature of interest and a property of that feature" .
 <https://saref.etsi.org/core#hasProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has property" .
 # 
 # https://saref.etsi.org/core#isMeasuredIn
 <https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
 <https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#UnitOfMeasure> .
+<https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying that a measurement is measured in units" .
 <https://saref.etsi.org/core#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "is measured in" .
 # 
 # https://saref.etsi.org/core#isPropertyOf
@@ -199,14 +224,17 @@
 <https://saref.etsi.org/core#isPropertyOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
 <https://saref.etsi.org/core#isPropertyOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Property> .
 <https://saref.etsi.org/core#isPropertyOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#FeatureOfInterest> .
+<https://saref.etsi.org/core#isPropertyOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a property and the feature of interest it belongs to" .
 <https://saref.etsi.org/core#isPropertyOf> <http://www.w3.org/2000/01/rdf-schema#label> "is property of" .
 # 
 # https://saref.etsi.org/core#makesMeasurement
 <https://saref.etsi.org/core#makesMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates." .
 <https://saref.etsi.org/core#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "makes measurement" .
 # 
 # https://saref.etsi.org/core#measuresProperty
 <https://saref.etsi.org/core#measuresProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://saref.etsi.org/core#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship specifying the property that can be measured by a certain device" .
 <https://saref.etsi.org/core#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#label> "measures property" .
 # 
 # https://saref.etsi.org/core#relatesToMeasurement
@@ -214,29 +242,29 @@
 <https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2002/07/owl#inverseOf> <https://saref.etsi.org/core#relatesToProperty> .
 <https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Property> .
 <https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#Measurement> .
+<https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a property and the measurements it relates to" .
 <https://saref.etsi.org/core#relatesToMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "relates to measurement" .
 # 
 # https://saref.etsi.org/core#relatesToProperty
 <https://saref.etsi.org/core#relatesToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://saref.etsi.org/core#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://saref.etsi.org/core#Measurement> .
 <https://saref.etsi.org/core#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://saref.etsi.org/core#Property> .
+<https://saref.etsi.org/core#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship between a measurement and the property it relates to" .
 <https://saref.etsi.org/core#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#label> "relates to property"@en .
 # 
 # https://www.w3.org/2019/wot/td#hasInteractionAffordance
 <https://www.w3.org/2019/wot/td#hasInteractionAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://www.w3.org/2019/wot/td#hasInteractionAffordance> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3.org/2019/wot/td#Thing> .
 <https://www.w3.org/2019/wot/td#hasInteractionAffordance> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/2019/wot/td#InteractionAffordance> .
+<https://www.w3.org/2019/wot/td#hasInteractionAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "Offers an affordance to interact with the Thing" .
 <https://www.w3.org/2019/wot/td#hasInteractionAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "has interaction affordance" .
 # 
 # https://www.w3.org/2019/wot/td#hasLink
 <https://www.w3.org/2019/wot/td#hasLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://www.w3.org/2019/wot/td#hasLink> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.w3.org/2019/wot/td#Thing> .
 <https://www.w3.org/2019/wot/td#hasLink> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.w3.org/2019/wot/hypermedia#Link> .
+<https://www.w3.org/2019/wot/td#hasLink> <http://www.w3.org/2000/01/rdf-schema#comment> "Provides Web links to arbitrary resources that relate to the specified Thing Description." .
 <https://www.w3.org/2019/wot/td#hasLink> <http://www.w3.org/2000/01/rdf-schema#label> "has link" .
-# 
-# https://www.w3.org/2019/wot/td#hasValueType
-<https://www.w3.org/2019/wot/td#hasValueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://www.w3.org/2019/wot/td#hasValueType> <http://www.w3.org/2000/01/rdf-schema#label> "has value type" .
 # 
 # 
 # 
@@ -252,6 +280,7 @@
 # 
 # http://purl.org/dc/elements/1.1/license
 <http://purl.org/dc/elements/1.1/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/license> <http://www.w3.org/2000/01/rdf-schema#comment> "The license of an entity" .
 <http://purl.org/dc/elements/1.1/license> <http://www.w3.org/2000/01/rdf-schema#label> "license" .
 # 
 # http://purl.org/dc/elements/1.1/title
@@ -259,273 +288,323 @@
 # 
 # http://www.w3.org/ns/dcat#accessURL
 <http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "accessURL" .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#comment> "The URL of an Entity" .
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/2000/01/rdf-schema#label> "access url" .
 # 
 # http://www.w3.org/ns/dcat#keyword
 <http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/2000/01/rdf-schema#comment> "The keyword of an entity" .
 <http://www.w3.org/ns/dcat#keyword> <http://www.w3.org/2000/01/rdf-schema#label> "keyword" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#adapterId
 <https://auroral.iot.linkeddata.es/def/core#adapterId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#adapterId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Item> .
 <https://auroral.iot.linkeddata.es/def/core#adapterId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#adapterId> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier of an adapter" .
 <https://auroral.iot.linkeddata.es/def/core#adapterId> <http://www.w3.org/2000/01/rdf-schema#label> "adapter id" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#code
 <https://auroral.iot.linkeddata.es/def/core#code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#code> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Place> .
 <https://auroral.iot.linkeddata.es/def/core#code> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#code> <http://www.w3.org/2000/01/rdf-schema#comment> "The code of an entity" .
+<https://auroral.iot.linkeddata.es/def/core#code> <http://www.w3.org/2000/01/rdf-schema#label> "code" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#continentCode
 <https://auroral.iot.linkeddata.es/def/core#continentCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#continentCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Country> .
 <https://auroral.iot.linkeddata.es/def/core#continentCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://auroral.iot.linkeddata.es/def/core#continentCode> <http://www.w3.org/2000/01/rdf-schema#label> "continent Code" .
+<https://auroral.iot.linkeddata.es/def/core#continentCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The code of a continent" .
+<https://auroral.iot.linkeddata.es/def/core#continentCode> <http://www.w3.org/2000/01/rdf-schema#label> "continent code" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#currentStatus
 <https://auroral.iot.linkeddata.es/def/core#currentStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#currentStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
 <https://auroral.iot.linkeddata.es/def/core#currentStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#currentStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The current status of an entity" .
 <https://auroral.iot.linkeddata.es/def/core#currentStatus> <http://www.w3.org/2000/01/rdf-schema#label> "current status" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#datasetProvider
 <https://auroral.iot.linkeddata.es/def/core#datasetProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#datasetProvider> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Dataset> .
 <https://auroral.iot.linkeddata.es/def/core#datasetProvider> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#datasetProvider> <http://www.w3.org/2000/01/rdf-schema#comment> "The provider of a dataset" .
 <https://auroral.iot.linkeddata.es/def/core#datasetProvider> <http://www.w3.org/2000/01/rdf-schema#label> "dataset provider" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasActor
 <https://auroral.iot.linkeddata.es/def/core#hasActor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasActor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Notification> .
 <https://auroral.iot.linkeddata.es/def/core#hasActor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasActor> <http://www.w3.org/2000/01/rdf-schema#comment> "The actor of an entity" .
 <https://auroral.iot.linkeddata.es/def/core#hasActor> <http://www.w3.org/2000/01/rdf-schema#label> "has actor" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasContactMail
 <https://auroral.iot.linkeddata.es/def/core#hasContactMail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasContactMail> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#User> .
 <https://auroral.iot.linkeddata.es/def/core#hasContactMail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasContactMail> <http://www.w3.org/2000/01/rdf-schema#comment> "The contact mail of a user" .
 <https://auroral.iot.linkeddata.es/def/core#hasContactMail> <http://www.w3.org/2000/01/rdf-schema#label> "has contact mail" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasCreationDate
 <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://auroral.iot.linkeddata.es/def/core#hasCreationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The creation date of an entity" .
 <https://auroral.iot.linkeddata.es/def/core#hasCreationDate> <http://www.w3.org/2000/01/rdf-schema#label> "has creation date" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasEmail
 <https://auroral.iot.linkeddata.es/def/core#hasEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#User> .
 <https://auroral.iot.linkeddata.es/def/core#hasEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "The e-mail of an entity" .
 <https://auroral.iot.linkeddata.es/def/core#hasEmail> <http://www.w3.org/2000/01/rdf-schema#label> "has email" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasFirstName
 <https://auroral.iot.linkeddata.es/def/core#hasFirstName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasFirstName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#User> .
 <https://auroral.iot.linkeddata.es/def/core#hasFirstName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasFirstName> <http://www.w3.org/2000/01/rdf-schema#comment> "The first name of a user" .
 <https://auroral.iot.linkeddata.es/def/core#hasFirstName> <http://www.w3.org/2000/01/rdf-schema#label> "has first name" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasFunctionality
 <https://auroral.iot.linkeddata.es/def/core#hasFunctionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasFunctionality> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
 <https://auroral.iot.linkeddata.es/def/core#hasFunctionality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasFunctionality> <http://www.w3.org/2000/01/rdf-schema#comment> "The functionality of a given entity" .
 <https://auroral.iot.linkeddata.es/def/core#hasFunctionality> <http://www.w3.org/2000/01/rdf-schema#label> "has functionality" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasID
 <https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier of an entity" .
 <https://auroral.iot.linkeddata.es/def/core#hasID> <http://www.w3.org/2000/01/rdf-schema#label> "has i d" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasKey
 <https://auroral.iot.linkeddata.es/def/core#hasKey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasKey> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Node> .
 <https://auroral.iot.linkeddata.es/def/core#hasKey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasKey> <http://www.w3.org/2000/01/rdf-schema#comment> "The key of an entity" .
 <https://auroral.iot.linkeddata.es/def/core#hasKey> <http://www.w3.org/2000/01/rdf-schema#label> "has key" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasLastName
 <https://auroral.iot.linkeddata.es/def/core#hasLastName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasLastName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#User> .
 <https://auroral.iot.linkeddata.es/def/core#hasLastName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasLastName> <http://www.w3.org/2000/01/rdf-schema#comment> "The last name of a user" .
 <https://auroral.iot.linkeddata.es/def/core#hasLastName> <http://www.w3.org/2000/01/rdf-schema#label> "has last name" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasLocation
 <https://auroral.iot.linkeddata.es/def/core#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "The location of an entity" .
+<https://auroral.iot.linkeddata.es/def/core#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "has location" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasName
 <https://auroral.iot.linkeddata.es/def/core#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasName> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of an entity" .
 <https://auroral.iot.linkeddata.es/def/core#hasName> <http://www.w3.org/2000/01/rdf-schema#label> "has name" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasNote
 <https://auroral.iot.linkeddata.es/def/core#hasNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasNote> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasNote> <http://www.w3.org/2000/01/rdf-schema#comment> "The node of a given entity" .
 <https://auroral.iot.linkeddata.es/def/core#hasNote> <http://www.w3.org/2000/01/rdf-schema#label> "has note" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasObject
 <https://auroral.iot.linkeddata.es/def/core#hasObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasObject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Notification> .
 <https://auroral.iot.linkeddata.es/def/core#hasObject> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasObject> <http://www.w3.org/2000/01/rdf-schema#comment> "The object of an entity" .
 <https://auroral.iot.linkeddata.es/def/core#hasObject> <http://www.w3.org/2000/01/rdf-schema#label> "has object" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasOccupation
 <https://auroral.iot.linkeddata.es/def/core#hasOccupation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasOccupation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#User> .
 <https://auroral.iot.linkeddata.es/def/core#hasOccupation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasOccupation> <http://www.w3.org/2000/01/rdf-schema#comment> "The occupation of an entity" .
 <https://auroral.iot.linkeddata.es/def/core#hasOccupation> <http://www.w3.org/2000/01/rdf-schema#label> "has occupation" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasRegistrationNumber
 <https://auroral.iot.linkeddata.es/def/core#hasRegistrationNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasRegistrationNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasRegistrationNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The registration number of an entity" .
 <https://auroral.iot.linkeddata.es/def/core#hasRegistrationNumber> <http://www.w3.org/2000/01/rdf-schema#label> "has registration number" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasRequirement
 <https://auroral.iot.linkeddata.es/def/core#hasRequirement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasRequirement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
 <https://auroral.iot.linkeddata.es/def/core#hasRequirement> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasRequirement> <http://www.w3.org/2000/01/rdf-schema#comment> "The requirement of a service" .
 <https://auroral.iot.linkeddata.es/def/core#hasRequirement> <http://www.w3.org/2000/01/rdf-schema#label> "has requirement" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasSkinColor
 <https://auroral.iot.linkeddata.es/def/core#hasSkinColor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasSkinColor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasSkinColor> <http://www.w3.org/2000/01/rdf-schema#comment> "The skin color of a user" .
 <https://auroral.iot.linkeddata.es/def/core#hasSkinColor> <http://www.w3.org/2000/01/rdf-schema#label> "has skin color" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasSubDomain
 <https://auroral.iot.linkeddata.es/def/core#hasSubDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasSubDomain> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
 <https://auroral.iot.linkeddata.es/def/core#hasSubDomain> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasSubDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The sub domain of an entity" .
 <https://auroral.iot.linkeddata.es/def/core#hasSubDomain> <http://www.w3.org/2000/01/rdf-schema#label> "has sub domain" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasTarget
 <https://auroral.iot.linkeddata.es/def/core#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasTarget> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Notification> .
 <https://auroral.iot.linkeddata.es/def/core#hasTarget> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasTarget> <http://www.w3.org/2000/01/rdf-schema#comment> "The target of a notification" .
 <https://auroral.iot.linkeddata.es/def/core#hasTarget> <http://www.w3.org/2000/01/rdf-schema#label> "has target" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasToken
 <https://auroral.iot.linkeddata.es/def/core#hasToken> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasToken> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Node> .
 <https://auroral.iot.linkeddata.es/def/core#hasToken> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#hasToken> <http://www.w3.org/2000/01/rdf-schema#comment> "The token of a notification" .
 <https://auroral.iot.linkeddata.es/def/core#hasToken> <http://www.w3.org/2000/01/rdf-schema#label> "has token" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#hasUpdateDate
 <https://auroral.iot.linkeddata.es/def/core#hasUpdateDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#hasUpdateDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Item> .
 <https://auroral.iot.linkeddata.es/def/core#hasUpdateDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://auroral.iot.linkeddata.es/def/core#hasUpdateDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The update date of an item" .
 <https://auroral.iot.linkeddata.es/def/core#hasUpdateDate> <http://www.w3.org/2000/01/rdf-schema#label> "has update date" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#isLastUpdated
 <https://auroral.iot.linkeddata.es/def/core#isLastUpdated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://auroral.iot.linkeddata.es/def/core#isLastUpdated> <http://www.w3.org/2000/01/rdf-schema#comment> "The last update of an entity" .
 <https://auroral.iot.linkeddata.es/def/core#isLastUpdated> <http://www.w3.org/2000/01/rdf-schema#label> "is last updated" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#isUnread
 <https://auroral.iot.linkeddata.es/def/core#isUnread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#isUnread> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Notification> .
 <https://auroral.iot.linkeddata.es/def/core#isUnread> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://auroral.iot.linkeddata.es/def/core#isUnread> <http://www.w3.org/2000/01/rdf-schema#comment> "The unread status of a notfication" .
 <https://auroral.iot.linkeddata.es/def/core#isUnread> <http://www.w3.org/2000/01/rdf-schema#label> "is unread" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#isoCode
 <https://auroral.iot.linkeddata.es/def/core#isoCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#isoCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Country> .
 <https://auroral.iot.linkeddata.es/def/core#isoCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://auroral.iot.linkeddata.es/def/core#isoCode> <http://www.w3.org/2000/01/rdf-schema#label> "iso Code" .
+<https://auroral.iot.linkeddata.es/def/core#isoCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The iso code of a country" .
+<https://auroral.iot.linkeddata.es/def/core#isoCode> <http://www.w3.org/2000/01/rdf-schema#label> "iso code" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#name
 <https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of an entity" .
+<https://auroral.iot.linkeddata.es/def/core#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#nameCountry
 <https://auroral.iot.linkeddata.es/def/core#nameCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#nameCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Country> .
 <https://auroral.iot.linkeddata.es/def/core#nameCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#nameCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a country" .
 <https://auroral.iot.linkeddata.es/def/core#nameCountry> <http://www.w3.org/2000/01/rdf-schema#label> "name country" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#namePlace
 <https://auroral.iot.linkeddata.es/def/core#namePlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#namePlace> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Place> .
 <https://auroral.iot.linkeddata.es/def/core#namePlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#namePlace> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of a place" .
 <https://auroral.iot.linkeddata.es/def/core#namePlace> <http://www.w3.org/2000/01/rdf-schema#label> "name place" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#numberOfDownloads
 <https://auroral.iot.linkeddata.es/def/core#numberOfDownloads> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#numberOfDownloads> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
 <https://auroral.iot.linkeddata.es/def/core#numberOfDownloads> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#numberOfDownloads> <http://www.w3.org/2000/01/rdf-schema#comment> "The number of downloads of a service" .
 <https://auroral.iot.linkeddata.es/def/core#numberOfDownloads> <http://www.w3.org/2000/01/rdf-schema#label> "number of downloads" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#serialNumber
 <https://auroral.iot.linkeddata.es/def/core#serialNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#serialNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Device> .
 <https://auroral.iot.linkeddata.es/def/core#serialNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#serialNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The serial number of device" .
 <https://auroral.iot.linkeddata.es/def/core#serialNumber> <http://www.w3.org/2000/01/rdf-schema#label> "serial number" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#serviceDescription
 <https://auroral.iot.linkeddata.es/def/core#serviceDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#serviceDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
 <https://auroral.iot.linkeddata.es/def/core#serviceDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#serviceDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "The description of a service" .
 <https://auroral.iot.linkeddata.es/def/core#serviceDescription> <http://www.w3.org/2000/01/rdf-schema#label> "service description" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#serviceFree
 <https://auroral.iot.linkeddata.es/def/core#serviceFree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#serviceFree> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
 <https://auroral.iot.linkeddata.es/def/core#serviceFree> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://auroral.iot.linkeddata.es/def/core#serviceFree> <http://www.w3.org/2000/01/rdf-schema#comment> "It determines if a service is free or no" .
 <https://auroral.iot.linkeddata.es/def/core#serviceFree> <http://www.w3.org/2000/01/rdf-schema#label> "service free" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#serviceProvider
 <https://auroral.iot.linkeddata.es/def/core#serviceProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#serviceProvider> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
 <https://auroral.iot.linkeddata.es/def/core#serviceProvider> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#serviceProvider> <http://www.w3.org/2000/01/rdf-schema#comment> "The provider of a service" .
 <https://auroral.iot.linkeddata.es/def/core#serviceProvider> <http://www.w3.org/2000/01/rdf-schema#label> "service provider" .
-# 
-# https://auroral.iot.linkeddata.es/def/core#status
-<https://auroral.iot.linkeddata.es/def/core#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://auroral.iot.linkeddata.es/def/core#status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # https://auroral.iot.linkeddata.es/def/core#value
 <https://auroral.iot.linkeddata.es/def/core#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#value> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Readability> .
 <https://auroral.iot.linkeddata.es/def/core#value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://auroral.iot.linkeddata.es/def/core#value> <http://www.w3.org/2000/01/rdf-schema#comment> "The value of the readability of a measurement" .
+<https://auroral.iot.linkeddata.es/def/core#value> <http://www.w3.org/2000/01/rdf-schema#label> "value" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#versionNumber
 <https://auroral.iot.linkeddata.es/def/core#versionNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#versionNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Device> .
 <https://auroral.iot.linkeddata.es/def/core#versionNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#versionNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The version number of  a device" .
 <https://auroral.iot.linkeddata.es/def/core#versionNumber> <http://www.w3.org/2000/01/rdf-schema#label> "version number" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#versionOfService
 <https://auroral.iot.linkeddata.es/def/core#versionOfService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#versionOfService> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Service> .
 <https://auroral.iot.linkeddata.es/def/core#versionOfService> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://auroral.iot.linkeddata.es/def/core#versionOfService> <http://www.w3.org/2000/01/rdf-schema#comment> "The version of a service" .
 <https://auroral.iot.linkeddata.es/def/core#versionOfService> <http://www.w3.org/2000/01/rdf-schema#label> "version of service" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#visibility
 <https://auroral.iot.linkeddata.es/def/core#visibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://auroral.iot.linkeddata.es/def/core#visibility> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Dataset> .
 <https://auroral.iot.linkeddata.es/def/core#visibility> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://auroral.iot.linkeddata.es/def/core#visibility> <http://www.w3.org/2000/01/rdf-schema#comment> "The visibility of a dataset" .
+<https://auroral.iot.linkeddata.es/def/core#visibility> <http://www.w3.org/2000/01/rdf-schema#label> "visibility" .
 # 
 # https://saref.etsi.org/core#deviceId
 <https://saref.etsi.org/core#deviceId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://saref.etsi.org/core#deviceId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Device> .
 <https://saref.etsi.org/core#deviceId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://saref.etsi.org/core#deviceId> <http://www.w3.org/2000/01/rdf-schema#comment> "The identifier of a device" .
+<https://saref.etsi.org/core#deviceId> <http://www.w3.org/2000/01/rdf-schema#label> "device id" .
 # 
 # https://saref.etsi.org/core#hasManufacturer
 <https://saref.etsi.org/core#hasManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://saref.etsi.org/core#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Device> .
 <https://saref.etsi.org/core#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://saref.etsi.org/core#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "The manufacturer of a device" .
 <https://saref.etsi.org/core#hasManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "has manufacturer" .
 # 
 # https://saref.etsi.org/core#hasModel
 <https://saref.etsi.org/core#hasModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://saref.etsi.org/core#hasModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://auroral.iot.linkeddata.es/def/core#Device> .
 <https://saref.etsi.org/core#hasModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://saref.etsi.org/core#hasModel> <http://www.w3.org/2000/01/rdf-schema#comment> "The model of a device" .
 <https://saref.etsi.org/core#hasModel> <http://www.w3.org/2000/01/rdf-schema#label> "has model" .
 # 
 # https://saref.etsi.org/core#hasTimeStamp
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#comment> "The timestamp of an entity" .
 <https://saref.etsi.org/core#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#label> "has time stamp" .
 # 
 # https://saref.etsi.org/core#hasValue
 <https://saref.etsi.org/core#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://saref.etsi.org/core#hasValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The value related to an entity" .
 <https://saref.etsi.org/core#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
 # 
 # 
@@ -539,55 +618,69 @@
 # 
 # http://lexvo.org/ontology#Language
 <http://lexvo.org/ontology#Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://lexvo.org/ontology#Language> <http://www.w3.org/2000/01/rdf-schema#comment> "The used languages for services (english, arabic, spanich, etc)" .
 <http://lexvo.org/ontology#Language> <http://www.w3.org/2000/01/rdf-schema#label> "Language" .
 # 
 # http://www.geonames.org/ontology#Feature
 <http://www.geonames.org/ontology#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.geonames.org/ontology#Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to a specific location" .
 <http://www.geonames.org/ontology#Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature" .
 # 
 # http://www.opengis.net/ont/geosparql#Geometry
 <http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "A Geometry consists of a set of coordinates and a specification on how the coordinates should be interpreted." .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry" .
 # 
 # http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
 <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#comment> "Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes." .
 <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Thing" .
 # 
 # http://www.w3.org/ns/dcat#Dataset
 <http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of data, published or curated by a single agent, and available for access or download in one or more representations" .
 <http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset" .
 # 
 # http://xmlns.com/foaf/0.1/Image
 <http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Digital images (such as JPEG, PNG, GIF bitmaps, SVG diagrams etc.)  of users" .
 <http://xmlns.com/foaf/0.1/Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image" .
 # 
 # http://xmlns.com/foaf/0.1/Person
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "The Person class represents people." .
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Actuator
 <https://auroral.iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Device> .
 <https://auroral.iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core#Actuator> .
+<https://auroral.iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "a device that causes a machine or other device to operate." .
 <https://auroral.iot.linkeddata.es/def/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Audit
 <https://auroral.iot.linkeddata.es/def/core#Audit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/core#Audit> <http://www.w3.org/2000/01/rdf-schema#comment> "It correponds to the  examination  and  evaluation  of  organisations or users." .
 <https://auroral.iot.linkeddata.es/def/core#Audit> <http://www.w3.org/2000/01/rdf-schema#label> "Audit" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Building
 <https://auroral.iot.linkeddata.es/def/core#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core#FeatureOfInterest> .
+<https://auroral.iot.linkeddata.es/def/core#Building> <http://www.w3.org/2000/01/rdf-schema#comment> "Building is a feature of Interest." .
 <https://auroral.iot.linkeddata.es/def/core#Building> <http://www.w3.org/2000/01/rdf-schema#label> "Building" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#City
 <https://auroral.iot.linkeddata.es/def/core#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core#FeatureOfInterest> .
+<https://auroral.iot.linkeddata.es/def/core#City> <http://www.w3.org/2000/01/rdf-schema#comment> "City is a feature of Interest." .
 <https://auroral.iot.linkeddata.es/def/core#City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Country
 <https://auroral.iot.linkeddata.es/def/core#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.geonames.org/ontology#Feature> .
+<https://auroral.iot.linkeddata.es/def/core#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the country where a service is applied" .
+<https://auroral.iot.linkeddata.es/def/core#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Dataset
 <https://auroral.iot.linkeddata.es/def/core#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -617,16 +710,19 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 _:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#boolean> .
 _:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#visibility> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of data, published or curated by a single agent, and available for access or download in one or more representations" .
 <https://auroral.iot.linkeddata.es/def/core#Dataset> <http://www.w3.org/2000/01/rdf-schema#label> "Dataset" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Device
 <https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#PhysicalThing> .
 <https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core#Device> .
+<https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function" .
 <https://auroral.iot.linkeddata.es/def/core#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Domain
 <https://auroral.iot.linkeddata.es/def/core#Domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/core#Domain> <http://www.w3.org/2000/01/rdf-schema#comment> "refers to the domains in the AURORAL project (Farming, mobility, energy, health, tourism)" .
 <https://auroral.iot.linkeddata.es/def/core#Domain> <http://www.w3.org/2000/01/rdf-schema#label> "Domain" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Item
@@ -634,7 +730,7 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.w3.org/2019/wot/td#Thing> .
 <https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
 _:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/core#ItemStatus> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#status> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasStatus> .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
 _:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/core#Domain> .
@@ -652,16 +748,19 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
 _:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasUpdateDate> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#comment> "Is defined as the physical or a virtual things" .
 <https://auroral.iot.linkeddata.es/def/core#Item> <http://www.w3.org/2000/01/rdf-schema#label> "Item" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#ItemStatus
 <https://auroral.iot.linkeddata.es/def/core#ItemStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#ItemStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Status> .
+<https://auroral.iot.linkeddata.es/def/core#ItemStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Presents the possible status of item: enabled, disabled, deleted" .
 <https://auroral.iot.linkeddata.es/def/core#ItemStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Item status" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Municipality
 <https://auroral.iot.linkeddata.es/def/core#Municipality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Municipality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core#FeatureOfInterest> .
+<https://auroral.iot.linkeddata.es/def/core#Municipality> <http://www.w3.org/2000/01/rdf-schema#comment> "Municipality is a  feature of Interest." .
 <https://auroral.iot.linkeddata.es/def/core#Municipality> <http://www.w3.org/2000/01/rdf-schema#label> "Municipality" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Node
@@ -672,7 +771,7 @@ _:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linked
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
 _:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#NodeStatus> .
-_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#status> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasStatus> .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
 _:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -690,18 +789,20 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasName> .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#comment> "Is defined as the way to organise the users into distinct groups" .
 <https://auroral.iot.linkeddata.es/def/core#Node> <http://www.w3.org/2000/01/rdf-schema#label> "Node" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#NodeStatus
 <https://auroral.iot.linkeddata.es/def/core#NodeStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#NodeStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Status> .
+<https://auroral.iot.linkeddata.es/def/core#NodeStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Presents the status of the Node: active, deleted, etc." .
 <https://auroral.iot.linkeddata.es/def/core#NodeStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Node status" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Notification
 <https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
 _:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#NotificationStatus> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#status> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasStatus> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
 _:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
@@ -711,11 +812,13 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasID> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#comment> "Is defined  as  the  act of reporting a message to a set of users" .
 <https://auroral.iot.linkeddata.es/def/core#Notification> <http://www.w3.org/2000/01/rdf-schema#label> "Notification" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#NotificationStatus
 <https://auroral.iot.linkeddata.es/def/core#NotificationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#NotificationStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Status> .
+<https://auroral.iot.linkeddata.es/def/core#NotificationStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Presents the possible status of the notificationÑ rejected, accepted, waiting, etc." .
 <https://auroral.iot.linkeddata.es/def/core#NotificationStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Notification status" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Organization
@@ -773,30 +876,36 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
 _:genid33 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#isLastUpdated> .
 _:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization." .
 <https://auroral.iot.linkeddata.es/def/core#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#PhysicalThing
 <https://auroral.iot.linkeddata.es/def/core#PhysicalThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#PhysicalThing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Item> .
+<https://auroral.iot.linkeddata.es/def/core#PhysicalThing> <http://www.w3.org/2000/01/rdf-schema#comment> "Refers to the objects in real word, that could be a sensor or an actuator" .
 <https://auroral.iot.linkeddata.es/def/core#PhysicalThing> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Thing" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Place
 <https://auroral.iot.linkeddata.es/def/core#Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.geonames.org/ontology#Feature> .
+<https://auroral.iot.linkeddata.es/def/core#Place> <http://www.w3.org/2000/01/rdf-schema#comment> "It is a place in general that could be a city, a home, etc. where the service is located" .
 <https://auroral.iot.linkeddata.es/def/core#Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Readability
 <https://auroral.iot.linkeddata.es/def/core#Readability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/core#Readability> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the status of the detected measurement, that could be redable or not." .
 <https://auroral.iot.linkeddata.es/def/core#Readability> <http://www.w3.org/2000/01/rdf-schema#label> "Readability" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Role
 <https://auroral.iot.linkeddata.es/def/core#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/core#Role> <http://www.w3.org/2000/01/rdf-schema#comment> "Is defined  as  the  function assumed by a user inside the organisation." .
 <https://auroral.iot.linkeddata.es/def/core#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Sensor
 <https://auroral.iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Device> .
 <https://auroral.iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://saref.etsi.org/core#Sensor> .
+<https://auroral.iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device which detects or measures a physical property and records, indicates, or otherwise responds to it." .
 <https://auroral.iot.linkeddata.es/def/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Service
@@ -844,14 +953,17 @@ _:genid43 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 _:genid43 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid43 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#serviceProvider> .
 _:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#comment> "The service that coul dbe provided with the device" .
 <https://auroral.iot.linkeddata.es/def/core#Service> <http://www.w3.org/2000/01/rdf-schema#label> "Service" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#ServiceType
 <https://auroral.iot.linkeddata.es/def/core#ServiceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/core#ServiceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the service types that could be a Commidity service or a not commidity service" .
 <https://auroral.iot.linkeddata.es/def/core#ServiceType> <http://www.w3.org/2000/01/rdf-schema#label> "Service Type" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Status
 <https://auroral.iot.linkeddata.es/def/core#Status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://auroral.iot.linkeddata.es/def/core#Status> <http://www.w3.org/2000/01/rdf-schema#comment> "Presents the status of item, node, user and notification" .
 <https://auroral.iot.linkeddata.es/def/core#Status> <http://www.w3.org/2000/01/rdf-schema#label> "Status" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#User
@@ -874,12 +986,12 @@ _:genid47 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.lin
 _:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasAudit> .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
-_:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Image> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar> .
+_:genid48 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#UserStatus> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#hasStatus> .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
-_:genid49 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://auroral.iot.linkeddata.es/def/core#UserStatus> .
-_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#status> .
+_:genid49 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://xmlns.com/foaf/0.1/Image> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#isRepresentedByAvatar> .
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
 _:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
@@ -909,6 +1021,7 @@ _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#UserStatus
 <https://auroral.iot.linkeddata.es/def/core#UserStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://auroral.iot.linkeddata.es/def/core#UserStatus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://auroral.iot.linkeddata.es/def/core#Status> .
+<https://auroral.iot.linkeddata.es/def/core#UserStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Presents the Status of the  user : delected or active" .
 <https://auroral.iot.linkeddata.es/def/core#UserStatus> <http://www.w3.org/2000/01/rdf-schema#label> "User status" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#VirtualThing
@@ -918,10 +1031,12 @@ _:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://auroral.iot.linkeddata.es/def/core#PhysicalThing> .
 _:genid56 <http://www.w3.org/2002/07/owl#onProperty> <https://auroral.iot.linkeddata.es/def/core#exposes> .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://auroral.iot.linkeddata.es/def/core#VirtualThing> <http://www.w3.org/2000/01/rdf-schema#comment> "Presents virtual things which are  the service and the dataset" .
 <https://auroral.iot.linkeddata.es/def/core#VirtualThing> <http://www.w3.org/2000/01/rdf-schema#label> "Virtual Thing" .
 # 
 # https://saref.etsi.org/core#Actuator
 <https://saref.etsi.org/core#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that causes a machine or other device to operate." .
 <https://saref.etsi.org/core#Actuator> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator" .
 # 
 # https://saref.etsi.org/core#Device
@@ -934,46 +1049,57 @@ _:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://saref.etsi.org/core#hasModel> .
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://saref.etsi.org/core#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible object designed to accomplish a particular task. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function" .
 <https://saref.etsi.org/core#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
 # 
 # https://saref.etsi.org/core#FeatureOfInterest
 <https://saref.etsi.org/core#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#comment> "A feature of interest is an abstraction of a real world phenomena (thing, person, event, etc)" .
 <https://saref.etsi.org/core#FeatureOfInterest> <http://www.w3.org/2000/01/rdf-schema#label> "Feature of interest" .
 # 
 # https://saref.etsi.org/core#Measurement
 <https://saref.etsi.org/core#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Measurement is the quantification of attributes of an object or event" .
 <https://saref.etsi.org/core#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement" .
 # 
 # https://saref.etsi.org/core#Property
 <https://saref.etsi.org/core#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "Anything that can be sensed, measured or controlled in households, common public buildings or offices. We propose here a list of properties that are relevant for the purpose of SAREF, but this list can be extended." .
 <https://saref.etsi.org/core#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property" .
 # 
 # https://saref.etsi.org/core#Sensor
 <https://saref.etsi.org/core#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device which detects or measures a physical property and records, indicates, or otherwise responds to it." .
 <https://saref.etsi.org/core#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor" .
 # 
 # https://saref.etsi.org/core#UnitOfMeasure
 <https://saref.etsi.org/core#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://saref.etsi.org/core#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the unit of each mesurement dtected by a sensor" .
 <https://saref.etsi.org/core#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "Unit of measure" .
 # 
 # https://www.w3.org/2006/time#TemporalUnit
 <https://www.w3.org/2006/time#TemporalUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/2006/time#TemporalUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "A standard duration, which provides a scale factor for a time extent, or the granularity or precision for a time position." .
 <https://www.w3.org/2006/time#TemporalUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Temporal Unit" .
 # 
 # https://www.w3.org/2019/wot/hypermedia#Link
 <https://www.w3.org/2019/wot/hypermedia#Link> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/2019/wot/hypermedia#Link> <http://www.w3.org/2000/01/rdf-schema#comment> "A link can be viewed as a statement of the form \"link context has a relation type resource at link target\", where the optional target attributes may further describe the resource." .
 <https://www.w3.org/2019/wot/hypermedia#Link> <http://www.w3.org/2000/01/rdf-schema#label> "Link" .
 # 
 # https://www.w3.org/2019/wot/td#InteractionAffordance
 <https://www.w3.org/2019/wot/td#InteractionAffordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/2019/wot/td#InteractionAffordance> <http://www.w3.org/2000/01/rdf-schema#comment> "It is the ability of an object or system to evoke its use and function." .
 <https://www.w3.org/2019/wot/td#InteractionAffordance> <http://www.w3.org/2000/01/rdf-schema#label> "Interaction Affordance" .
 # 
 # https://www.w3.org/2019/wot/td#Thing
 <https://www.w3.org/2019/wot/td#Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/2019/wot/td#Thing> <http://www.w3.org/2000/01/rdf-schema#comment> "An abstraction of a physical or a virtual entity whose metadata and interfaces are described by a WoT Thing Description, whereas a virtual entity is the composition of one or more Things." .
 <https://www.w3.org/2019/wot/td#Thing> <http://www.w3.org/2000/01/rdf-schema#label> "Thing" .
 # 
 # https://www.w3.org/ns/org#Organization
 <https://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization." .
 <https://www.w3.org/ns/org#Organization> <http://www.w3.org/2000/01/rdf-schema#label> "Organization" .
 # 
 # 
@@ -1097,7 +1223,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#Admin
 <https://auroral.iot.linkeddata.es/def/core#Admin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#Admin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Role> .
-<https://auroral.iot.linkeddata.es/def/core#Admin> <http://www.w3.org/2000/01/rdf-schema#label> "Admin" .
+<https://auroral.iot.linkeddata.es/def/core#Admin> <http://www.w3.org/2000/01/rdf-schema#label> "admin" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#AmpereHour
 <https://auroral.iot.linkeddata.es/def/core#AmpereHour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1115,7 +1241,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#Commodity
 <https://auroral.iot.linkeddata.es/def/core#Commodity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#Commodity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#ServiceType> .
-<https://auroral.iot.linkeddata.es/def/core#Commodity> <http://www.w3.org/2000/01/rdf-schema#label> "Commodity" .
+<https://auroral.iot.linkeddata.es/def/core#Commodity> <http://www.w3.org/2000/01/rdf-schema#label> "commodity" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#ContractAcceptedNotification
 <https://auroral.iot.linkeddata.es/def/core#ContractAcceptedNotification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1130,12 +1256,12 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#CyclingEconomy
 <https://auroral.iot.linkeddata.es/def/core#CyclingEconomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#CyclingEconomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Domain> .
-<https://auroral.iot.linkeddata.es/def/core#CyclingEconomy> <http://www.w3.org/2000/01/rdf-schema#label> "Cycling economy" .
+<https://auroral.iot.linkeddata.es/def/core#CyclingEconomy> <http://www.w3.org/2000/01/rdf-schema#label> "cycling economy" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#DairyFarming
 <https://auroral.iot.linkeddata.es/def/core#DairyFarming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#DairyFarming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Domain> .
-<https://auroral.iot.linkeddata.es/def/core#DairyFarming> <http://www.w3.org/2000/01/rdf-schema#label> "Dairy farming" .
+<https://auroral.iot.linkeddata.es/def/core#DairyFarming> <http://www.w3.org/2000/01/rdf-schema#label> "dairy farming" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Decibel
 <https://auroral.iot.linkeddata.es/def/core#Decibel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1159,12 +1285,12 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#Dev_ops
 <https://auroral.iot.linkeddata.es/def/core#Dev_ops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#Dev_ops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Role> .
-<https://auroral.iot.linkeddata.es/def/core#Dev_ops> <http://www.w3.org/2000/01/rdf-schema#label> "Dev ops" .
+<https://auroral.iot.linkeddata.es/def/core#Dev_ops> <http://www.w3.org/2000/01/rdf-schema#label> "dev ops" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Dev_owner
 <https://auroral.iot.linkeddata.es/def/core#Dev_owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#Dev_owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Role> .
-<https://auroral.iot.linkeddata.es/def/core#Dev_owner> <http://www.w3.org/2000/01/rdf-schema#label> "Dev owner" .
+<https://auroral.iot.linkeddata.es/def/core#Dev_owner> <http://www.w3.org/2000/01/rdf-schema#label> "dev owner" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#DisabledItemStatus
 <https://auroral.iot.linkeddata.es/def/core#DisabledItemStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1179,12 +1305,12 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#Energy
 <https://auroral.iot.linkeddata.es/def/core#Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Domain> .
-<https://auroral.iot.linkeddata.es/def/core#Energy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy" .
+<https://auroral.iot.linkeddata.es/def/core#Energy> <http://www.w3.org/2000/01/rdf-schema#label> "energy" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Health
 <https://auroral.iot.linkeddata.es/def/core#Health> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#Health> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Domain> .
-<https://auroral.iot.linkeddata.es/def/core#Health> <http://www.w3.org/2000/01/rdf-schema#label> "Health" .
+<https://auroral.iot.linkeddata.es/def/core#Health> <http://www.w3.org/2000/01/rdf-schema#label> "health" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#InfoNotificationStatus
 <https://auroral.iot.linkeddata.es/def/core#InfoNotificationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1223,12 +1349,12 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#Mobility
 <https://auroral.iot.linkeddata.es/def/core#Mobility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#Mobility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Domain> .
-<https://auroral.iot.linkeddata.es/def/core#Mobility> <http://www.w3.org/2000/01/rdf-schema#label> "Mobility" .
+<https://auroral.iot.linkeddata.es/def/core#Mobility> <http://www.w3.org/2000/01/rdf-schema#label> "mobility" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#NotCommodity
 <https://auroral.iot.linkeddata.es/def/core#NotCommodity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#NotCommodity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#ServiceType> .
-<https://auroral.iot.linkeddata.es/def/core#NotCommodity> <http://www.w3.org/2000/01/rdf-schema#label> "Not commodity" .
+<https://auroral.iot.linkeddata.es/def/core#NotCommodity> <http://www.w3.org/2000/01/rdf-schema#label> "not commodity" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#RegistrationRequestNotification
 <https://auroral.iot.linkeddata.es/def/core#RegistrationRequestNotification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1248,7 +1374,7 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#Sev_provider
 <https://auroral.iot.linkeddata.es/def/core#Sev_provider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#Sev_provider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Role> .
-<https://auroral.iot.linkeddata.es/def/core#Sev_provider> <http://www.w3.org/2000/01/rdf-schema#label> "Service provider" .
+<https://auroral.iot.linkeddata.es/def/core#Sev_provider> <http://www.w3.org/2000/01/rdf-schema#label> "service provider" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Sharq
 <https://auroral.iot.linkeddata.es/def/core#Sharq> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1258,16 +1384,17 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://auroral.iot.linkeddata.es/def/core#Super_user
 <https://auroral.iot.linkeddata.es/def/core#Super_user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#Super_user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Role> .
-<https://auroral.iot.linkeddata.es/def/core#Super_user> <http://www.w3.org/2000/01/rdf-schema#label> "Super user" .
+<https://auroral.iot.linkeddata.es/def/core#Super_user> <http://www.w3.org/2000/01/rdf-schema#label> "super user" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Sys_integrator
 <https://auroral.iot.linkeddata.es/def/core#Sys_integrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://auroral.iot.linkeddata.es/def/core#Sys_integrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Role> .
-<https://auroral.iot.linkeddata.es/def/core#Sys_integrator> <http://www.w3.org/2000/01/rdf-schema#label> "System integrator" .
+<https://auroral.iot.linkeddata.es/def/core#Sys_integrator> <http://www.w3.org/2000/01/rdf-schema#label> "system integrator" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#Tourism
 <https://auroral.iot.linkeddata.es/def/core#Tourism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://auroral.iot.linkeddata.es/def/core#Tourism> <http://www.w3.org/2000/01/rdf-schema#label> "Tourism" .
+<https://auroral.iot.linkeddata.es/def/core#Tourism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://auroral.iot.linkeddata.es/def/core#Domain> .
+<https://auroral.iot.linkeddata.es/def/core#Tourism> <http://www.w3.org/2000/01/rdf-schema#label> "tourism" .
 # 
 # https://auroral.iot.linkeddata.es/def/core#User
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -1314,12 +1441,13 @@ _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of an entity" .
 <http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
 # 
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of  an entity" .
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/2000/01/rdf-schema#label> "title" .
 # 
+<https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#comment> "Is a person who belongs to an organisation." .
 <https://auroral.iot.linkeddata.es/def/core#User> <http://www.w3.org/2000/01/rdf-schema#label> "User" .
-# 
-<https://auroral.iot.linkeddata.es/def/core#status> <http://www.w3.org/2000/01/rdf-schema#label> "status" .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
