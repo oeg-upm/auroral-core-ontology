@@ -959,6 +959,193 @@
         <rdf:type rdf:resource="http://w3id.org/def/vtc#TestSuite"/>
         <terms:source rdf:resource="https://auroral.iot.linkeddata.es/def/core"/>
     </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test80 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test80">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>Service subClassOf VirtualThing</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test81 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test81">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>Commodity type ServiceType</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test82 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test82">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>NotCommodity type ServiceType</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test83 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test83">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>Service language Language</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test84 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test84">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>Service applicableToGeographicalArea Place</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test85 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test85">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>Dataset subClassOf VirtualThing</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test86 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test86">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>Dataset subClassOf Dataset</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test87 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test87">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>Item hasDomain Domain</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test88 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test88">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>Tourism type Domain</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test89 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test89">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>Health type Domain</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test90 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test90">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>Energy type Domain</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test91 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test91">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>Mobility type Domain</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test92 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test92">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>DairyFarming type Domain</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test93 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test93">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>CircularEconomy type Domain</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test94 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test94">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>PhysicalThing hasGeometry Geometry</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test95 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test95">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:belongsTo>Measurement hasReadability Readability</vtc:belongsTo>
+    </NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/vtc#Test96 -->
+
+
+    <NamedIndividual rdf:about="https://w3id.org/def/vtc#Test96">
+        <rdf:type rdf:resource="https://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:belongsTo rdf:resource="https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"/>
+        <vtc:desiredBehaviour>Measurement hasTemporalUnit TemporalUnit</vtc:desiredBehaviour>
+    </NamedIndividual>
 </rdf:RDF>
 
 

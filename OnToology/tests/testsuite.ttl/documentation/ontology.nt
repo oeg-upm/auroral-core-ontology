@@ -520,4 +520,106 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/def/vtc#TestSuite> .
 <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> <http://purl.org/dc/terms/source> <https://auroral.iot.linkeddata.es/def/core> .
 # 
+# https://w3id.org/def/vtc#Test80
+<https://w3id.org/def/vtc#Test80> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test80> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test80> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test80> <https://w3id.org/def/vtc#desiredBehaviour> "Service subClassOf VirtualThing" .
+# 
+# https://w3id.org/def/vtc#Test81
+<https://w3id.org/def/vtc#Test81> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test81> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test81> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test81> <https://w3id.org/def/vtc#desiredBehaviour> "Commodity type ServiceType" .
+# 
+# https://w3id.org/def/vtc#Test82
+<https://w3id.org/def/vtc#Test82> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test82> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test82> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test82> <https://w3id.org/def/vtc#desiredBehaviour> "NotCommodity type ServiceType" .
+# 
+# https://w3id.org/def/vtc#Test83
+<https://w3id.org/def/vtc#Test83> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test83> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test83> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test83> <https://w3id.org/def/vtc#desiredBehaviour> "Service language Language" .
+# 
+# https://w3id.org/def/vtc#Test84
+<https://w3id.org/def/vtc#Test84> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test84> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test84> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test84> <https://w3id.org/def/vtc#desiredBehaviour> "Service applicableToGeographicalArea Place" .
+# 
+# https://w3id.org/def/vtc#Test85
+<https://w3id.org/def/vtc#Test85> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test85> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test85> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test85> <https://w3id.org/def/vtc#desiredBehaviour> "Dataset subClassOf VirtualThing" .
+# 
+# https://w3id.org/def/vtc#Test86
+<https://w3id.org/def/vtc#Test86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test86> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test86> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test86> <https://w3id.org/def/vtc#desiredBehaviour> "Dataset subClassOf Dataset" .
+# 
+# https://w3id.org/def/vtc#Test87
+<https://w3id.org/def/vtc#Test87> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test87> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test87> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test87> <https://w3id.org/def/vtc#desiredBehaviour> "Item hasDomain Domain" .
+# 
+# https://w3id.org/def/vtc#Test88
+<https://w3id.org/def/vtc#Test88> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test88> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test88> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test88> <https://w3id.org/def/vtc#desiredBehaviour> "Tourism type Domain" .
+# 
+# https://w3id.org/def/vtc#Test89
+<https://w3id.org/def/vtc#Test89> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test89> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test89> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test89> <https://w3id.org/def/vtc#desiredBehaviour> "Health type Domain" .
+# 
+# https://w3id.org/def/vtc#Test90
+<https://w3id.org/def/vtc#Test90> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test90> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test90> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test90> <https://w3id.org/def/vtc#desiredBehaviour> "Energy type Domain" .
+# 
+# https://w3id.org/def/vtc#Test91
+<https://w3id.org/def/vtc#Test91> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test91> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test91> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test91> <https://w3id.org/def/vtc#desiredBehaviour> "Mobility type Domain" .
+# 
+# https://w3id.org/def/vtc#Test92
+<https://w3id.org/def/vtc#Test92> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test92> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test92> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test92> <https://w3id.org/def/vtc#desiredBehaviour> "DairyFarming type Domain" .
+# 
+# https://w3id.org/def/vtc#Test93
+<https://w3id.org/def/vtc#Test93> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test93> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test93> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test93> <https://w3id.org/def/vtc#desiredBehaviour> "CircularEconomy type Domain" .
+# 
+# https://w3id.org/def/vtc#Test94
+<https://w3id.org/def/vtc#Test94> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test94> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test94> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test94> <https://w3id.org/def/vtc#desiredBehaviour> "PhysicalThing hasGeometry Geometry" .
+# 
+# https://w3id.org/def/vtc#Test95
+<https://w3id.org/def/vtc#Test95> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test95> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test95> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test95> <https://w3id.org/def/vtc#belongsTo> "Measurement hasReadability Readability" .
+# 
+# https://w3id.org/def/vtc#Test96
+<https://w3id.org/def/vtc#Test96> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/vtc#Test96> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/vtc#TestCaseDesign> .
+<https://w3id.org/def/vtc#Test96> <https://w3id.org/def/vtc#belongsTo> <https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore> .
+<https://w3id.org/def/vtc#Test96> <https://w3id.org/def/vtc#desiredBehaviour> "Measurement hasTemporalUnit TemporalUnit" .
+# 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

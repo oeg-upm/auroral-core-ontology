@@ -965,6 +965,209 @@
     "@id" : "http://w3id.org/def/vtc#TestSuite"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/vtc#Test80",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Service subClassOf VirtualThing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test81",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Commodity type ServiceType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test82",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "NotCommodity type ServiceType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test83",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Service language Language"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test84",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Service applicableToGeographicalArea Place"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test85",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Dataset subClassOf VirtualThing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test86",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Dataset subClassOf Dataset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test87",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Item hasDomain Domain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Tourism type Domain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test89",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Health type Domain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test90",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Energy type Domain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test91",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Mobility type Domain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test92",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "DairyFarming type Domain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test93",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "CircularEconomy type Domain"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test94",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "PhysicalThing hasGeometry Geometry"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test95",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  }, {
+    "@value" : "Measurement hasReadability Readability"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/vtc#Test96",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://w3id.org/def/vtc#TestCaseDesign"
+  } ],
+  "https://w3id.org/def/vtc#belongsTo" : [ {
+    "@id" : "https://auroral.iot.linkeddata.es/tests/core#TestsuiteCore"
+  } ],
+  "https://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Measurement hasTemporalUnit TemporalUnit"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/vtc#TestCaseDesign",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
