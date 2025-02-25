@@ -21,7 +21,7 @@
         <dc:description>This ontology aims at modelling the data related to users, items, notification and organisations for the AURORAL project.</dc:description>
         <dc:title>The AURORAL Core Ontology</dc:title>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
-        <owl:versionInfo>0.0.2</owl:versionInfo>
+        <owl:versionInfo>0.0.3</owl:versionInfo>
     </owl:Ontology>
     
 

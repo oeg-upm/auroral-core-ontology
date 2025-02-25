@@ -10,7 +10,7 @@
 <https://auroral.iot.linkeddata.es/def/core#> <http://purl.org/dc/elements/1.1/description> "This ontology aims at modelling the data related to users, items, notification and organisations for the AURORAL project." .
 <https://auroral.iot.linkeddata.es/def/core#> <http://purl.org/dc/elements/1.1/title> "The AURORAL Core Ontology" .
 <https://auroral.iot.linkeddata.es/def/core#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> .
-<https://auroral.iot.linkeddata.es/def/core#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.2" .
+<https://auroral.iot.linkeddata.es/def/core#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.3" .
 # 
 # 
 # #################################################################

@@ -871,7 +871,7 @@
     "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.0.2"
+    "@value" : "0.0.3"
   } ]
 }, {
   "@id" : "https://auroral.iot.linkeddata.es/def/core#AcceptedNotificationStatus",
