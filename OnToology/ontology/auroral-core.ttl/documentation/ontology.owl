@@ -7,9 +7,12 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
     <owl:Ontology rdf:about="https://auroral.iot.linkeddata.es/def/core#">
+        <dc:contributor>Artur Romao</dc:contributor>
         <dc:contributor>David Buján Carballal</dc:contributor>
+        <dc:contributor>Nuno Marques</dc:contributor>
         <dc:creator>Ahlem Rhayem</dc:creator>
         <dc:creator>Alba Fernández Izquierdo</dc:creator>
         <dc:creator>Andrea Cimmino</dc:creator>
@@ -67,6 +70,27 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
     
 
 
@@ -328,6 +352,16 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#performedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#performedBy">
+        <rdfs:comment>relation between a measurement and the agent performing it</rdfs:comment>
+        <rdfs:label>performed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#serviceType -->
 
 
@@ -418,6 +452,17 @@
     <owl:ObjectProperty rdf:about="https://saref.etsi.org/core#makesMeasurement">
         <rdfs:comment>A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates.</rdfs:comment>
         <rdfs:label>makes measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core#measurementMadeBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core#measurementMadeBy">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core#Measurement"/>
+        <rdfs:comment>A relation between a measurement and the device that made it.</rdfs:comment>
+        <rdfs:label>measurement made by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -610,6 +655,17 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasCode">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>alarm or notification code</rdfs:comment>
+        <rdfs:label>has code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#hasContactMail -->
 
 
@@ -784,6 +840,17 @@
     
 
 
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasSeverity -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasSeverity">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>alarm or notification severity</rdfs:comment>
+        <rdfs:label>has severity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- https://auroral.iot.linkeddata.es/def/core#hasSkinColor -->
 
 
@@ -827,6 +894,16 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The token of a notification</rdfs:comment>
         <rdfs:label>has token</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#hasType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#hasType">
+        <rdfs:comment>type of agent</rdfs:comment>
+        <rdfs:label>has type</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -920,6 +997,28 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>The number of downloads of a service</rdfs:comment>
         <rdfs:label>number of downloads</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#receivedAt -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#receivedAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>time when a measurment is received</rdfs:comment>
+        <rdfs:label>received at</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://auroral.iot.linkeddata.es/def/core#sentAt -->
+
+
+    <owl:DatatypeProperty rdf:about="https://auroral.iot.linkeddata.es/def/core#sentAt">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>time when a measurment is sent</rdfs:comment>
+        <rdfs:label>sent at</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -1125,6 +1224,7 @@
 
 
     <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
         <rdfs:comment>Anything with spatial extent, i.e. size, shape, or position. e.g. people, places, bowling balls, as well as abstract areas like cubes.</rdfs:comment>
         <rdfs:label>Spatial Thing</rdfs:label>
     </owl:Class>
@@ -1137,6 +1237,16 @@
     <owl:Class rdf:about="http://www.w3.org/ns/dcat#Dataset">
         <rdfs:comment>A collection of data, published or curated by a single agent, and available for access or download in one or more representations</rdfs:comment>
         <rdfs:label>Dataset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <rdfs:comment>An agent (eg. person, group, software or physical artifact).</rdfs:comment>
+        <rdfs:label>Agent</rdfs:label>
     </owl:Class>
     
 
@@ -1155,6 +1265,7 @@
 
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:comment>The Person class represents people.</rdfs:comment>
         <rdfs:label>Person</rdfs:label>
     </owl:Class>
