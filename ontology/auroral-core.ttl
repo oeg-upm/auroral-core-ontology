@@ -21,7 +21,7 @@
 @base <https://auroral.iot.linkeddata.es/def/core#> .
 
 <https://auroral.iot.linkeddata.es/def/core#> rdf:type owl:Ontology ;
-                                               dc:contributor "David Buján Carballal", "Artur Romao", "Nuno Marques" ;
+                                               dc:contributor "David Buján Carballal", "Artur Romao (Dectechnologies, project ALICE4EU)", "Nuno Marques (Dectechnologies, project ALICE4EU)" ;
                                                dc:creator "Ahlem Rhayem" ,
                                                           "Alba Fernández Izquierdo" ,
                                                           "Andrea Cimmino" ,
